@@ -1,4 +1,4 @@
-import { IDataObject } from "n8n-workflow";
+import { IDataObject } from "@lhminh167/n8n-workflow";
 
 export type QuickBooksOAuth2Credentials = {
 	environment: 'production' | 'sandbox';
