@@ -1,6 +1,7 @@
 import { getStyleTokenValue, isNumber } from "@/components/helpers";
 import { NODE_OUTPUT_DEFAULT_KEY, QUICKSTART_NOTE_NAME, START_NODE_TYPE, STICKY_NODE_TYPE } from "@/constants";
 import { IBounds, INodeUi, IZoomConfig, XYPosition } from "@/Interface";
+//@ts-ignore
 import {
 	IConnection,
 	INode, INodeExecutionData, INodeTypeDescription, ITaskData, NodeInputConnections
