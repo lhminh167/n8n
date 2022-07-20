@@ -101,5 +101,6 @@
     "vue-typed-mixins": "^0.2.0",
     "vue2-touch-events": "^3.2.1",
     "vuex": "^3.1.1"
-  }
+  },
+  "gitHead": "9186f5f39af08723f56110f3d2f8e44915380c5e"
 }
