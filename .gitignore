@@ -13,4 +13,4 @@ _START_PACKAGE
 !.vscode/extensions.json
 .idea
 nodelinter.config.json
-packages/*/package-lock.json
+# packages/*/package-lock.json
