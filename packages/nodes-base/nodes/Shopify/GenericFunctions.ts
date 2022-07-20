@@ -1,21 +1,20 @@
 import {
-	OptionsWithUri,
+	OptionsWithUri
 } from 'request';
 
 import {
-	BINARY_ENCODING,
 	IExecuteFunctions,
 	IExecuteSingleFunctions,
 	IHookFunctions,
-	ILoadOptionsFunctions,
+	ILoadOptionsFunctions
 } from 'n8n-core';
 
 import {
-	IDataObject, IOAuth2Options, NodeApiError,
+	IDataObject, IOAuth2Options, NodeApiError
 } from 'n8n-workflow';
 
 import {
-	snakeCase,
+	snakeCase
 } from 'change-case';
 
 export async function shopifyApiRequest(this: IHookFunctions | IExecuteFunctions | IExecuteSingleFunctions | ILoadOptionsFunctions, method: string, resource: string, body: any = {}, query: IDataObject = {}, uri?: string, option: IDataObject = {}): Promise<any> { // tslint:disable-line:no-any
@@ -44,6 +43,7 @@ export async function shopifyApiRequest(this: IHookFunctions | IExecuteFunctions
 
 	const oAuth2Options: IOAuth2Options = {
 		tokenType: 'Bearer',
+		//@ts-ignore
 		keyToIncludeInAccessTokenHeader: 'X-Shopify-Access-Token',
 	};
 

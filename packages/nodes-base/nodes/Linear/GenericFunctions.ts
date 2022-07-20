@@ -1,10 +1,10 @@
 import {
-	OptionsWithUri,
+	OptionsWithUri
 } from 'request';
 
 import {
 	IExecuteFunctions,
-	ILoadOptionsFunctions,
+	ILoadOptionsFunctions
 } from 'n8n-core';
 
 import {
@@ -14,13 +14,13 @@ import {
 	IHookFunctions,
 	IWebhookFunctions,
 	JsonObject,
-	NodeApiError,
+	NodeApiError
 } from 'n8n-workflow';
-
+		//@ts-ignore
 import get from 'lodash.get';
 
 import {
-	query,
+	query
 } from './Queries';
 
 export async function linearApiRequest(this: IExecuteFunctions | IWebhookFunctions | IHookFunctions | ILoadOptionsFunctions, body: any = {}, option: IDataObject = {}): Promise<any> { // tslint:disable-line:no-any

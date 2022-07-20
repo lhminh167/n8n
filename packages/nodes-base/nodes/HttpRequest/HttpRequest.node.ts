@@ -1,5 +1,5 @@
 import {
-	IExecuteFunctions,
+	IExecuteFunctions
 } from 'n8n-core';
 import {
 	IBinaryData,
@@ -9,7 +9,7 @@ import {
 	INodeTypeDescription,
 	IOAuth2Options,
 	NodeApiError,
-	NodeOperationError,
+	NodeOperationError
 } from 'n8n-workflow';
 
 import { OptionsWithUri } from 'request';
@@ -1218,6 +1218,7 @@ export class HttpRequest implements INodeType {
 					},
 					shopifyOAuth2Api: {
 						tokenType: 'Bearer',
+						//@ts-ignore
 						keyToIncludeInAccessTokenHeader: 'X-Shopify-Access-Token',
 					},
 				};
