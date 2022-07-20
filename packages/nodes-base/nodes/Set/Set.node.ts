@@ -1,11 +1,11 @@
-import { IExecuteFunctions } from 'n8n-core';
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeParameters,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeParameters,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import { set } from 'lodash';
 

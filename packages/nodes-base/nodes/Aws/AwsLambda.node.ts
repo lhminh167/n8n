@@ -1,15 +1,14 @@
-import { IExecuteFunctions } from 'n8n-core';
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	JsonObject,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    JsonObject,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import { awsApiRequestREST } from './GenericFunctions';
 

@@ -1,17 +1,17 @@
 import { OptionsWithUri } from 'request';
 
 import {
-	BINARY_ENCODING,
-	IExecuteFunctions,
-	IExecuteSingleFunctions,
-	IHookFunctions,
-	ILoadOptionsFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    BINARY_ENCODING,
+    IExecuteFunctions,
+    IExecuteSingleFunctions,
+    IHookFunctions,
+    ILoadOptionsFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject, NodeApiError, NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject, NodeApiError, NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 export async function payPalApiRequest(this: IHookFunctions | IExecuteFunctions | IExecuteSingleFunctions | ILoadOptionsFunctions | IWebhookFunctions, endpoint: string, method: string, body: any = {}, query?: IDataObject, uri?: string): Promise<any> { // tslint:disable-line:no-any
 

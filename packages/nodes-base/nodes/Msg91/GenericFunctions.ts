@@ -1,11 +1,11 @@
 import {
-	IExecuteFunctions,
-	IHookFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IHookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject, NodeApiError, NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject, NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 /**
  * Make an API request to MSG91

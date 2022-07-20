@@ -1,6 +1,6 @@
 import {
-	IDataObject,
-} from 'n8n-workflow';
+    IDataObject
+} from '@lhminh167/n8n-workflow';
 
 export interface IImage {
 	id?: string;

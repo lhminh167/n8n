@@ -1,28 +1,27 @@
 /* eslint-disable n8n-nodes-base/node-filename-against-convention */
 import {
-	createDeferredPromise,
-	IDataObject,
-	INodeExecutionData,
-	INodeProperties,
-	INodeType,
-	INodeTypeDescription,
-	IRun,
-	ITriggerFunctions,
-	ITriggerResponse,
-	LoggerProxy as Logger,
-	NodeOperationError,
-} from 'n8n-workflow';
+    createDeferredPromise,
+    IDataObject,
+    INodeExecutionData,
+    INodeProperties,
+    INodeType,
+    INodeTypeDescription,
+    IRun,
+    ITriggerFunctions,
+    ITriggerResponse,
+    LoggerProxy as Logger,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	rabbitDefaultOptions,
+    rabbitDefaultOptions
 } from './DefaultOptions';
 
 import {
-	MessageTracker,
-	rabbitmqConnectQueue,
+    MessageTracker,
+    rabbitmqConnectQueue
 } from './GenericFunctions';
 
-import * as amqplib from 'amqplib';
 
 export class RabbitMQTrigger implements INodeType {
 	description: INodeTypeDescription = {

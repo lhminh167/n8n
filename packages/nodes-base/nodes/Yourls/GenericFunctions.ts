@@ -1,16 +1,16 @@
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	IExecuteFunctions,
-	IExecuteSingleFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IExecuteSingleFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject, NodeApiError, NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject, NodeApiError, NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 export async function yourlsApiRequest(this: IExecuteFunctions | IExecuteSingleFunctions | ILoadOptionsFunctions, method: string, body: any = {}, qs: IDataObject = {}): Promise<any> { // tslint:disable-line:no-any
 

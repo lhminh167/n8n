@@ -1,28 +1,28 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	demioApiRequest,
+    demioApiRequest
 } from './GenericFunctions';
 
 import {
-	eventFields,
-	eventOperations,
+    eventFields,
+    eventOperations
 } from './EventDescription';
 
 import {
-	reportFields,
-	reportOperations,
+    reportFields,
+    reportOperations
 } from './ReportDescription';
 
 export class Demio implements INodeType {

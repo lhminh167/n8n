@@ -1,40 +1,39 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	IPollFunctions,
-	NodeApiError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    IPollFunctions,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	TDtableMetadataColumns,
-	TDtableViewColumns,
-	TEndpointResolvedExpr,
-	TEndpointVariableName,
+    TDtableMetadataColumns,
+    TDtableViewColumns,
+    TEndpointResolvedExpr,
+    TEndpointVariableName
 } from './types';
 
 import {
-	schema,
+    schema
 } from './Schema';
 
 import {
-	ICredential,
-	ICtx,
-	IDtableMetadataColumn,
-	IEndpointVariables,
-	IName,
-	IRow,
-	IRowObject,
+    ICredential,
+    ICtx,
+    IDtableMetadataColumn,
+    IEndpointVariables,
+    IName,
+    IRow,
+    IRowObject
 } from './Interfaces';
 
-import _ from 'lodash';
 
 export async function seaTableApiRequest(this: IExecuteFunctions | ILoadOptionsFunctions | IPollFunctions, ctx: ICtx, method: string, endpoint: string, body: any = {}, qs: IDataObject = {}, url: string | undefined = undefined, option: IDataObject = {}): Promise<any> { // tslint:disable-line:no-any
 

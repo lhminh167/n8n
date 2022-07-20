@@ -1,14 +1,7 @@
 import { randomBytes } from 'crypto';
 import { existsSync } from 'fs';
 
-import express from 'express';
-import superagent from 'superagent';
-import request from 'supertest';
-import { URL } from 'url';
-import bodyParser from 'body-parser';
-import { set } from 'lodash';
-import { CronJob } from 'cron';
-import { BinaryDataManager, UserSettings } from 'n8n-core';
+import { BinaryDataManager, UserSettings } from '@lhminh167/n8n-core';
 import {
 	ICredentialType,
 	IDataObject,
@@ -20,12 +13,16 @@ import {
 	ITriggerFunctions,
 	ITriggerResponse,
 	LoggerProxy,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
+import bodyParser from 'body-parser';
+import { CronJob } from 'cron';
+import express from 'express';
+import { set } from 'lodash';
+import superagent from 'superagent';
+import request from 'supertest';
+import { URL } from 'url';
 
 import config from '../../../config';
-import { AUTHLESS_ENDPOINTS, PUBLIC_API_REST_PATH_SEGMENT, REST_PATH_SEGMENT } from './constants';
-import { AUTH_COOKIE_NAME } from '../../../src/constants';
-import { addRoutes as authMiddleware } from '../../../src/UserManagement/routes';
 import {
 	ActiveWorkflowRunner,
 	CredentialTypes,
@@ -34,18 +31,21 @@ import {
 	InternalHooksManager,
 	NodeTypes,
 } from '../../../src';
-import { meNamespace as meEndpoints } from '../../../src/UserManagement/routes/me';
-import { usersNamespace as usersEndpoints } from '../../../src/UserManagement/routes/users';
+import { credentialsController } from '../../../src/api/credentials.api';
+import { AUTH_COOKIE_NAME } from '../../../src/constants';
+import type { User } from '../../../src/databases/entities/User';
+import { getLogger } from '../../../src/Logger';
+import { loadPublicApiVersions } from '../../../src/PublicApi/';
+import { issueJWT } from '../../../src/UserManagement/auth/jwt';
+import type { N8nApp } from '../../../src/UserManagement/Interfaces';
+import { addRoutes as authMiddleware } from '../../../src/UserManagement/routes';
 import { authenticationMethods as authEndpoints } from '../../../src/UserManagement/routes/auth';
+import { meNamespace as meEndpoints } from '../../../src/UserManagement/routes/me';
 import { ownerNamespace as ownerEndpoints } from '../../../src/UserManagement/routes/owner';
 import { passwordResetNamespace as passwordResetEndpoints } from '../../../src/UserManagement/routes/passwordReset';
-import { issueJWT } from '../../../src/UserManagement/auth/jwt';
-import { getLogger } from '../../../src/Logger';
-import { credentialsController } from '../../../src/api/credentials.api';
-import { loadPublicApiVersions } from '../../../src/PublicApi/';
-import type { User } from '../../../src/databases/entities/User';
+import { usersNamespace as usersEndpoints } from '../../../src/UserManagement/routes/users';
+import { AUTHLESS_ENDPOINTS, PUBLIC_API_REST_PATH_SEGMENT, REST_PATH_SEGMENT } from './constants';
 import type { ApiPath, EndpointGroup, PostgresSchemaSection, TriggerTime } from './types';
-import type { N8nApp } from '../../../src/UserManagement/Interfaces';
 
 /**
  * Initialize a test server.

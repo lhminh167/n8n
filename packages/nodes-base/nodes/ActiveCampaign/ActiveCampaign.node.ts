@@ -1,81 +1,81 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	activeCampaignApiRequest,
-	activeCampaignApiRequestAllItems,
-	IProduct,
+    activeCampaignApiRequest,
+    activeCampaignApiRequestAllItems,
+    IProduct
 } from './GenericFunctions';
 
 import {
-	contactFields,
-	contactOperations,
+    contactFields,
+    contactOperations
 } from './ContactDescription';
 
 import {
-	dealFields,
-	dealOperations,
+    dealFields,
+    dealOperations
 } from './DealDescription';
 
 import {
-	ecomOrderFields,
-	ecomOrderOperations,
+    ecomOrderFields,
+    ecomOrderOperations
 } from './EcomOrderDescription';
 
 import {
-	ecomCustomerFields,
-	ecomCustomerOperations,
+    ecomCustomerFields,
+    ecomCustomerOperations
 } from './EcomCustomerDescription';
 
 import {
-	ecomOrderProductsFields,
-	ecomOrderProductsOperations,
+    ecomOrderProductsFields,
+    ecomOrderProductsOperations
 } from './EcomOrderProductsDescription';
 
 import {
-	connectionFields,
-	connectionOperations,
+    connectionFields,
+    connectionOperations
 } from './ConnectionDescription';
 
 import {
-	accountFields,
-	accountOperations
+    accountFields,
+    accountOperations
 } from './AccountDescription';
 
 import {
-	tagFields,
-	tagOperations
+    tagFields,
+    tagOperations
 } from './TagDescription';
 
 import {
-	accountContactFields,
-	accountContactOperations
+    accountContactFields,
+    accountContactOperations
 } from './AccountContactDescription';
 
 import {
-	contactListFields,
-	contactListOperations,
+    contactListFields,
+    contactListOperations
 } from './ContactListDescription';
 
 import {
-	contactTagFields,
-	contactTagOperations,
+    contactTagFields,
+    contactTagOperations
 } from './ContactTagDescription';
 
 import {
-	listFields,
-	listOperations,
+    listFields,
+    listOperations
 } from './ListDescription';
 
 interface CustomProperty {

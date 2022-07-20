@@ -1,19 +1,19 @@
 import {
-	IHookFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IHookFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookResponseData,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookResponseData
+} from '@lhminh167/n8n-workflow';
 
 import {
-	getEvents,
-	lemlistApiRequest,
+    getEvents,
+    lemlistApiRequest
 } from './GenericFunctions';
 
 export class LemlistTrigger implements INodeType {

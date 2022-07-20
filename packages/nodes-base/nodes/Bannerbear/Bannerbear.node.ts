@@ -1,29 +1,29 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	bannerbearApiRequest,
-	keysToSnakeCase,
+    bannerbearApiRequest,
+    keysToSnakeCase
 } from './GenericFunctions';
 
 import {
-	imageFields,
-	imageOperations,
+    imageFields,
+    imageOperations
 } from './ImageDescription';
 
 import {
-	templateFields,
-	templateOperations,
+    templateFields,
+    templateOperations
 } from './TemplateDescription';
 
 export class Bannerbear implements INodeType {

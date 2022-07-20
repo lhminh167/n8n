@@ -1,14 +1,14 @@
 import {
-	IDataObject,
-	INodeProperties
-} from 'n8n-workflow';
+    IDataObject,
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 import {
-	groups,
+    groups
 } from './Json/Groups';
 
 import {
-	tools,
+    tools
 } from './Json/Tools';
 
 function capitalize(str: string): string {

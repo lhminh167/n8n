@@ -1,20 +1,20 @@
 import {
-	IHookFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IHookFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookResponseData,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookResponseData,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	affinityApiRequest,
-	eventsExist,
-	mapResource,
+    affinityApiRequest,
+    eventsExist,
+    mapResource
 } from './GenericFunctions';
 
 export class AffinityTrigger implements INodeType {

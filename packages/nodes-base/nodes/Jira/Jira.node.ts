@@ -1,57 +1,57 @@
 
 import {
-	mergeWith,
+    mergeWith
 } from 'lodash';
 
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IBinaryData,
-	IBinaryKeyData,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IBinaryData,
+    IBinaryKeyData,
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	jiraSoftwareCloudApiRequest,
-	jiraSoftwareCloudApiRequestAllItems,
-	simplifyIssueOutput,
-	validateJSON,
+    jiraSoftwareCloudApiRequest,
+    jiraSoftwareCloudApiRequestAllItems,
+    simplifyIssueOutput,
+    validateJSON
 } from './GenericFunctions';
 
 import {
-	issueAttachmentFields,
-	issueAttachmentOperations,
+    issueAttachmentFields,
+    issueAttachmentOperations
 } from './IssueAttachmentDescription';
 
 import {
-	issueCommentFields,
-	issueCommentOperations,
+    issueCommentFields,
+    issueCommentOperations
 } from './IssueCommentDescription';
 
 import {
-	issueFields,
-	issueOperations,
+    issueFields,
+    issueOperations
 } from './IssueDescription';
 
 import {
-	IFields,
-	IIssue,
-	INotificationRecipients,
-	INotify,
-	NotificationRecipientsRestrictions,
+    IFields,
+    IIssue,
+    INotificationRecipients,
+    INotify,
+    NotificationRecipientsRestrictions
 } from './IssueInterface';
 
 import {
-	userFields,
-	userOperations,
+    userFields,
+    userOperations
 } from './UserDescription';
 
 export class Jira implements INodeType {

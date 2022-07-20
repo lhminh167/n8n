@@ -1,24 +1,24 @@
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	IExecuteFunctions,
-	IExecuteSingleFunctions,
-	IHookFunctions,
-	ILoadOptionsFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IExecuteSingleFunctions,
+    IHookFunctions,
+    ILoadOptionsFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialDataDecryptedObject,
-	IDataObject,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    ICredentialDataDecryptedObject,
+    IDataObject,
+    NodeApiError,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	createHash,
+    createHash
 } from 'crypto';
 
 export async function getAuthorization(

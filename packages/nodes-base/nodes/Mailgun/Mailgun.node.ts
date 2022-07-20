@@ -1,12 +1,11 @@
-import { IExecuteFunctions } from 'n8n-core';
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 
 export class Mailgun implements INodeType {

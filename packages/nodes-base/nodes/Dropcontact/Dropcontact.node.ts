@@ -1,22 +1,22 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialDataDecryptedObject,
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeApiError,
-} from 'n8n-workflow';
+    ICredentialDataDecryptedObject,
+    ICredentialsDecrypted,
+    ICredentialTestFunctions,
+    IDataObject,
+    INodeCredentialTestResult,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	dropcontactApiRequest,
-	validateCredentials,
+    dropcontactApiRequest,
+    validateCredentials
 } from './GenericFunction';
 
 export class Dropcontact implements INodeType {

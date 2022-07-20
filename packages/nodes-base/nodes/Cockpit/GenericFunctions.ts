@@ -1,9 +1,9 @@
 import {
-	IExecuteFunctions,
-	IExecuteSingleFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
-import { IDataObject, NodeApiError, NodeOperationError, } from 'n8n-workflow';
+    IExecuteFunctions,
+    IExecuteSingleFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
+import { IDataObject, NodeApiError } from '@lhminh167/n8n-workflow';
 import { OptionsWithUri } from 'request';
 
 export async function cockpitApiRequest(this: IExecuteFunctions | IExecuteSingleFunctions | ILoadOptionsFunctions, method: string, resource: string, body: any = {}, uri?: string, option: IDataObject = {}): Promise<any> { // tslint:disable-line:no-any

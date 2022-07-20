@@ -1,69 +1,65 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	JsonObject,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions, INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    JsonObject,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	channelFields,
-	channelOperations,
+    channelFields,
+    channelOperations
 } from './ChannelDescription';
 
 import {
-	messageFields,
-	messageOperations,
+    messageFields,
+    messageOperations
 } from './MessageDescription';
 
 import {
-	starFields,
-	starOperations,
+    starFields,
+    starOperations
 } from './StarDescription';
 
 import {
-	fileFields,
-	fileOperations,
+    fileFields,
+    fileOperations
 } from './FileDescription';
 
 import {
-	reactionFields,
-	reactionOperations,
+    reactionFields,
+    reactionOperations
 } from './ReactionDescription';
 
 import {
-	userGroupFields,
-	userGroupOperations,
+    userGroupFields,
+    userGroupOperations
 } from './UserGroupDescription';
 
 import {
-	userFields,
-	userOperations,
+    userFields,
+    userOperations
 } from './UserDescription';
 
 import {
-	userProfileFields,
-	userProfileOperations,
+    userProfileFields,
+    userProfileOperations
 } from './UserProfileDescription';
 
 import {
-	slackApiRequest,
-	slackApiRequestAllItems,
-	validateJSON,
+    slackApiRequest,
+    slackApiRequestAllItems,
+    validateJSON
 } from './GenericFunctions';
 
 import {
-	IAttachment,
+    IAttachment
 } from './MessageInterface';
 
 import moment from 'moment';

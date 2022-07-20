@@ -1,22 +1,22 @@
 import {
-	IHookFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IHookFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialDataDecryptedObject,
-	IDataObject,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookResponseData,
-	NodeOperationError,
-} from 'n8n-workflow';
+    ICredentialDataDecryptedObject,
+    IDataObject,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookResponseData,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	allEvents,
-	eventExists,
-	getId,
-	jiraSoftwareCloudApiRequest,
+    allEvents,
+    eventExists,
+    getId,
+    jiraSoftwareCloudApiRequest
 } from './GenericFunctions';
 
 import * as queryString from 'querystring';

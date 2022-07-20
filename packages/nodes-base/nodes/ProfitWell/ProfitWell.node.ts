@@ -1,29 +1,29 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	profitWellApiRequest,
-	simplifyDailyMetrics,
-	simplifyMontlyMetrics,
+    profitWellApiRequest,
+    simplifyDailyMetrics,
+    simplifyMontlyMetrics
 } from './GenericFunctions';
 
 import {
-	companyOperations,
+    companyOperations
 } from './CompanyDescription';
 
 import {
-	metricFields,
-	metricOperations,
+    metricFields,
+    metricOperations
 } from './MetricDescription';
 
 export class ProfitWell implements INodeType {

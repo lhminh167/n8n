@@ -1,25 +1,25 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	msGraphSecurityApiRequest,
-	throwOnEmptyUpdate,
-	tolerateDoubleQuotes,
+    msGraphSecurityApiRequest,
+    throwOnEmptyUpdate,
+    tolerateDoubleQuotes
 } from './GenericFunctions';
 
 import {
-	secureScoreControlProfileFields,
-	secureScoreControlProfileOperations,
-	secureScoreFields,
-	secureScoreOperations,
+    secureScoreControlProfileFields,
+    secureScoreControlProfileOperations,
+    secureScoreFields,
+    secureScoreOperations
 } from './descriptions';
 
 export class MicrosoftGraphSecurity implements INodeType {

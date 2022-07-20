@@ -1,40 +1,40 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	JsonObject,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    JsonObject
+} from '@lhminh167/n8n-workflow';
 
 import {
-	microsoftApiRequest,
-	microsoftApiRequestAllItems,
+    microsoftApiRequest,
+    microsoftApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	channelFields,
-	channelOperations,
+    channelFields,
+    channelOperations
 } from './ChannelDescription';
 
 import {
-	channelMessageFields,
-	channelMessageOperations,
+    channelMessageFields,
+    channelMessageOperations
 } from './ChannelMessageDescription';
 
 import {
-	chatMessageFields,
-	chatMessageOperations,
+    chatMessageFields,
+    chatMessageOperations
 } from './ChatMessageDescription';
 
 import {
-	taskFields,
-	taskOperations,
+    taskFields,
+    taskOperations
 } from './TaskDescription';
 
 export class MicrosoftTeams implements INodeType {

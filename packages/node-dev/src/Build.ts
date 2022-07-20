@@ -1,14 +1,14 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { ChildProcess, spawn } from 'child_process';
 
-import { readFile as fsReadFile } from 'fs/promises';
 import { write as fsWrite } from 'fs';
+import { readFile as fsReadFile } from 'fs/promises';
 
 import { join } from 'path';
 import { file } from 'tmp-promise';
 import { promisify } from 'util';
 
-import { UserSettings } from 'n8n-core';
+import { UserSettings } from '@lhminh167/n8n-core';
 // eslint-disable-next-line import/no-cycle
 import { IBuildOptions } from '.';
 

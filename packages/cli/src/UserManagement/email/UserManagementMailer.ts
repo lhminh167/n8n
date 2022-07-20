@@ -1,6 +1,6 @@
 /* eslint-disable import/no-cycle */
+import { IDataObject } from '@lhminh167/n8n-workflow';
 import { existsSync, readFileSync } from 'fs';
-import { IDataObject } from 'n8n-workflow';
 import { join as pathJoin } from 'path';
 import { GenericHelpers } from '../..';
 import * as config from '../../../config';

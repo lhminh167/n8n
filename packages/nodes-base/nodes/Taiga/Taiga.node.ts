@@ -1,33 +1,33 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	getVersionForUpdate,
-	handleListing,
-	taigaApiRequest,
-	throwOnEmptyUpdate,
-	toOptions,
+    getVersionForUpdate,
+    handleListing,
+    taigaApiRequest,
+    throwOnEmptyUpdate,
+    toOptions
 } from './GenericFunctions';
 
 import {
-	epicFields,
-	epicOperations,
-	issueFields,
-	issueOperations,
-	taskFields,
-	taskOperations,
-	userStoryFields,
-	userStoryOperations,
+    epicFields,
+    epicOperations,
+    issueFields,
+    issueOperations,
+    taskFields,
+    taskOperations,
+    userStoryFields,
+    userStoryOperations
 } from './descriptions';
 
 export class Taiga implements INodeType {

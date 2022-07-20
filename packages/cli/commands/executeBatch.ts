@@ -6,13 +6,13 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable @typescript-eslint/unbound-method */
 /* eslint-disable no-console */
-import fs from 'fs';
 import { Command, flags } from '@oclif/command';
+import fs from 'fs';
 
-import { BinaryDataManager, UserSettings } from 'n8n-core';
+import { BinaryDataManager, UserSettings } from '@lhminh167/n8n-core';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { INode, ITaskData, LoggerProxy } from 'n8n-workflow';
+import { INode, ITaskData, LoggerProxy } from '@lhminh167/n8n-workflow';
 
 import { sep } from 'path';
 
@@ -22,6 +22,7 @@ import { diff } from 'json-diff';
 import { pick } from 'lodash';
 import { getLogger } from '../src/Logger';
 
+import config from '../config';
 import {
 	ActiveExecutions,
 	CredentialsOverwrites,
@@ -36,7 +37,6 @@ import {
 	NodeTypes,
 	WorkflowRunner,
 } from '../src';
-import config from '../config';
 import { User } from '../src/databases/entities/User';
 import { getInstanceOwner } from '../src/UserManagement/UserManagementHelper';
 

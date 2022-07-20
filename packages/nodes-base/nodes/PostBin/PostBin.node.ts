@@ -1,16 +1,16 @@
 import {
-	INodeType,
-	INodeTypeDescription
-} from 'n8n-workflow';
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	binFields,
-	binOperations,
+    binFields,
+    binOperations
 } from './BinDescription';
 
 import {
-	requestFields,
-	requestOperations,
+    requestFields,
+    requestOperations
 } from './RequestDescription';
 
 export class PostBin implements INodeType {

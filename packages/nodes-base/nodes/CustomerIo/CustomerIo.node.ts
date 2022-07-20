@@ -1,32 +1,32 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 import {
-	customerIoApiRequest,
-	validateJSON,
-} from './GenericFunctions';
-import {
-	campaignFields,
-	campaignOperations,
+    campaignFields,
+    campaignOperations
 } from './CampaignDescription';
 import {
-	customerFields,
-	customerOperations,
+    customerFields,
+    customerOperations
 } from './CustomerDescription';
 import {
-	eventFields,
-	eventOperations,
+    eventFields,
+    eventOperations
 } from './EventDescription';
 import {
-	segmentFields,
-	segmentOperations,
+    customerIoApiRequest,
+    validateJSON
+} from './GenericFunctions';
+import {
+    segmentFields,
+    segmentOperations
 } from './SegmentDescription';
 
 

@@ -1,48 +1,48 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	keysToSnakeCase,
-	pagerDutyApiRequest,
-	pagerDutyApiRequestAllItems,
+    keysToSnakeCase,
+    pagerDutyApiRequest,
+    pagerDutyApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	incidentFields,
-	incidentOperations,
+    incidentFields,
+    incidentOperations
 } from './IncidentDescription';
 
 import {
-	incidentNoteFields,
-	incidentNoteOperations,
+    incidentNoteFields,
+    incidentNoteOperations
 } from './IncidentNoteDescription';
 
 import {
-	logEntryFields,
-	logEntryOperations,
+    logEntryFields,
+    logEntryOperations
 } from './LogEntryDescription';
 
 import {
-	userFields,
-	userOperations,
+    userFields,
+    userOperations
 } from './UserDescription';
 
 import {
-	IIncident,
+    IIncident
 } from './IncidentInterface';
 
 import {
-	snakeCase,
+    snakeCase
 } from 'change-case';
 
 import moment from 'moment-timezone';

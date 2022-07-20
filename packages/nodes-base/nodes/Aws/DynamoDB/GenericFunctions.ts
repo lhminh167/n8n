@@ -1,26 +1,26 @@
 import {
-	URL,
+    URL
 } from 'url';
 
 import {
-	sign,
+    sign
 } from 'aws4';
 
 import {
-	IExecuteFunctions,
-	IHookFunctions,
-	ILoadOptionsFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IHookFunctions,
+    ILoadOptionsFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialDataDecryptedObject,
-	IDataObject,
-	INodeExecutionData,
-} from 'n8n-workflow';
+    ICredentialDataDecryptedObject,
+    IDataObject,
+    INodeExecutionData
+} from '@lhminh167/n8n-workflow';
 
 import {
-	IRequestBody,
+    IRequestBody
 } from './types';
 
 function getEndpointForService(service: string, credentials: ICredentialDataDecryptedObject): string {

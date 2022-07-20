@@ -1,21 +1,17 @@
 import {
-	IHookFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IHookFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookResponseData,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookResponseData
+} from '@lhminh167/n8n-workflow';
 
 import {
-	apiRequest,
-	getFields,
-	getForms,
-	getSubmission,
-	IFormstackWebhookResponseBody
+    apiRequest, getForms, IFormstackWebhookResponseBody
 } from './GenericFunctions';
 
 export class FormstackTrigger implements INodeType {

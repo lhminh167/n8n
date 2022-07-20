@@ -1,24 +1,24 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	mailerliteApiRequest,
-	mailerliteApiRequestAllItems,
+    mailerliteApiRequest,
+    mailerliteApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	subscriberFields,
-	subscriberOperations,
+    subscriberFields,
+    subscriberOperations
 } from './SubscriberDescription';
 
 export class MailerLite implements INodeType {

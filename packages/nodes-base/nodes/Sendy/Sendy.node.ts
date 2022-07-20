@@ -1,28 +1,28 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeApiError,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	sendyApiRequest,
+    sendyApiRequest
 } from './GenericFunctions';
 
 import {
-	campaignFields,
-	campaignOperations,
+    campaignFields,
+    campaignOperations
 } from './CampaignDescription';
 
 import {
-	subscriberFields,
-	subscriberOperations,
+    subscriberFields,
+    subscriberOperations
 } from './SubscriberDescription';
 
 export class Sendy implements INodeType {

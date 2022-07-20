@@ -4,13 +4,11 @@
 /* eslint-disable no-param-reassign */
 import {
 	INode,
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
-	IRunExecutionData,
+	LoggerProxy as Logger,
 	NodeHelpers,
 	WebhookHttpMethod,
 	Workflow,
-	LoggerProxy as Logger,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 
 import express from 'express';
 
@@ -22,8 +20,6 @@ import {
 	NodeTypes,
 	ResponseHelper,
 	WebhookHelpers,
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
-	WorkflowCredentials,
 	WorkflowExecuteAdditionalData,
 } from '.';
 import { getWorkflowOwner } from './UserManagement/UserManagementHelper';

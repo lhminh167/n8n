@@ -1,23 +1,23 @@
-import { IExecuteFunctions } from 'n8n-core';
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	IHttpRequestMethods,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    IHttpRequestMethods,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeApiError,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	asanaApiRequest,
-	asanaApiRequestAllItems,
-	getColorOptions,
-	getTaskFields,
-	getWorkspaces,
+    asanaApiRequest,
+    asanaApiRequestAllItems,
+    getColorOptions,
+    getTaskFields,
+    getWorkspaces
 } from './GenericFunctions';
 
 import moment from 'moment-timezone';

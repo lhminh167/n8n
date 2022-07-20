@@ -1,16 +1,15 @@
 import {
-	OptionsWithUri
+    OptionsWithUri
 } from 'request';
 
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 export async function oneSimpleApiRequest(this: IExecuteFunctions, method: string, resource: string, body: IDataObject = {}, qs: IDataObject = {}, uri?: string, option: IDataObject = {}) {
 	const credentials = await this.getCredentials('oneSimpleApi');

@@ -1,11 +1,11 @@
 import {
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	campaignFields,
-	campaignOperations,
+    campaignFields,
+    campaignOperations
 } from './CampaignDescription';
 
 export class GoogleAds implements INodeType {

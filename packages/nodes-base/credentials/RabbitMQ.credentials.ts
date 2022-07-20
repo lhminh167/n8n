@@ -1,8 +1,8 @@
 import {
-	ICredentialType,
-	IDisplayOptions,
-	INodeProperties,
-} from 'n8n-workflow';
+    ICredentialType,
+    IDisplayOptions,
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 export class RabbitMQ implements ICredentialType {
 	name = 'rabbitmq';

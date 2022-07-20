@@ -1,7 +1,7 @@
 import {
-	INodeProperties,
-	INodePropertyOptions,
-} from 'n8n-workflow';
+    INodeProperties,
+    INodePropertyOptions
+} from '@lhminh167/n8n-workflow';
 
 export const resource = {
 	name: 'Entry',

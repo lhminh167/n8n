@@ -1,26 +1,26 @@
 /* eslint-disable n8n-nodes-base/node-filename-against-convention */
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IBinaryData,
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IBinaryData,
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeApiError,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	apiRequest,
-	apiRequestAllItems,
-	downloadRecordAttachments,
+    apiRequest,
+    apiRequestAllItems,
+    downloadRecordAttachments
 } from './GenericFunctions';
 
 import {
-	operationFields
+    operationFields
 } from './OperationDescription';
 
 export class NocoDB implements INodeType {

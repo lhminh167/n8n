@@ -1,26 +1,26 @@
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	IExecuteFunctions,
-	IExecuteSingleFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IExecuteSingleFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodePropertyOptions,
-	NodeApiError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodePropertyOptions,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import moment from 'moment-timezone';
 
 import jwt from 'jsonwebtoken';
 
 import {
-	LoggerProxy as Logger
-} from 'n8n-workflow';
+    LoggerProxy as Logger
+} from '@lhminh167/n8n-workflow';
 
 export async function salesforceApiRequest(this: IExecuteFunctions | IExecuteSingleFunctions | ILoadOptionsFunctions, method: string, endpoint: string, body: any = {}, qs: IDataObject = {}, uri?: string, option: IDataObject = {}): Promise<any> { // tslint:disable-line:no-any
 	const authenticationMethod = this.getNodeParameter('authentication', 0, 'oAuth2') as string;

@@ -1,16 +1,16 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	INodeExecutionData,
-} from 'n8n-workflow';
+    INodeExecutionData
+} from '@lhminh167/n8n-workflow';
 
 import * as channel from './channel';
+import { Mattermost } from './Interfaces';
 import * as message from './message';
 import * as reaction from './reaction';
 import * as user from './user';
-import { Mattermost } from './Interfaces';
 
 export async function router(this: IExecuteFunctions): Promise<INodeExecutionData[][]> {
 	const items = this.getInputData();

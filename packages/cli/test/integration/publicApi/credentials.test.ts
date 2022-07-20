@@ -1,15 +1,15 @@
 import express from 'express';
 
-import { UserSettings } from 'n8n-core';
+import { UserSettings } from '@lhminh167/n8n-core';
 
 import { Db } from '../../../src';
-import { randomApiKey, randomName, randomString } from '../shared/random';
-import * as utils from '../shared/utils';
-import type { CredentialPayload, SaveCredentialFunction } from '../shared/types';
+import { RESPONSE_ERROR_MESSAGES } from '../../../src/constants';
 import type { Role } from '../../../src/databases/entities/Role';
 import type { User } from '../../../src/databases/entities/User';
+import { randomApiKey, randomName, randomString } from '../shared/random';
 import * as testDb from '../shared/testDb';
-import { RESPONSE_ERROR_MESSAGES } from '../../../src/constants';
+import type { CredentialPayload, SaveCredentialFunction } from '../shared/types';
+import * as utils from '../shared/utils';
 
 let app: express.Application;
 let testDbName = '';
@@ -28,12 +28,8 @@ beforeAll(async () => {
 
 	utils.initConfigFile();
 
-	const [
-		fetchedGlobalOwnerRole,
-		fetchedGlobalMemberRole,
-		_,
-		fetchedCredentialOwnerRole,
-	] = await testDb.getAllRoles();
+	const [fetchedGlobalOwnerRole, fetchedGlobalMemberRole, _, fetchedCredentialOwnerRole] =
+		await testDb.getAllRoles();
 
 	globalOwnerRole = fetchedGlobalOwnerRole;
 	globalMemberRole = fetchedGlobalMemberRole;

@@ -1,31 +1,19 @@
-import { getCredentialTypes,
-	getCredentialsNewName,
-	getAllCredentials,
-	deleteCredential,
-	getCredentialData,
-	createNewCredential,
-	updateCredential,
-	oAuth2CredentialAuthorize,
-	oAuth1CredentialAuthorize,
-	testCredential,
+import {
+    createNewCredential, deleteCredential, getAllCredentials, getCredentialData, getCredentialsNewName, getCredentialTypes, oAuth1CredentialAuthorize, oAuth2CredentialAuthorize, testCredential, updateCredential
 } from '@/api/credentials';
+import { getAppNameFromCredType } from '@/components/helpers';
+import {
+    ICredentialsDecrypted, ICredentialType, INodeCredentialTestResult, INodeProperties, INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 import Vue from 'vue';
 import { ActionContext, Module } from 'vuex';
 import {
-	ICredentialMap,
-	ICredentialsResponse,
-	ICredentialsState,
-	ICredentialTypeMap,
-	IRootState,
+    ICredentialMap,
+    ICredentialsResponse,
+    ICredentialsState,
+    ICredentialTypeMap,
+    IRootState
 } from '../Interface';
-import {
-	ICredentialType,
-	ICredentialsDecrypted,
-	INodeCredentialTestResult,
-	INodeTypeDescription,
-	INodeProperties,
-} from 'n8n-workflow';
-import { getAppNameFromCredType } from '@/components/helpers';
 
 const DEFAULT_CREDENTIAL_NAME = 'Unnamed credential';
 const DEFAULT_CREDENTIAL_POSTFIX = 'account';

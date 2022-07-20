@@ -1,4 +1,12 @@
 /* eslint-disable import/no-cycle */
+import { Credentials, UserSettings } from '@lhminh167/n8n-core';
+import {
+	ICredentialsEncrypted,
+	IDataObject,
+	INodeCredentialsDetails,
+	LoggerProxy,
+	WorkflowExecuteMode,
+} from '@lhminh167/n8n-workflow';
 import ClientOAuth2 from 'client-oauth2';
 import Csrf from 'csrf';
 import express from 'express';
@@ -7,18 +15,11 @@ import omit from 'lodash.omit';
 import set from 'lodash.set';
 import split from 'lodash.split';
 import unset from 'lodash.unset';
-import { Credentials, UserSettings } from 'n8n-core';
-import {
-	LoggerProxy,
-	WorkflowExecuteMode,
-	INodeCredentialsDetails,
-	ICredentialsEncrypted,
-	IDataObject,
-} from 'n8n-workflow';
 import { resolve as pathResolve } from 'path';
 import querystring from 'querystring';
 
 import { Db, ICredentialsDb, ResponseHelper, WebhookHelpers } from '..';
+import config from '../../config';
 import { RESPONSE_ERROR_MESSAGES } from '../constants';
 import {
 	CredentialsHelper,
@@ -28,7 +29,6 @@ import {
 import { getLogger } from '../Logger';
 import { OAuthRequest } from '../requests';
 import { externalHooks } from '../Server';
-import config from '../../config';
 
 export const oauth2CredentialController = express.Router();
 

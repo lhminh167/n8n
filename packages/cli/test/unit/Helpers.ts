@@ -1,4 +1,4 @@
-import { INodeType, INodeTypeData, INodeTypes, NodeHelpers } from 'n8n-workflow';
+import { INodeType, INodeTypeData, INodeTypes, NodeHelpers } from '@lhminh167/n8n-workflow';
 
 class NodeTypesClass implements INodeTypes {
 	nodeTypes: INodeTypeData = {

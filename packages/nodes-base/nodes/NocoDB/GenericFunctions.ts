@@ -1,21 +1,20 @@
 import {
-	IExecuteFunctions,
-	IHookFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IHookFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	IBinaryKeyData,
-	IDataObject,
-	INodeExecutionData,
-	IPollFunctions,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IBinaryKeyData,
+    IDataObject,
+    INodeExecutionData,
+    IPollFunctions,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 
 interface IAttachment {

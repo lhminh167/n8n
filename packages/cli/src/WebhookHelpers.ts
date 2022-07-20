@@ -17,7 +17,7 @@ import express from 'express';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { get } from 'lodash';
 
-import { BINARY_ENCODING, BinaryDataManager, NodeExecuteFunctions } from 'n8n-core';
+import { BinaryDataManager, BINARY_ENCODING, NodeExecuteFunctions } from '@lhminh167/n8n-core';
 
 import {
 	createDeferredPromise,
@@ -37,7 +37,7 @@ import {
 	NodeHelpers,
 	Workflow,
 	WorkflowExecuteMode,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 
 // eslint-disable-next-line import/no-cycle
 import {

@@ -1,28 +1,25 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
+
 
 import {
-	OptionsWithUri,
-} from 'request';
-
-import {
-	scanFields,
-	scanOperations,
+    scanFields,
+    scanOperations
 } from './descriptions';
 
 import {
-	handleListing,
-	normalizeId,
-	urlScanIoApiRequest,
+    handleListing,
+    normalizeId,
+    urlScanIoApiRequest
 } from './GenericFunctions';
 
 export class UrlScanIo implements INodeType {

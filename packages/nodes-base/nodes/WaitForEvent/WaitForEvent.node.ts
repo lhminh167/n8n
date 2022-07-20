@@ -2,7 +2,7 @@ import { Kafka as apacheKafka, KafkaConfig, logLevel, SASLOptions } from 'kafkaj
 
 import { SchemaRegistry } from '@kafkajs/confluent-schema-registry';
 
-import { ITriggerFunctions } from 'n8n-core';
+import { ITriggerFunctions } from '@lhminh167/n8n-core';
 
 import {
 	IDataObject,
@@ -10,7 +10,7 @@ import {
 	INodeTypeDescription,
 	ITriggerResponse,
 	NodeOperationError,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 
 export class WaitForEventTrigger implements INodeType {
 	description: INodeTypeDescription = {

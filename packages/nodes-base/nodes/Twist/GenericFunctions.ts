@@ -1,15 +1,15 @@
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	IExecuteFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject, NodeApiError,
-} from 'n8n-workflow';
+    IDataObject, NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 export async function twistApiRequest(this: IExecuteFunctions | ILoadOptionsFunctions, method: string, endpoint: string, body: any = {}, qs: IDataObject = {}, option: IDataObject = {}): Promise<any> { // tslint:disable-line:no-any
 

@@ -1,24 +1,24 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	getresponseApiRequest,
-	getResponseApiRequestAllItems,
+    getresponseApiRequest,
+    getResponseApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	contactFields,
-	contactOperations,
+    contactFields,
+    contactOperations
 } from './ContactDescription';
 
 import moment from 'moment-timezone';

@@ -1,18 +1,18 @@
-import {  ActionContext, Module } from 'vuex';
-import {
-	ILogLevel,
-	IN8nPrompts,
-	IN8nUISettings,
-	IN8nValueSurveyData,
-	IRootState,
-	ISettingsState,
-} from '../Interface';
-import { getPromptsData, submitValueSurvey, submitContactInfo, getSettings } from '../api/settings';
-import Vue from 'vue';
-import { CONTACT_PROMPT_MODAL_KEY, VALUE_SURVEY_MODAL_KEY } from '@/constants';
-import { ITelemetrySettings } from 'n8n-workflow';
+import { createApiKey, deleteApiKey, getApiKey } from "@/api/api-keys";
 import { testHealthEndpoint } from '@/api/templates';
-import {createApiKey, deleteApiKey, getApiKey} from "@/api/api-keys";
+import { CONTACT_PROMPT_MODAL_KEY, VALUE_SURVEY_MODAL_KEY } from '@/constants';
+import { ITelemetrySettings } from '@lhminh167/n8n-workflow';
+import Vue from 'vue';
+import { ActionContext, Module } from 'vuex';
+import { getPromptsData, getSettings, submitContactInfo, submitValueSurvey } from '../api/settings';
+import {
+    ILogLevel,
+    IN8nPrompts,
+    IN8nUISettings,
+    IN8nValueSurveyData,
+    IRootState,
+    ISettingsState
+} from '../Interface';
 
 const module: Module<ISettingsState, IRootState> = {
 	namespaced: true,

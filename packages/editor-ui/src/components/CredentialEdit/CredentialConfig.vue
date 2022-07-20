@@ -73,7 +73,7 @@
 </template>
 
 <script lang="ts">
-import { ICredentialType, INodeTypeDescription } from 'n8n-workflow';
+import { ICredentialType, INodeTypeDescription } from '@lhminh167/n8n-workflow';
 import { getAppNameFromCredType } from '../helpers';
 
 import Vue from 'vue';

@@ -1,8 +1,8 @@
 import {
-	AllEntities,
-	Entity,
-	PropertiesOf,
-} from 'n8n-workflow';
+    AllEntities,
+    Entity,
+    PropertiesOf
+} from '@lhminh167/n8n-workflow';
 
 type SyncroMspMap = {
 	contact: 'create'|'delete'|'get'|'getAll'|'update';

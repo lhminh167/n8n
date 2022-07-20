@@ -1,21 +1,21 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	yourlsApiRequest,
+    yourlsApiRequest
 } from './GenericFunctions';
 
 import {
-	urlFields,
-	urlOperations,
+    urlFields,
+    urlOperations
 } from './UrlDescription';
 
 export class Yourls implements INodeType {

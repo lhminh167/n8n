@@ -1,22 +1,22 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	stravaApiRequest,
-	stravaApiRequestAllItems,
+    stravaApiRequest,
+    stravaApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	activityFields,
-	activityOperations,
+    activityFields,
+    activityOperations
 } from './ActivityDescription';
 
 import moment from 'moment';

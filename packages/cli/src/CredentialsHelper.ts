@@ -5,10 +5,10 @@
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 
-import { Credentials, NodeExecuteFunctions } from 'n8n-core';
+import { Credentials, NodeExecuteFunctions } from '@lhminh167/n8n-core';
 // eslint-disable-next-line import/no-extraneous-dependencies
+import { NodeVersionedType } from '@lhminh167/n8n-nodes-base';
 import { get } from 'lodash';
-import { NodeVersionedType } from 'n8n-nodes-base';
 
 import {
 	ICredentialDataDecryptedObject,
@@ -30,14 +30,14 @@ import {
 	INodeVersionedType,
 	IRequestOptionsSimplified,
 	IRunExecutionData,
+	ITaskDataConnections,
 	IWorkflowDataProxyAdditionalKeys,
+	LoggerProxy as Logger,
 	NodeHelpers,
 	RoutingNode,
 	Workflow,
 	WorkflowExecuteMode,
-	ITaskDataConnections,
-	LoggerProxy as Logger,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 
 // eslint-disable-next-line import/no-cycle
 import {

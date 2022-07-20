@@ -10,18 +10,18 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { Command, flags } from '@oclif/command';
 
-import { INode, INodeCredentialsDetails, LoggerProxy } from 'n8n-workflow';
+import { INode, INodeCredentialsDetails, LoggerProxy } from '@lhminh167/n8n-workflow';
 
-import fs from 'fs';
+import { UserSettings } from '@lhminh167/n8n-core';
 import glob from 'fast-glob';
-import { UserSettings } from 'n8n-core';
+import fs from 'fs';
 import { EntityManager, getConnection } from 'typeorm';
-import { getLogger } from '../../src/Logger';
 import { Db, ICredentialsDb, IWorkflowToImport } from '../../src';
-import { SharedWorkflow } from '../../src/databases/entities/SharedWorkflow';
-import { WorkflowEntity } from '../../src/databases/entities/WorkflowEntity';
 import { Role } from '../../src/databases/entities/Role';
+import { SharedWorkflow } from '../../src/databases/entities/SharedWorkflow';
 import { User } from '../../src/databases/entities/User';
+import { WorkflowEntity } from '../../src/databases/entities/WorkflowEntity';
+import { getLogger } from '../../src/Logger';
 import { setTagsForImport } from '../../src/TagHelpers';
 
 const FIX_INSTRUCTION =

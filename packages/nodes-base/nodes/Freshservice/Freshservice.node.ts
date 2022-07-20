@@ -1,74 +1,71 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	adjustAddress,
-	adjustAgentRoles,
-	formatFilters,
-	freshserviceApiRequest,
-	handleListing,
-	sanitizeAssignmentScopeGroup,
-	toArray,
-	toOptions,
-	toUserOptions,
-	validateAssignmentScopeGroup,
-	validateUpdateFields,
+    adjustAddress,
+    adjustAgentRoles,
+    formatFilters,
+    freshserviceApiRequest,
+    handleListing,
+    sanitizeAssignmentScopeGroup,
+    toArray,
+    toOptions,
+    toUserOptions,
+    validateAssignmentScopeGroup,
+    validateUpdateFields
 } from './GenericFunctions';
 
 import {
-	agentFields,
-	agentGroupFields,
-	agentGroupOperations,
-	agentOperations,
-	agentRoleFields,
-	agentRoleOperations,
-	announcementFields,
-	announcementOperations,
-	assetFields,
-	assetOperations,
-	assetTypeFields,
-	assetTypeOperations,
-	changeFields,
-	changeOperations,
-	departmentFields,
-	departmentOperations,
-	locationFields,
-	locationOperations,
-	problemFields,
-	problemOperations,
-	productFields,
-	productOperations,
-	releaseFields,
-	releaseOperations,
-	requesterFields,
-	requesterGroupFields,
-	requesterGroupOperations,
-	requesterOperations,
-	softwareFields,
-	softwareOperations,
-	ticketFields,
-	ticketOperations,
+    agentFields,
+    agentGroupFields,
+    agentGroupOperations,
+    agentOperations,
+    agentRoleFields,
+    agentRoleOperations,
+    announcementFields,
+    announcementOperations, assetTypeFields,
+    assetTypeOperations,
+    changeFields,
+    changeOperations,
+    departmentFields,
+    departmentOperations,
+    locationFields,
+    locationOperations,
+    problemFields,
+    problemOperations,
+    productFields,
+    productOperations,
+    releaseFields,
+    releaseOperations,
+    requesterFields,
+    requesterGroupFields,
+    requesterGroupOperations,
+    requesterOperations,
+    softwareFields,
+    softwareOperations,
+    ticketFields,
+    ticketOperations
 } from './descriptions';
 
 import {
-	AddressFixedCollection,
-	LoadedResource,
-	LoadedUser,
-	RolesParameter,
+    AddressFixedCollection,
+    LoadedResource,
+    LoadedUser,
+    RolesParameter
 } from './types';
 
 import {
-	tz,
+    tz
 } from 'moment-timezone';
 
 export class Freshservice implements INodeType {

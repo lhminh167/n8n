@@ -1,29 +1,26 @@
 
 import {
-	GenericValue,
-	IConnections,
-	ICredentialsDecrypted,
-	ICredentialsEncrypted,
-	ICredentialType,
-	IDataObject,
-	ILoadOptions,
-	INode,
-	INodeCredentials,
-	INodeIssues,
-	INodeParameters,
-	INodePropertyOptions,
-	INodeTypeDescription,
-	INodeTypeNameVersion,
-	IRunExecutionData,
-	IRun,
-	IRunData,
-	ITaskData,
-	ITelemetrySettings,
-	IWorkflowSettings as IWorkflowSettingsWorkflow,
-	WorkflowExecuteMode,
-} from 'n8n-workflow';
+    GenericValue,
+    IConnections,
+    ICredentialsDecrypted,
+    ICredentialsEncrypted,
+    ICredentialType,
+    IDataObject,
+    ILoadOptions,
+    INode,
+    INodeCredentials,
+    INodeIssues,
+    INodeParameters,
+    INodePropertyOptions,
+    INodeTypeDescription,
+    INodeTypeNameVersion, IRun,
+    IRunData, IRunExecutionData, ITaskData,
+    ITelemetrySettings,
+    IWorkflowSettings as IWorkflowSettingsWorkflow,
+    WorkflowExecuteMode
+} from '@lhminh167/n8n-workflow';
 
-export * from 'n8n-design-system/src/types';
+export * from '@lhminh167/n8n-design-system/src/types';
 
 declare module 'jsplumb' {
 	interface PaintStyle {

@@ -1,21 +1,21 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	apiRequest,
+    apiRequest
 } from '../../../transport';
 
 import moment from 'moment';
 
 import {
-	capitalCase,
+    capitalCase
 } from 'change-case';
 
 export async function update(this: IExecuteFunctions, index: number): Promise<INodeExecutionData[]> {

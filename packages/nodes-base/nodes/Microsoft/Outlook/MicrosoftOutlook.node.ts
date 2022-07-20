@@ -1,54 +1,54 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IBinaryKeyData,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IBinaryKeyData,
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeApiError,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	createMessage,
-	downloadAttachments,
-	makeRecipient,
-	microsoftApiRequest,
-	microsoftApiRequestAllItems
+    createMessage,
+    downloadAttachments,
+    makeRecipient,
+    microsoftApiRequest,
+    microsoftApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	draftFields,
-	draftOperations,
+    draftFields,
+    draftOperations
 } from './DraftDescription';
 
 import {
-	draftMessageSharedFields,
+    draftMessageSharedFields
 } from './DraftMessageSharedDescription';
 
 import {
-	messageFields,
-	messageOperations,
+    messageFields,
+    messageOperations
 } from './MessageDescription';
 
 import {
-	messageAttachmentFields,
-	messageAttachmentOperations,
+    messageAttachmentFields,
+    messageAttachmentOperations
 } from './MessageAttachmentDescription';
 
 import {
-	folderFields,
-	folderOperations,
+    folderFields,
+    folderOperations
 } from './FolderDescription';
 
 import {
-	folderMessageFields,
-	folderMessageOperations,
+    folderMessageFields,
+    folderMessageOperations
 } from './FolderMessageDecription';
 
 export class MicrosoftOutlook implements INodeType {

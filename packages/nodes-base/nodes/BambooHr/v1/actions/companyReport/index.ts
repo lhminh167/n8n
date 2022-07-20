@@ -1,11 +1,11 @@
 import * as get from './get';
 
-import { 
-	INodeProperties,
-} from 'n8n-workflow';
+import {
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 export {
-	get,
+    get,
 };
 
 export const descriptions: INodeProperties[] = [

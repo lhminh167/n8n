@@ -1,12 +1,12 @@
-import { IExecuteFunctions } from 'n8n-core';
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
 import {
-	INodeExecutionData,
-	INodeParameters,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-	NodeParameterValue,
-} from 'n8n-workflow';
+    INodeExecutionData,
+    INodeParameters,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError,
+    NodeParameterValue
+} from '@lhminh167/n8n-workflow';
 
 
 export class Switch implements INodeType {

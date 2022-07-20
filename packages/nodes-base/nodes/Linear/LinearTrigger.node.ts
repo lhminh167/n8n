@@ -1,19 +1,19 @@
 import {
-	IHookFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IHookFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ILoadOptionsFunctions,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookResponseData,
-} from 'n8n-workflow';
+    ILoadOptionsFunctions,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookResponseData
+} from '@lhminh167/n8n-workflow';
 
 import {
-	capitalizeFirstLetter,
-	linearApiRequest,
+    capitalizeFirstLetter,
+    linearApiRequest
 } from './GenericFunctions';
 
 export class LinearTrigger implements INodeType {

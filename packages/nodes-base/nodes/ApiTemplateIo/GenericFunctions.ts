@@ -1,12 +1,12 @@
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	IExecuteFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
-import { NodeApiError } from 'n8n-workflow';
+    IExecuteFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
+import { NodeApiError } from '@lhminh167/n8n-workflow';
 
 export async function apiTemplateIoApiRequest(
 	this: IExecuteFunctions | ILoadOptionsFunctions,

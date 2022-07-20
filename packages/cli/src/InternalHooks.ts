@@ -1,14 +1,14 @@
 /* eslint-disable import/no-cycle */
-import { get as pslGet } from 'psl';
-import { BinaryDataManager } from 'n8n-core';
+import { BinaryDataManager } from '@lhminh167/n8n-core';
 import {
 	INodesGraphResult,
 	INodeTypes,
 	IRun,
 	ITelemetryTrackProperties,
 	TelemetryHelpers,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 import { snakeCase } from 'change-case';
+import { get as pslGet } from 'psl';
 import {
 	IDiagnosticInfo,
 	IInternalHooksClass,
@@ -16,8 +16,8 @@ import {
 	IWorkflowBase,
 	IWorkflowDb,
 } from '.';
-import { Telemetry } from './telemetry';
 import { IExecutionTrackProperties } from './Interfaces';
+import { Telemetry } from './telemetry';
 
 export class InternalHooksClass implements IInternalHooksClass {
 	private versionCli: string;

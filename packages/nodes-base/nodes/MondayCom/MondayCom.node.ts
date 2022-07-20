@@ -1,44 +1,44 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	mondayComApiRequest,
-	mondayComApiRequestAllItems,
+    mondayComApiRequest,
+    mondayComApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	boardFields,
-	boardOperations,
+    boardFields,
+    boardOperations
 } from './BoardDescription';
 
 import {
-	boardColumnFields,
-	boardColumnOperations,
+    boardColumnFields,
+    boardColumnOperations
 } from './BoardColumnDescription';
 
 import {
-	boardGroupFields,
-	boardGroupOperations,
+    boardGroupFields,
+    boardGroupOperations
 } from './BoardGroupDescription';
 
 import {
-	boardItemFields,
-	boardItemOperations,
+    boardItemFields,
+    boardItemOperations
 } from './BoardItemDescription';
 
 import {
-	snakeCase,
+    snakeCase
 } from 'change-case';
 
 interface IGraphqlBody {

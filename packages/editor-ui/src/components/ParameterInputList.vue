@@ -98,7 +98,7 @@ import {
 	INodeType,
 	INodeTypeDescription,
 	NodeParameterValue,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 
 import { INodeUi, IUpdateInformation } from '@/Interface';
 

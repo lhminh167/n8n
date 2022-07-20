@@ -1,41 +1,41 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	JsonObject,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    JsonObject
+} from '@lhminh167/n8n-workflow';
 
 import {
-	xeroApiRequest,
-	xeroApiRequestAllItems,
+    xeroApiRequest,
+    xeroApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	invoiceFields,
-	invoiceOperations
+    invoiceFields,
+    invoiceOperations
 } from './InvoiceDescription';
 
 import {
-	contactFields,
-	contactOperations,
+    contactFields,
+    contactOperations
 } from './ContactDescription';
 
 import {
-	IInvoice,
-	ILineItem,
+    IInvoice,
+    ILineItem
 } from './InvoiceInterface';
 
 import {
-	IAddress,
-	IContact,
-	IPhone,
+    IAddress,
+    IContact,
+    IPhone
 } from './IContactInterface';
 
 export class Xero implements INodeType {

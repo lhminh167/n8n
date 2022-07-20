@@ -1,20 +1,18 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IBinaryData,
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IBinaryData, INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	readFile,
-	rm,
-	writeFile,
+    readFile,
+    rm,
+    writeFile
 } from 'fs/promises';
 
 import { file } from 'tmp-promise';

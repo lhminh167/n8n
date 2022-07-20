@@ -1,50 +1,50 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	cortexApiRequest,
-	getEntityLabel,
-	prepareParameters,
-	splitTags,
+    cortexApiRequest,
+    getEntityLabel,
+    prepareParameters,
+    splitTags
 } from './GenericFunctions';
 
 import {
-	analyzerFields,
-	analyzersOperations,
+    analyzerFields,
+    analyzersOperations
 } from './AnalyzerDescriptions';
 
 import {
-	IBinaryData,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IBinaryData,
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	responderFields,
-	respondersOperations,
+    responderFields,
+    respondersOperations
 } from './ResponderDescription';
 
 import {
-	jobFields,
-	jobOperations,
+    jobFields,
+    jobOperations
 } from './JobDescription';
 
 import {
-	upperFirst,
+    upperFirst
 } from 'lodash';
 
 import {
-	IJob,
+    IJob
 } from './AnalyzerInterface';
 
 import {
-	createHash,
+    createHash
 } from 'crypto';
 
 import * as changeCase from 'change-case';

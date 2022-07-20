@@ -4,14 +4,14 @@ import * as getAll from './getAll';
 import * as update from './update';
 
 import {
-	INodeProperties,
-} from 'n8n-workflow';
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 export {
-	create,
-	get,
-	getAll,
-	update
+    create,
+    get,
+    getAll,
+    update
 };
 
 export const descriptions: INodeProperties[] = [

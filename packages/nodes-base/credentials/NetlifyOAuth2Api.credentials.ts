@@ -1,7 +1,7 @@
 // import {
 // 	ICredentialType,
 // 	NodePropertyTypes,
-// } from 'n8n-workflow';
+// } from '@lhminh167/n8n-workflow';
 
 // export class NetlifyOAuth2Api implements ICredentialType {
 // 	name = 'netlifyOAuth2Api';

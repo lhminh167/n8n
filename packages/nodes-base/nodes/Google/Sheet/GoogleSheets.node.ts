@@ -1,35 +1,35 @@
 
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    ICredentialsDecrypted,
+    ICredentialTestFunctions,
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeCredentialTestResult,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	GoogleSheet,
-	ILookupValues,
-	ISheetUpdateData,
-	IToDelete,
-	ValueInputOption,
-	ValueRenderOption,
+    GoogleSheet,
+    ILookupValues,
+    ISheetUpdateData,
+    IToDelete,
+    ValueInputOption,
+    ValueRenderOption
 } from './GoogleSheet';
 
 import {
-	getAccessToken,
-	googleApiRequest,
-	hexToRgb,
-	IGoogleAuthCredentials,
+    getAccessToken,
+    googleApiRequest,
+    hexToRgb,
+    IGoogleAuthCredentials
 } from './GenericFunctions';
 
 export class GoogleSheets implements INodeType {

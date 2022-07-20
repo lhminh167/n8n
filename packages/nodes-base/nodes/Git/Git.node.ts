@@ -1,30 +1,30 @@
-import { IExecuteFunctions } from 'n8n-core';
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	addConfigFields,
-	addFields,
-	cloneFields,
-	commitFields,
-	logFields,
-	pushFields,
-	tagFields,
+    addConfigFields,
+    addFields,
+    cloneFields,
+    commitFields,
+    logFields,
+    pushFields,
+    tagFields
 } from './descriptions';
 
 import simpleGit, {
-	LogOptions,
-	SimpleGit,
-	SimpleGitOptions,
+    LogOptions,
+    SimpleGit,
+    SimpleGitOptions
 } from 'simple-git';
 
 import {
-	access,
-	mkdir,
+    access,
+    mkdir
 } from 'fs/promises';
 
 import { URL } from 'url';

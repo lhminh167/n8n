@@ -1,32 +1,32 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	JsonObject,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    JsonObject,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	IMessage,
-	mailjetApiRequest,
-	validateJSON,
+    IMessage,
+    mailjetApiRequest,
+    validateJSON
 } from './GenericFunctions';
 
 import {
-	emailFields,
-	emailOperations,
+    emailFields,
+    emailOperations
 } from './EmailDescription';
 
 import {
-	smsFields,
-	smsOperations,
+    smsFields,
+    smsOperations
 } from './SmsDescription';
 export class Mailjet implements INodeType {
 	description: INodeTypeDescription = {

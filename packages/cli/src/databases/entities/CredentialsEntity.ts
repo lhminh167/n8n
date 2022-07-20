@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 /* eslint-disable import/no-cycle */
-import { ICredentialNodeAccess } from 'n8n-workflow';
+import { ICredentialNodeAccess } from '@lhminh167/n8n-workflow';
 
 import {
 	BeforeUpdate,
@@ -14,8 +14,8 @@ import {
 } from 'typeorm';
 
 import { IsArray, IsObject, IsString, Length } from 'class-validator';
-import * as config from '../../../config';
 import { DatabaseType, ICredentialsDb } from '../..';
+import * as config from '../../../config';
 import { SharedCredentials } from './SharedCredentials';
 
 function resolveDataType(dataType: string) {

@@ -1,15 +1,15 @@
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	NodeApiError,
-} from 'n8n-workflow';
+    IDataObject,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 export async function googleApiRequest(
 	this: IExecuteFunctions,

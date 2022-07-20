@@ -1,33 +1,33 @@
 import {
-	IExecuteFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeApiError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	extractID,
-	googleApiRequest,
-	googleApiRequestAllItems,
-	hasKeys,
-	upperFirst,
+    extractID,
+    googleApiRequest,
+    googleApiRequestAllItems,
+    hasKeys,
+    upperFirst
 } from './GenericFunctions';
 
 import {
-	documentFields,
-	documentOperations,
+    documentFields,
+    documentOperations
 } from './DocumentDescription';
 
 import {
-	IUpdateBody,
-	IUpdateFields,
+    IUpdateBody,
+    IUpdateFields
 } from './interfaces';
 
 export class GoogleDocs implements INodeType {

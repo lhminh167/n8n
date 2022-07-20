@@ -1,37 +1,37 @@
-import { IExecuteFunctions } from 'n8n-core';
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
 
 import {
-	ICredentialDataDecryptedObject,
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	JsonObject,
-} from 'n8n-workflow';
+    ICredentialDataDecryptedObject,
+    ICredentialsDecrypted,
+    ICredentialTestFunctions,
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeCredentialTestResult,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    JsonObject
+} from '@lhminh167/n8n-workflow';
 
 import {
-	clientFields,
-	clientOperations,
-	siteFields,
-	siteOperations,
-	ticketFields,
-	ticketOperations,
-	userFields,
-	userOperations,
+    clientFields,
+    clientOperations,
+    siteFields,
+    siteOperations,
+    ticketFields,
+    ticketOperations,
+    userFields,
+    userOperations
 } from './descriptions';
 
 import {
-	getAccessTokens,
-	haloPSAApiRequest,
-	haloPSAApiRequestAllItems,
-	qsSetStatus,
-	simplifyHaloPSAGetOutput,
-	validateCredentials,
+    getAccessTokens,
+    haloPSAApiRequest,
+    haloPSAApiRequestAllItems,
+    qsSetStatus,
+    simplifyHaloPSAGetOutput,
+    validateCredentials
 } from './GenericFunctions';
 
 export class HaloPSA implements INodeType {

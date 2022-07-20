@@ -1,32 +1,32 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    ICredentialsDecrypted,
+    ICredentialTestFunctions,
+    IDataObject,
+    INodeCredentialTestResult,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	getToken,
-	strapiApiRequest,
-	strapiApiRequestAllItems,
-	validateJSON,
+    getToken,
+    strapiApiRequest,
+    strapiApiRequestAllItems,
+    validateJSON
 } from './GenericFunctions';
 
 import {
-	entryFields,
-	entryOperations,
+    entryFields,
+    entryOperations
 } from './EntryDescription';
 
 export class Strapi implements INodeType {

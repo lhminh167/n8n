@@ -1,8 +1,8 @@
 /* eslint-disable import/no-cycle */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
+import { LoggerProxy as Logger } from '@lhminh167/n8n-workflow';
 import express from 'express';
 import validator from 'validator';
-import { LoggerProxy as Logger } from 'n8n-workflow';
 
 import { Db, InternalHooksManager, ResponseHelper } from '../..';
 import * as config from '../../../config';

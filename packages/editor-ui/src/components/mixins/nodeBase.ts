@@ -9,8 +9,8 @@ import * as CanvasHelpers from '@/views/canvasHelpers';
 import { Endpoint } from 'jsplumb';
 
 import {
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 import { getStyleTokenValue } from '../helpers';
 
 export const nodeBase = mixins(

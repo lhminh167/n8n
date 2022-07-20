@@ -1,33 +1,31 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	storyblokApiRequest,
-	storyblokApiRequestAllItems,
-	validateJSON,
+    storyblokApiRequest,
+    storyblokApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	storyContentFields,
-	storyContentOperations,
+    storyContentFields,
+    storyContentOperations
 } from './StoryContentDescription';
 
 import {
-	storyManagementFields,
-	storyManagementOperations,
+    storyManagementFields,
+    storyManagementOperations
 } from './StoryManagementDescription';
 
-import { v4 as uuidv4 } from 'uuid';
 
 export class Storyblok implements INodeType {
 	description: INodeTypeDescription = {

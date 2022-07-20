@@ -6,7 +6,7 @@
 </template>
 
 <script lang="ts">
-import { ICredentialType, INodeTypeDescription } from 'n8n-workflow';
+import { ICredentialType, INodeTypeDescription } from '@lhminh167/n8n-workflow';
 import Vue from 'vue';
 
 export default Vue.extend({

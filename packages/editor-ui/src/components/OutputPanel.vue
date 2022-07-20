@@ -54,7 +54,7 @@
 
 <script lang="ts">
 import { IExecutionResponse, INodeUi } from '@/Interface';
-import { INodeTypeDescription, IRunData, IRunExecutionData, ITaskData } from 'n8n-workflow';
+import { INodeTypeDescription, IRunData, IRunExecutionData, ITaskData } from '@lhminh167/n8n-workflow';
 import Vue from 'vue';
 import RunData from './RunData.vue';
 import RunInfo from './RunInfo.vue';

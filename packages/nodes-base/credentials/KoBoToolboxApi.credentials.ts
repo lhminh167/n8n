@@ -1,9 +1,9 @@
 import {
-	IAuthenticateGeneric,
-	ICredentialTestRequest,
-	ICredentialType,
-	NodePropertyTypes,
-} from 'n8n-workflow';
+    IAuthenticateGeneric,
+    ICredentialTestRequest,
+    ICredentialType,
+    NodePropertyTypes
+} from '@lhminh167/n8n-workflow';
 
 export class KoBoToolboxApi implements ICredentialType {
 	name = 'koBoToolboxApi';

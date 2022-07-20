@@ -1,9 +1,9 @@
-import { ITriggerFunctions } from 'n8n-core';
+import { ITriggerFunctions } from '@lhminh167/n8n-core';
 import {
-	INodeType,
-	INodeTypeDescription,
-	ITriggerResponse,
-} from 'n8n-workflow';
+    INodeType,
+    INodeTypeDescription,
+    ITriggerResponse
+} from '@lhminh167/n8n-workflow';
 
 type eventType = 'Instance started' | undefined;
 

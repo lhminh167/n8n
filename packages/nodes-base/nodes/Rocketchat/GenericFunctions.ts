@@ -1,13 +1,11 @@
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	IExecuteFunctions,
-	IHookFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
-import { NodeApiError, NodeOperationError, } from 'n8n-workflow';
+    IExecuteFunctions, ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
+import { NodeApiError } from '@lhminh167/n8n-workflow';
 
 export async function rocketchatApiRequest(this: IExecuteFunctions | ILoadOptionsFunctions, resource: string, method: string, operation: string, body: any = {}, headers?: object): Promise<any> { // tslint:disable-line:no-any
 	const credentials = await this.getCredentials('rocketchatApi');

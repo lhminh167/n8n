@@ -1,30 +1,30 @@
 import {
-	IHookFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IHookFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookResponseData,
-	NodeApiError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookResponseData,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import { v4 as uuid } from 'uuid';
 
 import {
-	snakeCase,
+    snakeCase
 } from 'change-case';
 
 import {
-	facebookApiRequest, getAllFields, getFields,
+    facebookApiRequest, getAllFields, getFields
 } from './GenericFunctions';
 
 import {
-	createHmac,
+    createHmac
 } from 'crypto';
 
 export class FacebookTrigger implements INodeType {

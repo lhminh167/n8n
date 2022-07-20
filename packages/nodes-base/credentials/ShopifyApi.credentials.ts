@@ -1,12 +1,11 @@
-import { BINARY_ENCODING } from 'n8n-core';
+import { BINARY_ENCODING } from '@lhminh167/n8n-core';
 import {
-	IAuthenticateGeneric,
-	ICredentialDataDecryptedObject,
-	ICredentialTestRequest,
-	ICredentialType,
-	IHttpRequestOptions,
-	INodeProperties,
-} from 'n8n-workflow';
+    ICredentialDataDecryptedObject,
+    ICredentialTestRequest,
+    ICredentialType,
+    IHttpRequestOptions,
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 export class ShopifyApi implements ICredentialType {
 	name = 'shopifyApi';

@@ -1,43 +1,43 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeApiError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	handleListing,
-	redditApiRequest,
+    handleListing,
+    redditApiRequest
 } from './GenericFunctions';
 
 import {
-	postCommentFields,
-	postCommentOperations,
+    postCommentFields,
+    postCommentOperations
 } from './PostCommentDescription';
 
 import {
-	postFields,
-	postOperations,
+    postFields,
+    postOperations
 } from './PostDescription';
 
 import {
-	profileFields,
-	profileOperations,
+    profileFields,
+    profileOperations
 } from './ProfileDescription';
 
 import {
-	subredditFields,
-	subredditOperations,
+    subredditFields,
+    subredditOperations
 } from './SubredditDescription';
 
 import {
-	userFields,
-	userOperations,
+    userFields,
+    userOperations
 } from './UserDescription';
 
 export class Reddit implements INodeType {

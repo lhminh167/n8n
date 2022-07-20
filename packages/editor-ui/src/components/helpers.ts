@@ -1,7 +1,7 @@
 import { CORE_NODES_CATEGORY, ERROR_TRIGGER_NODE_TYPE, TEMPLATES_NODES_FILTER } from '@/constants';
 import { INodeUi, ITemplatesNode } from '@/Interface';
+import { INodeTypeDescription } from '@lhminh167/n8n-workflow';
 import dateformat from 'dateformat';
-import { INodeTypeDescription } from 'n8n-workflow';
 
 const KEYWORDS_TO_FILTER = ['API', 'OAuth1', 'OAuth2'];
 const SI_SYMBOL = ['', 'k', 'M', 'G', 'T', 'P', 'E'];

@@ -1,10 +1,10 @@
 import {
-	IExecuteSingleFunctions,
-	IHttpRequestOptions,
-	IN8nHttpFullResponse,
-	INodeExecutionData,
-	NodeApiError,
-} from 'n8n-workflow';
+    IExecuteSingleFunctions,
+    IHttpRequestOptions,
+    IN8nHttpFullResponse,
+    INodeExecutionData,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 // Regular expressions used to extract binId from parameter value
 const BIN_ID_REGEX = /\b\d{13}-\d{13}\b/g;

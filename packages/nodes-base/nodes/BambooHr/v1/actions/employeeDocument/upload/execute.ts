@@ -1,16 +1,15 @@
 import {
-	BINARY_ENCODING,
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IBinaryData,
-	IBinaryKeyData,
-	IDataObject, NodeOperationError,
-} from 'n8n-workflow';
+    IBinaryData,
+    IBinaryKeyData,
+    IDataObject, NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	apiRequest,
+    apiRequest
 } from '../../../transport';
 
 export async function upload(this: IExecuteFunctions, index: number) {

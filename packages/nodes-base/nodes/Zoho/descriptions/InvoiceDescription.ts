@@ -1,14 +1,14 @@
 import {
-	INodeProperties,
-} from 'n8n-workflow';
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 import {
-	billingAddress,
-	currencies,
-	makeCustomFieldsFixedCollection,
-	makeGetAllFields,
-	productDetailsOptions,
-	shippingAddress,
+    billingAddress,
+    currencies,
+    makeCustomFieldsFixedCollection,
+    makeGetAllFields,
+    productDetailsOptions,
+    shippingAddress
 } from './SharedFields';
 
 export const invoiceOperations: INodeProperties[] = [

@@ -1,5 +1,5 @@
-import { IExecuteFunctions } from 'n8n-core';
-import { INodeExecutionData, INodeType, INodeTypeDescription } from 'n8n-workflow';
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
+import { INodeExecutionData, INodeType, INodeTypeDescription } from '@lhminh167/n8n-workflow';
 
 export class ClassNameReplace implements INodeType {
 	description: INodeTypeDescription = {

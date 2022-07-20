@@ -1,19 +1,19 @@
-import { IExecuteFunctions } from 'n8n-core';
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	generateReturning,
-	getItemCopy,
-	getItemsCopy,
-	pgInsert,
-	pgQuery,
-	pgUpdate,
+    generateReturning,
+    getItemCopy,
+    getItemsCopy,
+    pgInsert,
+    pgQuery,
+    pgUpdate
 } from '../Postgres/Postgres.node.functions';
 
 import pgPromise from 'pg-promise';

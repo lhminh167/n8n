@@ -1,83 +1,83 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialDataDecryptedObject,
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	JsonObject,
-	NodeOperationError,
-} from 'n8n-workflow';
+    ICredentialDataDecryptedObject,
+    ICredentialsDecrypted,
+    ICredentialTestFunctions,
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeCredentialTestResult,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    JsonObject,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	clean,
-	getAssociations,
-	getCallMetadata,
-	getEmailMetadata,
-	getMeetingMetadata,
-	getTaskMetadata,
-	hubspotApiRequest,
-	hubspotApiRequestAllItems,
+    clean,
+    getAssociations,
+    getCallMetadata,
+    getEmailMetadata,
+    getMeetingMetadata,
+    getTaskMetadata,
+    hubspotApiRequest,
+    hubspotApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	contactFields,
-	contactOperations,
+    contactFields,
+    contactOperations
 } from './ContactDescription';
 
 import {
-	contactListFields,
-	contactListOperations,
+    contactListFields,
+    contactListOperations
 } from './ContactListDescription';
 
 import {
-	companyFields,
-	companyOperations,
+    companyFields,
+    companyOperations
 } from './CompanyDescription';
 
 import {
-	dealFields,
-	dealOperations,
+    dealFields,
+    dealOperations
 } from './DealDescription';
 
 import {
-	engagementFields,
-	engagementOperations,
+    engagementFields,
+    engagementOperations
 } from './EngagementDescription';
 
 import {
-	formFields,
-	formOperations,
+    formFields,
+    formOperations
 } from './FormDescription';
 
 import {
-	ticketFields,
-	ticketOperations,
+    ticketFields,
+    ticketOperations
 } from './TicketDescription';
 
 import {
-	IForm,
+    IForm
 } from './FormInterface';
 
 import {
-	IAssociation,
-	IDeal,
+    IAssociation,
+    IDeal
 } from './DealInterface';
 
 import {
-	snakeCase,
+    snakeCase
 } from 'change-case';
 
 import {
-	validateCredentials
+    validateCredentials
 } from './GenericFunctions';
 export class Hubspot implements INodeType {
 	description: INodeTypeDescription = {

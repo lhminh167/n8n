@@ -1,23 +1,23 @@
 import {
-	IHookFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IHookFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookResponseData,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookResponseData
+} from '@lhminh167/n8n-workflow';
 
 import {
-	clickupApiRequest,
+    clickupApiRequest
 } from './GenericFunctions';
 
 import {
-	createHmac,
+    createHmac
 } from 'crypto';
 
 export class ClickUpTrigger implements INodeType {

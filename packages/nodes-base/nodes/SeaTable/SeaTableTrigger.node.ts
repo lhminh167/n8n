@@ -1,27 +1,26 @@
 import {
-	IPollFunctions,
-} from 'n8n-core';
+    IPollFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	getColumns,
-	rowFormatColumns,
-	seaTableApiRequest,
-	simplify,
+    getColumns,
+    rowFormatColumns,
+    seaTableApiRequest,
+    simplify
 } from './GenericFunctions';
 
 import {
-	ICtx,
-	IRow,
-	IRowResponse,
+    ICtx,
+    IRow,
+    IRowResponse
 } from './Interfaces';
 
 import moment from 'moment';

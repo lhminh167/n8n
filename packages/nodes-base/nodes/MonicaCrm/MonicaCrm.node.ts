@@ -1,52 +1,52 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	getDateParts,
-	monicaCrmApiRequest,
-	monicaCrmApiRequestAllItems,
-	toOptions,
+    getDateParts,
+    monicaCrmApiRequest,
+    monicaCrmApiRequestAllItems,
+    toOptions
 } from './GenericFunctions';
 
 import {
-	activityFields,
-	activityOperations,
-	callFields,
-	callOperations,
-	contactFieldFields,
-	contactFieldOperations,
-	contactFields,
-	contactOperations,
-	contactTagFields,
-	contactTagOperations,
-	conversationFields,
-	conversationMessageFields,
-	conversationMessageOperations,
-	conversationOperations,
-	journalEntryFields,
-	journalEntryOperations,
-	noteFields,
-	noteOperations,
-	reminderFields,
-	reminderOperations,
-	tagFields,
-	tagOperations,
-	taskFields,
-	taskOperations,
+    activityFields,
+    activityOperations,
+    callFields,
+    callOperations,
+    contactFieldFields,
+    contactFieldOperations,
+    contactFields,
+    contactOperations,
+    contactTagFields,
+    contactTagOperations,
+    conversationFields,
+    conversationMessageFields,
+    conversationMessageOperations,
+    conversationOperations,
+    journalEntryFields,
+    journalEntryOperations,
+    noteFields,
+    noteOperations,
+    reminderFields,
+    reminderOperations,
+    tagFields,
+    tagOperations,
+    taskFields,
+    taskOperations
 } from './descriptions';
 
 import {
-	LoaderGetResponse,
-	Option,
+    LoaderGetResponse,
+    Option
 } from './types';
 
 export class MonicaCrm implements INodeType {

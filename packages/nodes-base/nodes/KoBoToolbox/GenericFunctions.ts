@@ -1,16 +1,16 @@
 import {
-	IExecuteFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	IHookFunctions,
-	IHttpRequestOptions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	IWebhookFunctions,
-} from 'n8n-workflow';
+    IDataObject,
+    IHookFunctions,
+    IHttpRequestOptions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-workflow';
 
 import _ from 'lodash';
 

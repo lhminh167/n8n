@@ -1,39 +1,36 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
+import { snakeCase } from 'change-case';
+import { validateJSON, zulipApiRequest } from './GenericFunctions';
 import {
-	zulipApiRequest,
-} from './GenericFunctions';
-import {
-	messageFields,
-	messageOperations,
+    messageFields,
+    messageOperations
 } from './MessageDescription';
 import {
-	IMessage,
+    IMessage
 } from './MessageInterface';
-import { snakeCase } from 'change-case';
 import {
-	streamFields,
-	streamOperations,
+    streamFields,
+    streamOperations
 } from './StreamDescription';
 import {
-	userFields,
-	userOperations,
-} from './UserDescription';
-import {
-	IPrincipal,
-	IStream,
+    IPrincipal,
+    IStream
 } from './StreamInterface';
-import { validateJSON } from './GenericFunctions';
+import {
+    userFields,
+    userOperations
+} from './UserDescription';
 import { IUser } from './UserInterface';
 
 export class Zulip implements INodeType {

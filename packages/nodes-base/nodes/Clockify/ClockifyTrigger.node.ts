@@ -1,17 +1,17 @@
 import moment from 'moment-timezone';
 
-import { IPollFunctions } from 'n8n-core';
+import { IPollFunctions } from '@lhminh167/n8n-core';
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	clockifyApiRequest,
+    clockifyApiRequest
 } from './GenericFunctions';
 
 import { EntryTypeEnum } from './EntryTypeEnum';

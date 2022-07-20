@@ -3,12 +3,12 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/unbound-method */
-import { BinaryDataManager, UserSettings } from 'n8n-core';
+import { BinaryDataManager, UserSettings } from '@lhminh167/n8n-core';
 import { Command, flags } from '@oclif/command';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import Redis from 'ioredis';
 
-import { IDataObject, LoggerProxy } from 'n8n-workflow';
+import { IDataObject, LoggerProxy } from '@lhminh167/n8n-workflow';
 import config from '../config';
 import {
 	ActiveExecutions,

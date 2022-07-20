@@ -1,22 +1,22 @@
 import {
-	IHookFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IHookFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookResponseData,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookResponseData
+} from '@lhminh167/n8n-workflow';
 
 import {
-	helpscoutApiRequest,
-	helpscoutApiRequestAllItems,
+    helpscoutApiRequest,
+    helpscoutApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	createHmac,
+    createHmac
 } from 'crypto';
 
 export class HelpScoutTrigger implements INodeType {

@@ -1,28 +1,28 @@
 import {
-	IExecuteFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	ICustomProperties,
-	pipedriveApiRequest,
-	pipedriveApiRequestAllItems,
-	pipedriveEncodeCustomProperties,
-	pipedriveGetCustomProperties,
-	pipedriveResolveCustomProperties,
-	sortOptionParameters,
+    ICustomProperties,
+    pipedriveApiRequest,
+    pipedriveApiRequestAllItems,
+    pipedriveEncodeCustomProperties,
+    pipedriveGetCustomProperties,
+    pipedriveResolveCustomProperties,
+    sortOptionParameters
 } from './GenericFunctions';
 
 import {
-	currencies,
+    currencies
 } from './utils';
 
 interface CustomProperty {

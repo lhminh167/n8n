@@ -1,21 +1,21 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	spotifyApiRequest,
-	spotifyApiRequestAllItems,
+    spotifyApiRequest,
+    spotifyApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	isoCountryCodes
+    isoCountryCodes
 } from './IsoCountryCodes';
 
 export class Spotify implements INodeType {

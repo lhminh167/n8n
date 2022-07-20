@@ -1,18 +1,17 @@
 import {
-	OptionsWithUri
+    OptionsWithUri
 } from 'request';
 
 import {
-	IExecuteFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodePropertyOptions,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodePropertyOptions,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 export async function homeAssistantApiRequest(this: IExecuteFunctions | ILoadOptionsFunctions, method: string, resource: string, body: IDataObject = {}, qs: IDataObject = {}, uri?: string, option: IDataObject = {}) {
 	const credentials = await this.getCredentials('homeAssistantApi');

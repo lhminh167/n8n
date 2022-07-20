@@ -9,7 +9,6 @@
 /* eslint-disable @typescript-eslint/restrict-template-expressions */
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable no-param-reassign */
-import { In } from 'typeorm';
 import {
 	IDataObject,
 	IExecuteData,
@@ -20,7 +19,8 @@ import {
 	ITaskData,
 	LoggerProxy as Logger,
 	Workflow,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
+import { In } from 'typeorm';
 // eslint-disable-next-line import/no-cycle
 import {
 	CredentialTypes,
@@ -36,8 +36,8 @@ import {
 
 import config from '../config';
 // eslint-disable-next-line import/no-cycle
-import { WorkflowEntity } from './databases/entities/WorkflowEntity';
 import { User } from './databases/entities/User';
+import { WorkflowEntity } from './databases/entities/WorkflowEntity';
 import { getWorkflowOwner } from './UserManagement/UserManagementHelper';
 
 const ERROR_TRIGGER_TYPE = config.getEnv('nodes.errorTriggerType');

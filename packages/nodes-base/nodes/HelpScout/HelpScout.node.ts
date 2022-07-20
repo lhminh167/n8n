@@ -1,58 +1,58 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IBinaryKeyData,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IBinaryKeyData,
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	countriesCodes
+    countriesCodes
 } from './CountriesCodes';
 
 import {
-	conversationFields,
-	conversationOperations,
+    conversationFields,
+    conversationOperations
 } from './ConversationDescription';
 
 import {
-	customerFields,
-	customerOperations,
+    customerFields,
+    customerOperations
 } from './CustomerDescription';
 
 import {
-	ICustomer,
+    ICustomer
 } from './CustomerInterface';
 
 import {
-	IConversation,
+    IConversation
 } from './ConversationInterface';
 
 import {
-	helpscoutApiRequest,
-	helpscoutApiRequestAllItems,
+    helpscoutApiRequest,
+    helpscoutApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	mailboxFields,
-	mailboxOperations,
+    mailboxFields,
+    mailboxOperations
 } from './MailboxDescription';
 
 import {
-	threadFields,
-	threadOperations,
+    threadFields,
+    threadOperations
 } from './ThreadDescription';
 
 import {
-	IAttachment,
-	IThread,
+    IAttachment,
+    IThread
 } from './ThreadInterface';
 
 

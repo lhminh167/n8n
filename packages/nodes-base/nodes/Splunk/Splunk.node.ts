@@ -1,48 +1,48 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    ICredentialsDecrypted,
+    ICredentialTestFunctions,
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeCredentialTestResult,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	formatFeed,
-	formatResults,
-	formatSearch,
-	getId,
-	populate,
-	setCount,
-	splunkApiRequest,
-	toUnixEpoch,
+    formatFeed,
+    formatResults,
+    formatSearch,
+    getId,
+    populate,
+    setCount,
+    splunkApiRequest,
+    toUnixEpoch
 } from './GenericFunctions';
 
 import {
-	firedAlertOperations,
-	searchConfigurationFields,
-	searchConfigurationOperations,
-	searchJobFields,
-	searchJobOperations,
-	searchResultFields,
-	searchResultOperations,
-	userFields,
-	userOperations,
+    firedAlertOperations,
+    searchConfigurationFields,
+    searchConfigurationOperations,
+    searchJobFields,
+    searchJobOperations,
+    searchResultFields,
+    searchResultOperations,
+    userFields,
+    userOperations
 } from './descriptions';
 
 import {
-	SplunkCredentials,
-	SplunkFeedResponse,
+    SplunkCredentials,
+    SplunkFeedResponse
 } from './types';
 
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 export class Splunk implements INodeType {

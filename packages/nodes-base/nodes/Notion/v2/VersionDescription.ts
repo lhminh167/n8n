@@ -1,32 +1,32 @@
 /* eslint-disable n8n-nodes-base/node-filename-against-convention */
 import {
-	databaseFields,
-	databaseOperations,
+    databaseFields,
+    databaseOperations
 } from '../DatabaseDescription';
 
 import {
-	userFields,
-	userOperations,
+    userFields,
+    userOperations
 } from '../UserDescription';
 
 import {
-	pageFields,
-	pageOperations,
+    pageFields,
+    pageOperations
 } from '../PageDescription';
 
 import {
-	blockFields,
-	blockOperations,
+    blockFields,
+    blockOperations
 } from '../BlockDescription';
 
 import {
-	databasePageFields,
-	databasePageOperations,
+    databasePageFields,
+    databasePageOperations
 } from '../DatabasePageDescription';
 
 import {
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 export const versionDescription: INodeTypeDescription = {
 	displayName: 'Notion (Beta)',

@@ -1,58 +1,58 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	apiRequest,
-	apiRequestAllItems,
+    apiRequest,
+    apiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	attachmentFields,
-	attachmentOperations,
+    attachmentFields,
+    attachmentOperations
 } from './AttachmentDescription';
 
 import {
-	boardFields,
-	boardOperations,
+    boardFields,
+    boardOperations
 } from './BoardDescription';
 
 import {
-	boardMemberFields,
-	boardMemberOperations,
+    boardMemberFields,
+    boardMemberOperations
 } from './BoardMemberDescription';
 
 import {
-	cardFields,
-	cardOperations,
+    cardFields,
+    cardOperations
 } from './CardDescription';
 
 import {
-	cardCommentFields,
-	cardCommentOperations,
+    cardCommentFields,
+    cardCommentOperations
 } from './CardCommentDescription';
 
 import {
-	checklistFields,
-	checklistOperations,
+    checklistFields,
+    checklistOperations
 } from './ChecklistDescription';
 
 import {
-	labelFields,
-	labelOperations,
+    labelFields,
+    labelOperations
 } from './LabelDescription';
 
 import {
-	listFields,
-	listOperations,
+    listFields,
+    listOperations
 } from './ListDescription';
 
 export class Trello implements INodeType {

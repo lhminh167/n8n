@@ -1,5 +1,5 @@
-import { ITriggerFunctions } from 'n8n-core';
-import { INodeType, INodeTypeDescription, ITriggerResponse } from 'n8n-workflow';
+import { ITriggerFunctions } from '@lhminh167/n8n-core';
+import { INodeType, INodeTypeDescription, ITriggerResponse } from '@lhminh167/n8n-workflow';
 
 export class ClassNameReplace implements INodeType {
 	description: INodeTypeDescription = {

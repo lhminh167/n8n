@@ -1,20 +1,20 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IBinaryData,
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IBinaryData,
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	addAdditionalFields,
-	apiRequest,
-	getPropertyName,
+    addAdditionalFields,
+    apiRequest,
+    getPropertyName
 } from './GenericFunctions';
 
 export class Telegram implements INodeType {

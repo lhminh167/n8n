@@ -1,10 +1,10 @@
 import {
-	INodeProperties,
-} from 'n8n-workflow';
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 import {
-	getProductOptionalFields,
-	getSearchFilters,
+    getProductOptionalFields,
+    getSearchFilters
 } from './GenericFunctions';
 
 export const productOperations: INodeProperties[] = [

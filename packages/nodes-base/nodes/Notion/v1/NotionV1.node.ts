@@ -1,35 +1,35 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeBaseDescription,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeBaseDescription,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	extractDatabaseId,
-	extractPageId,
-	formatBlocks,
-	formatTitle,
-	getBlockTypes,
-	mapFilters,
-	mapProperties,
-	mapSorting,
-	notionApiRequest,
-	notionApiRequestAllItems,
-	simplifyObjects,
+    extractDatabaseId,
+    extractPageId,
+    formatBlocks,
+    formatTitle,
+    getBlockTypes,
+    mapFilters,
+    mapProperties,
+    mapSorting,
+    notionApiRequest,
+    notionApiRequestAllItems,
+    simplifyObjects
 } from '../GenericFunctions';
 
 import moment from 'moment-timezone';
 
 import {
-	versionDescription
+    versionDescription
 } from './VersionDescription';
 
 export class NotionV1 implements INodeType {

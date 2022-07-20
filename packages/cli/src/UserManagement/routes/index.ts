@@ -2,30 +2,30 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable import/no-cycle */
+import { LoggerProxy as Logger } from '@lhminh167/n8n-workflow';
 import cookieParser from 'cookie-parser';
-import passport from 'passport';
-import { Strategy } from 'passport-jwt';
 import { NextFunction, Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
-import { LoggerProxy as Logger } from 'n8n-workflow';
+import passport from 'passport';
+import { Strategy } from 'passport-jwt';
 
-import { JwtPayload, N8nApp } from '../Interfaces';
-import { authenticationMethods } from './auth';
+import { Db } from '../..';
 import * as config from '../../../config';
 import { AUTH_COOKIE_NAME } from '../../constants';
-import { issueCookie, resolveJwtContent } from '../auth/jwt';
-import { meNamespace } from './me';
-import { usersNamespace } from './users';
-import { passwordResetNamespace } from './passwordReset';
 import { AuthenticatedRequest } from '../../requests';
-import { ownerNamespace } from './owner';
+import { issueCookie, resolveJwtContent } from '../auth/jwt';
+import { JwtPayload, N8nApp } from '../Interfaces';
 import {
+	isAuthenticatedRequest,
 	isAuthExcluded,
 	isPostUsersId,
-	isAuthenticatedRequest,
 	isUserManagementDisabled,
 } from '../UserManagementHelper';
-import { Db } from '../..';
+import { authenticationMethods } from './auth';
+import { meNamespace } from './me';
+import { ownerNamespace } from './owner';
+import { passwordResetNamespace } from './passwordReset';
+import { usersNamespace } from './users';
 
 export function addRoutes(this: N8nApp, ignoredEndpoints: string[], restEndpoint: string): void {
 	// needed for testing; not adding overhead since it directly returns if req.cookies exists

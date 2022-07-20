@@ -1,21 +1,21 @@
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	IExecuteFunctions,
-	IExecuteSingleFunctions,
-	IHookFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IExecuteSingleFunctions,
+    IHookFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialDataDecryptedObject,
-	ICredentialTestFunctions,
-	IDataObject,
-	JsonObject,
-	NodeApiError,
-} from 'n8n-workflow';
+    ICredentialDataDecryptedObject,
+    ICredentialTestFunctions,
+    IDataObject,
+    JsonObject,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import moment from 'moment';
 

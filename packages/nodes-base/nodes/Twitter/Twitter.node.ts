@@ -1,35 +1,35 @@
 
 import {
-	IExecuteFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	directMessageFields,
-	directMessageOperations,
+    directMessageFields,
+    directMessageOperations
 } from './DirectMessageDescription';
 
 import {
-	tweetFields,
-	tweetOperations,
+    tweetFields,
+    tweetOperations
 } from './TweetDescription';
 
 import {
-	twitterApiRequest,
-	twitterApiRequestAllItems,
-	uploadAttachments,
+    twitterApiRequest,
+    twitterApiRequestAllItems,
+    uploadAttachments
 } from './GenericFunctions';
 
 import {
-	ITweet,
+    ITweet
 } from './TweetInterface';
 
 const ISO6391 = require('iso-639-1');

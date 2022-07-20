@@ -1,21 +1,21 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialDataDecryptedObject,
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    ICredentialDataDecryptedObject,
+    ICredentialsDecrypted,
+    ICredentialTestFunctions,
+    IDataObject,
+    INodeCredentialTestResult,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	dhlApiRequest,
-	validateCredentials,
+    dhlApiRequest,
+    validateCredentials
 } from './GenericFunctions';
 
 export class Dhl implements INodeType {

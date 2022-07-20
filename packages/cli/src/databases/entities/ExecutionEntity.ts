@@ -1,9 +1,9 @@
 /* eslint-disable import/no-cycle */
-import { WorkflowExecuteMode } from 'n8n-workflow';
+import { WorkflowExecuteMode } from '@lhminh167/n8n-workflow';
 
 import { Column, ColumnOptions, Entity, Index, PrimaryGeneratedColumn } from 'typeorm';
-import * as config from '../../../config';
 import { DatabaseType, IExecutionFlattedDb, IWorkflowDb } from '../..';
+import * as config from '../../../config';
 
 function resolveDataType(dataType: string) {
 	const dbType = config.getEnv('database.type');

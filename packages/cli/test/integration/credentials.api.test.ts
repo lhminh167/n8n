@@ -1,14 +1,14 @@
+import { UserSettings } from '@lhminh167/n8n-core';
 import express from 'express';
-import { UserSettings } from 'n8n-core';
 import { Db } from '../../src';
-import { randomName, randomString } from './shared/random';
-import * as utils from './shared/utils';
-import type { CredentialPayload, SaveCredentialFunction } from './shared/types';
-import type { Role } from '../../src/databases/entities/Role';
-import type { User } from '../../src/databases/entities/User';
-import * as testDb from './shared/testDb';
 import { RESPONSE_ERROR_MESSAGES } from '../../src/constants';
 import { CredentialsEntity } from '../../src/databases/entities/CredentialsEntity';
+import type { Role } from '../../src/databases/entities/Role';
+import type { User } from '../../src/databases/entities/User';
+import { randomName, randomString } from './shared/random';
+import * as testDb from './shared/testDb';
+import type { CredentialPayload, SaveCredentialFunction } from './shared/types';
+import * as utils from './shared/utils';
 
 jest.mock('../../src/telemetry');
 
@@ -357,7 +357,6 @@ test('PATCH /credentials/:id should fail with missing encryption key', async () 
 	const mock = jest.spyOn(UserSettings, 'getEncryptionKey');
 	mock.mockRejectedValue(new Error(RESPONSE_ERROR_MESSAGES.NO_ENCRYPTION_KEY));
 
-
 	const ownerShell = await testDb.createUserShell(globalOwnerRole);
 	const authOwnerAgent = utils.createAgent(app, { auth: true, user: ownerShell });
 
@@ -507,7 +506,6 @@ test('GET /credentials/:id should fail with missing encryption key', async () =>
 
 	const mock = jest.spyOn(UserSettings, 'getEncryptionKey');
 	mock.mockRejectedValue(new Error(RESPONSE_ERROR_MESSAGES.NO_ENCRYPTION_KEY));
-
 
 	const response = await authOwnerAgent
 		.get(`/credentials/${savedCredential.id}`)

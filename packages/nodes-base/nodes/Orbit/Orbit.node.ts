@@ -1,40 +1,40 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	orbitApiRequest,
-	orbitApiRequestAllItems,
-	resolveIdentities,
+    orbitApiRequest,
+    orbitApiRequestAllItems,
+    resolveIdentities
 } from './GenericFunctions';
 
 import {
-	activityFields,
-	activityOperations,
+    activityFields,
+    activityOperations
 } from './ActivityDescription';
 
 import {
-	memberFields,
-	memberOperations,
+    memberFields,
+    memberOperations
 } from './MemberDescription';
 
 import {
-	noteFields,
-	noteOperations,
+    noteFields,
+    noteOperations
 } from './NoteDescription';
 
 import {
-	postFields,
-	postOperations,
+    postFields,
+    postOperations
 } from './PostDescription';
 
 import moment from 'moment';

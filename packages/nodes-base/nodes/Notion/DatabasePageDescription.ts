@@ -1,19 +1,19 @@
 import {
-	INodeProperties,
-} from 'n8n-workflow';
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 import {
-	getConditions,
-	getSearchFilters,
+    getConditions,
+    getSearchFilters
 } from './GenericFunctions';
 
 import {
-	blocks,
-	text,
+    blocks,
+    text
 } from './Blocks';
 
 import {
-	filters,
+    filters
 } from './Filters';
 
 export const databasePageOperations: INodeProperties[] = [

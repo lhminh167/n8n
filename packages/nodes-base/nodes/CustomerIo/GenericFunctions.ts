@@ -1,19 +1,16 @@
 import {
-	IExecuteFunctions,
-	IHookFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IHookFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
+
 
 import {
-	OptionsWithUri,
-} from 'request';
+    IDataObject, IHttpRequestMethods, IHttpRequestOptions, NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	IDataObject, IHttpRequestMethods, IHttpRequestOptions, NodeApiError, NodeOperationError,
-} from 'n8n-workflow';
-
-import {
-	get,
+    get
 } from 'lodash';
 
 export async function customerIoApiRequest(this: IHookFunctions | IExecuteFunctions | ILoadOptionsFunctions, method: string, endpoint: string, body: object, baseApi?: string, query?: IDataObject): Promise<any> { // tslint:disable-line:no-any

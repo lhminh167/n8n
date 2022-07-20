@@ -1,14 +1,14 @@
-import { IExecuteFunctions } from 'n8n-core';
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
 import {
-	ICredentialDataDecryptedObject,
-	IDataObject,
-	INodeExecutionData,
-	NodeOperationError,
-} from 'n8n-workflow';
+    ICredentialDataDecryptedObject,
+    IDataObject,
+    INodeExecutionData,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 import {
-	IMongoCredentials,
-	IMongoCredentialsType,
-	IMongoParametricCredentials,
+    IMongoCredentials,
+    IMongoCredentialsType,
+    IMongoParametricCredentials
 } from './mongo.node.types';
 
 import { get, set } from 'lodash';

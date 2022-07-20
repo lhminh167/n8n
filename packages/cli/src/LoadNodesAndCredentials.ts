@@ -8,7 +8,7 @@
 /* eslint-disable no-await-in-loop */
 /* eslint-disable no-continue */
 /* eslint-disable no-restricted-syntax */
-import { CUSTOM_EXTENSION_ENV, UserSettings } from 'n8n-core';
+import { CUSTOM_EXTENSION_ENV, UserSettings } from '@lhminh167/n8n-core';
 import {
 	CodexData,
 	ICredentialType,
@@ -18,18 +18,18 @@ import {
 	INodeTypeData,
 	INodeVersionedType,
 	LoggerProxy,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 
+import glob from 'fast-glob';
 import {
 	access as fsAccess,
 	readdir as fsReaddir,
 	readFile as fsReadFile,
 	stat as fsStat,
 } from 'fs/promises';
-import glob from 'fast-glob';
 import path from 'path';
-import { getLogger } from './Logger';
 import config from '../config';
+import { getLogger } from './Logger';
 
 const CUSTOM_NODES_CATEGORY = 'Custom Nodes';
 

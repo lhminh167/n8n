@@ -1,62 +1,62 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    ICredentialsDecrypted,
+    ICredentialTestFunctions,
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeCredentialTestResult,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	configOperations,
+    configOperations
 } from './ConfigDescription';
 
 import {
-	serviceFields,
-	serviceOperations,
+    serviceFields,
+    serviceOperations
 } from './ServiceDescription';
 
 import {
-	stateFields,
-	stateOperations,
+    stateFields,
+    stateOperations
 } from './StateDescription';
 
 import {
-	eventFields,
-	eventOperations,
+    eventFields,
+    eventOperations
 } from './EventDescription';
 
 import {
-	logFields,
-	logOperations,
+    logFields,
+    logOperations
 } from './LogDescription';
 
 import {
-	templateFields,
-	templateOperations,
+    templateFields,
+    templateOperations
 } from './TemplateDescription';
 
 import {
-	historyFields,
-	historyOperations,
+    historyFields,
+    historyOperations
 } from './HistoryDescription';
 
 import {
-	cameraProxyFields,
-	cameraProxyOperations,
+    cameraProxyFields,
+    cameraProxyOperations
 } from './CameraProxyDescription';
 
 import {
-	getHomeAssistantEntities,
-	getHomeAssistantServices,
-	homeAssistantApiRequest,
+    getHomeAssistantEntities,
+    getHomeAssistantServices,
+    homeAssistantApiRequest
 } from './GenericFunctions';
 
 export class HomeAssistant implements INodeType {

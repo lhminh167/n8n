@@ -1,14 +1,13 @@
-import { IExecuteFunctions } from 'n8n-core';
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
 import {
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 import glob from 'fast-glob';
-import path from 'path';
 
 import {
-	readFile as fsReadFile,
+    readFile as fsReadFile
 } from 'fs/promises';
 
 

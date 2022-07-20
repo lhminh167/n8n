@@ -1,50 +1,50 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	actionNetworkApiRequest,
-	adjustEventPayload,
-	adjustPersonPayload,
-	adjustPetitionPayload,
-	handleListing,
-	makeOsdiLink,
-	resourceLoaders,
-	simplifyResponse,
+    actionNetworkApiRequest,
+    adjustEventPayload,
+    adjustPersonPayload,
+    adjustPetitionPayload,
+    handleListing,
+    makeOsdiLink,
+    resourceLoaders,
+    simplifyResponse
 } from './GenericFunctions';
 
 import {
-	attendanceFields,
-	attendanceOperations,
-	eventFields,
-	eventOperations,
-	personFields,
-	personOperations,
-	personTagFields,
-	personTagOperations,
-	petitionFields,
-	petitionOperations,
-	signatureFields,
-	signatureOperations,
-	tagFields,
-	tagOperations,
+    attendanceFields,
+    attendanceOperations,
+    eventFields,
+    eventOperations,
+    personFields,
+    personOperations,
+    personTagFields,
+    personTagOperations,
+    petitionFields,
+    petitionOperations,
+    signatureFields,
+    signatureOperations,
+    tagFields,
+    tagOperations
 } from './descriptions';
 
 import {
-	AllFieldsUi,
-	EmailAddressUi,
-	Operation,
-	PersonResponse,
-	Resource,
-	Response,
+    AllFieldsUi,
+    EmailAddressUi,
+    Operation,
+    PersonResponse,
+    Resource,
+    Response
 } from './types';
 
 export class ActionNetwork implements INodeType {

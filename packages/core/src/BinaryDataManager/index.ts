@@ -1,4 +1,4 @@
-import { IBinaryData, INodeExecutionData } from 'n8n-workflow';
+import { IBinaryData, INodeExecutionData } from '@lhminh167/n8n-workflow';
 import { BINARY_ENCODING } from '../Constants';
 import { IBinaryDataConfig, IBinaryDataManager } from '../Interfaces';
 import { BinaryDataFileSystem } from './FileSystem';

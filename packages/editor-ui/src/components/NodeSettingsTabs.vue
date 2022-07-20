@@ -9,7 +9,7 @@
 <script lang="ts">
 import { externalHooks } from '@/components/mixins/externalHooks';
 import { INodeUi, ITab } from '@/Interface';
-import { INodeTypeDescription } from 'n8n-workflow';
+import { INodeTypeDescription } from '@lhminh167/n8n-workflow';
 
 import mixins from 'vue-typed-mixins';
 

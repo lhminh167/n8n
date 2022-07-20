@@ -1,47 +1,47 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	affinityApiRequest,
-	affinityApiRequestAllItems,
+    affinityApiRequest,
+    affinityApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	organizationFields,
-	organizationOperations,
+    organizationFields,
+    organizationOperations
 } from './OrganizationDescription';
 
 import {
-	personFields,
-	personOperations,
+    personFields,
+    personOperations
 } from './PersonDescription';
 
 import {
-	listFields,
-	listOperations,
+    listFields,
+    listOperations
 } from './ListDescription';
 
 import {
-	listEntryFields,
-	listEntryOperations,
+    listEntryFields,
+    listEntryOperations
 } from './ListEntryDescription';
 
 import {
-	IOrganization,
+    IOrganization
 } from './OrganizationInterface';
 
 import {
-	IPerson,
+    IPerson
 } from './PersonInterface';
 
 export class Affinity implements INodeType {

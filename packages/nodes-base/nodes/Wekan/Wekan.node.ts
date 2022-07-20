@@ -1,49 +1,49 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	apiRequest,
+    apiRequest
 } from './GenericFunctions';
 
 import {
-	boardFields,
-	boardOperations,
+    boardFields,
+    boardOperations
 } from './BoardDescription';
 
 import {
-	cardFields,
-	cardOperations,
+    cardFields,
+    cardOperations
 } from './CardDescription';
 
 import {
-	cardCommentFields,
-	cardCommentOperations,
+    cardCommentFields,
+    cardCommentOperations
 } from './CardCommentDescription';
 
 import {
-	checklistFields,
-	checklistOperations,
+    checklistFields,
+    checklistOperations
 } from './ChecklistDescription';
 
 import {
-	checklistItemFields,
-	checklistItemOperations,
+    checklistItemFields,
+    checklistItemOperations
 } from './ChecklistItemDescription';
 
 import {
-	listFields,
-	listOperations,
+    listFields,
+    listOperations
 } from './ListDescription';
 
 // https://wekan.github.io/api/v4.41/

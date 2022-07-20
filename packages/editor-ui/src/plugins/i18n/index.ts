@@ -1,18 +1,15 @@
-import _Vue from "vue";
-import axios from 'axios';
-import VueI18n from 'vue-i18n';
-import { Store } from "vuex";
-import Vue from 'vue';
 import { INodeTranslationHeaders, IRootState } from '@/Interface';
 import {
-	deriveMiddleKey,
-	isNestedInCollectionLike,
-	normalize,
-	insertOptionsAndValues,
-} from "./utils";
+    locale
+} from '@lhminh167/n8n-design-system';
+import axios from 'axios';
+import { default as Vue, default as _Vue } from "vue";
+import VueI18n from 'vue-i18n';
+import { Store } from "vuex";
 import {
-	locale,
-} from 'n8n-design-system';
+    deriveMiddleKey, insertOptionsAndValues, isNestedInCollectionLike,
+    normalize
+} from "./utils";
 
 import englishBaseText from './locales/en.json';
 

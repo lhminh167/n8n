@@ -1,44 +1,40 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeApiError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions, INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	deriveUid,
-	grafanaApiRequest,
-	throwOnEmptyUpdate,
+    deriveUid,
+    grafanaApiRequest,
+    throwOnEmptyUpdate
 } from './GenericFunctions';
 
 import {
-	dashboardFields,
-	dashboardOperations,
-	teamFields,
-	teamMemberFields,
-	teamMemberOperations,
-	teamOperations,
-	userFields,
-	userOperations,
+    dashboardFields,
+    dashboardOperations,
+    teamFields,
+    teamMemberFields,
+    teamMemberOperations,
+    teamOperations,
+    userFields,
+    userOperations
 } from './descriptions';
 
 import {
-	DashboardUpdateFields,
-	DashboardUpdatePayload,
-	LoadedDashboards,
-	LoadedFolders,
-	LoadedTeams,
-	LoadedUsers,
+    DashboardUpdateFields,
+    DashboardUpdatePayload,
+    LoadedDashboards,
+    LoadedFolders,
+    LoadedTeams,
+    LoadedUsers
 } from './types';
 
 export class Grafana implements INodeType {

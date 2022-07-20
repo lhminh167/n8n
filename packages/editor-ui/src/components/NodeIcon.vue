@@ -13,7 +13,7 @@
 <script lang="ts">
 
 import { IVersionNode } from '@/Interface';
-import { INodeTypeDescription } from 'n8n-workflow';
+import { INodeTypeDescription } from '@lhminh167/n8n-workflow';
 import Vue from 'vue';
 
 interface NodeIconData {

@@ -1,48 +1,42 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    ICredentialsDecrypted,
+    ICredentialTestFunctions,
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeCredentialTestResult,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	IMessage,
-	IMessageUi,
+    IMessage,
+    IMessageUi
 } from './MessageInterface';
 
 import {
-	OptionsWithUri
+    OptionsWithUri
 } from 'request';
 
 import {
-	// attachmentFields,
-	// attachmentOperations,
-	// incomingWebhookFields,
-	// incomingWebhookOperations,
-	// mediaFields,
-	// mediaOperations,
-	memberFields,
-	memberOperations,
-	messageFields,
-	messageOperations,
-	spaceFields,
-	spaceOperations
+    memberFields,
+    memberOperations,
+    messageFields,
+    messageOperations,
+    spaceFields,
+    spaceOperations
 } from './descriptions';
 
 import {
-	googleApiRequest,
-	googleApiRequestAllItems,
-	validateJSON,
+    googleApiRequest,
+    googleApiRequestAllItems,
+    validateJSON
 } from './GenericFunctions';
 
 import moment from 'moment-timezone';

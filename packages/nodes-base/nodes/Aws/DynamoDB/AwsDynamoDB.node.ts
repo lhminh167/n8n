@@ -1,41 +1,41 @@
 /* eslint-disable n8n-nodes-base/node-filename-against-convention */
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeParameterValue,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeParameterValue
+} from '@lhminh167/n8n-workflow';
 
 import {
-	awsApiRequest,
-	awsApiRequestAllItems,
+    awsApiRequest,
+    awsApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	itemFields,
-	itemOperations,
+    itemFields,
+    itemOperations
 } from './ItemDescription';
 
 import {
-	FieldsUiValues,
-	IAttributeNameUi,
-	IAttributeValueUi,
-	IRequestBody,
-	PutItemUi,
+    FieldsUiValues,
+    IAttributeNameUi,
+    IAttributeValueUi,
+    IRequestBody,
+    PutItemUi
 } from './types';
 
 import {
-	adjustExpressionAttributeName,
-	adjustExpressionAttributeValues,
-	adjustPutItem,
-	decodeItem,
-	simplify,
+    adjustExpressionAttributeName,
+    adjustExpressionAttributeValues,
+    adjustPutItem,
+    decodeItem,
+    simplify
 } from './utils';
 
 export class AwsDynamoDB implements INodeType {

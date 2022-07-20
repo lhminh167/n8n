@@ -44,7 +44,7 @@
 import {
 	INodeTypeDescription,
 	IWebhookDescription,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 
 import { WEBHOOK_NODE_TYPE } from '@/constants';
 import { copyPaste } from '@/components/mixins/copyPaste';

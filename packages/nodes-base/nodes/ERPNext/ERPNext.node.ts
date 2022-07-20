@@ -1,32 +1,32 @@
 /* eslint-disable n8n-nodes-base/node-filename-against-convention */
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	documentFields,
-	documentOperations,
+    documentFields,
+    documentOperations
 } from './DocumentDescription';
 
 import {
-	erpNextApiRequest,
-	erpNextApiRequestAllItems
+    erpNextApiRequest,
+    erpNextApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	DocumentProperties,
-	processNames,
-	toSQL,
+    DocumentProperties,
+    processNames,
+    toSQL
 } from './utils';
 
 export class ERPNext implements INodeType {

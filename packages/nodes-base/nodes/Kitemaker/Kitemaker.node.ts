@@ -1,48 +1,48 @@
 import {
-	IExecuteFunctions
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	organizationOperations,
-	spaceFields,
-	spaceOperations,
-	userFields,
-	userOperations,
-	workItemFields,
-	workItemOperations,
+    organizationOperations,
+    spaceFields,
+    spaceOperations,
+    userFields,
+    userOperations,
+    workItemFields,
+    workItemOperations
 } from './descriptions';
 
 import {
-	createLoadOptions,
-	kitemakerRequest,
-	kitemakerRequestAllItems,
+    createLoadOptions,
+    kitemakerRequest,
+    kitemakerRequestAllItems
 } from './GenericFunctions';
 
 import {
-	getAllSpaces,
-	getAllUsers,
-	getAllWorkItems,
-	getLabels,
-	getOrganization,
-	getSpaces,
-	getStatuses,
-	getUsers,
-	getWorkItem,
-	getWorkItems,
+    getAllSpaces,
+    getAllUsers,
+    getAllWorkItems,
+    getLabels,
+    getOrganization,
+    getSpaces,
+    getStatuses,
+    getUsers,
+    getWorkItem,
+    getWorkItems
 } from './queries';
 
 import {
-	createWorkItem,
-	editWorkItem,
+    createWorkItem,
+    editWorkItem
 } from './mutations';
 
 export class Kitemaker implements INodeType {

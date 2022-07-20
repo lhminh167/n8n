@@ -1,26 +1,25 @@
 import {
-	IHookFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IHookFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookResponseData,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookResponseData
+} from '@lhminh167/n8n-workflow';
 
 import {
-	getAutomaticSecret,
-	getEvents,
-	mapResource,
-	webexApiRequest,
-	webexApiRequestAllItems,
+    getAutomaticSecret,
+    getEvents,
+    mapResource,
+    webexApiRequest,
+    webexApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	createHmac,
+    createHmac
 } from 'crypto';
 
 export class CiscoWebexTrigger implements INodeType {

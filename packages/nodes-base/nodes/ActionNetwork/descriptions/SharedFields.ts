@@ -1,10 +1,10 @@
 import {
-	INodeProperties,
-} from 'n8n-workflow';
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 import {
-	Operation,
-	Resource,
+    Operation,
+    Resource
 } from '../types';
 
 export const languageOptions: INodeProperties['options'] = [

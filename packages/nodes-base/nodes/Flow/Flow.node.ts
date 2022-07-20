@@ -1,25 +1,24 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 import {
-	flowApiRequest,
-	FlowApiRequestAllItems,
+    flowApiRequest,
+    FlowApiRequestAllItems
 } from './GenericFunctions';
 import {
-	taskFields,
-	taskOpeations,
+    taskFields,
+    taskOpeations
 } from './TaskDescription';
 import {
-	ITask, TaskInfo,
- } from './TaskInterface';
+    ITask, TaskInfo
+} from './TaskInterface';
 
 export class Flow implements INodeType {
 	description: INodeTypeDescription = {

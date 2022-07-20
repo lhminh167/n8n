@@ -3,14 +3,14 @@
 /* eslint-disable no-console */
 import { Command, flags } from '@oclif/command';
 
-import { Credentials, UserSettings } from 'n8n-core';
+import { Credentials, UserSettings } from '@lhminh167/n8n-core';
 
-import { IDataObject, LoggerProxy } from 'n8n-workflow';
+import { IDataObject, LoggerProxy } from '@lhminh167/n8n-workflow';
 
 import fs from 'fs';
 import path from 'path';
-import { getLogger } from '../../src/Logger';
 import { Db, ICredentialsDecryptedDb } from '../../src';
+import { getLogger } from '../../src/Logger';
 
 export class ExportCredentialsCommand extends Command {
 	static description = 'Export credentials';

@@ -1,69 +1,69 @@
 import {
-	IExecuteFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	clientFields,
-	clientOperations,
+    clientFields,
+    clientOperations
 } from './ClientDescription';
 
 import {
-	contactFields,
-	contactOperations,
+    contactFields,
+    contactOperations
 } from './ContactDescription';
 
 import {
-	companyOperations,
+    companyOperations
 } from './CompanyDescription';
 
 import {
-	estimateFields,
-	estimateOperations,
+    estimateFields,
+    estimateOperations
 } from './EstimateDescription';
 
 import {
-	expenseFields,
-	expenseOperations,
+    expenseFields,
+    expenseOperations
 } from './ExpenseDescription';
 
 import {
-	getAllResource,
-	harvestApiRequest,
+    getAllResource,
+    harvestApiRequest
 } from './GenericFunctions';
 
 import {
-	invoiceFields,
-	invoiceOperations,
+    invoiceFields,
+    invoiceOperations
 } from './InvoiceDescription';
 
 import {
-	projectFields,
-	projectOperations,
+    projectFields,
+    projectOperations
 } from './ProjectDescription';
 
 import {
-	taskFields,
-	taskOperations,
+    taskFields,
+    taskOperations
 } from './TaskDescription';
 
 import {
-	timeEntryFields,
-	timeEntryOperations,
+    timeEntryFields,
+    timeEntryOperations
 } from './TimeEntryDescription';
 
 import {
-	userFields,
-	userOperations,
+    userFields,
+    userOperations
 } from './UserDescription';
 
 export class Harvest implements INodeType {

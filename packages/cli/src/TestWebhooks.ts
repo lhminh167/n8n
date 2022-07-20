@@ -3,7 +3,7 @@
 /* eslint-disable no-param-reassign */
 import express from 'express';
 
-import { ActiveWebhooks } from 'n8n-core';
+import { ActiveWebhooks } from '@lhminh167/n8n-core';
 
 import {
 	IWebhookData,
@@ -12,7 +12,7 @@ import {
 	Workflow,
 	WorkflowActivateMode,
 	WorkflowExecuteMode,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 // eslint-disable-next-line import/no-cycle
 import { IResponseCallbackData, IWorkflowDb, Push, ResponseHelper, WebhookHelpers } from '.';
 

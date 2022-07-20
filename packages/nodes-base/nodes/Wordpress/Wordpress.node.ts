@@ -1,31 +1,31 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 import {
-	wordpressApiRequest,
-	wordpressApiRequestAllItems,
+    wordpressApiRequest,
+    wordpressApiRequestAllItems
 } from './GenericFunctions';
 import {
-	postFields,
-	postOperations,
+    postFields,
+    postOperations
 } from './PostDescription';
 import {
-	userFields,
-	userOperations,
-} from './UserDescription';
-import {
-	IPost,
+    IPost
 } from './PostInterface';
 import {
-	IUser,
+    userFields,
+    userOperations
+} from './UserDescription';
+import {
+    IUser
 } from './UserInterface';
 
 export class Wordpress implements INodeType {

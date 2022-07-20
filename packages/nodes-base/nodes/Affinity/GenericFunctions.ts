@@ -1,20 +1,19 @@
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	BINARY_ENCODING,
-	IExecuteFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    BINARY_ENCODING,
+    IExecuteFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	IHookFunctions,
-	IWebhookFunctions,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    IHookFunctions,
+    IWebhookFunctions,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 export async function affinityApiRequest(this: IExecuteFunctions | IWebhookFunctions | IHookFunctions | ILoadOptionsFunctions, method: string, resource: string, body: any = {}, query: IDataObject = {}, uri?: string, option: IDataObject = {}): Promise<any> { // tslint:disable-line:no-any
 

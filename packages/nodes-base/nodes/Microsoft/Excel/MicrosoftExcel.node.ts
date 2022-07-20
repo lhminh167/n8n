@@ -1,37 +1,36 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	microsoftApiRequest,
-	microsoftApiRequestAllItems,
-	microsoftApiRequestAllItemsSkip,
+    microsoftApiRequest,
+    microsoftApiRequestAllItems,
+    microsoftApiRequestAllItemsSkip
 } from './GenericFunctions';
 
 import {
-	workbookFields,
-	workbookOperations,
+    workbookFields,
+    workbookOperations
 } from './WorkbookDescription';
 
 import {
-	worksheetFields,
-	worksheetOperations,
+    worksheetFields,
+    worksheetOperations
 } from './WorksheetDescription';
 
 import {
-	tableFields,
-	tableOperations,
+    tableFields,
+    tableOperations
 } from './TableDescription';
 
 export class MicrosoftExcel implements INodeType {

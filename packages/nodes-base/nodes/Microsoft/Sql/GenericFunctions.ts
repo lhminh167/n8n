@@ -1,4 +1,4 @@
-import { IDataObject, INodeExecutionData } from 'n8n-workflow';
+import { IDataObject, INodeExecutionData } from '@lhminh167/n8n-workflow';
 import { ITables } from './TableInterface';
 
 /**

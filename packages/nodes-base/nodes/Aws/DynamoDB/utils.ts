@@ -1,17 +1,17 @@
 import {
-	IDataObject,
-	INodeExecutionData,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData
+} from '@lhminh167/n8n-workflow';
 
 import {
-	AdjustedPutItem,
-	AttributeValueType,
-	EAttributeValueType,
-	IAttributeNameUi,
-	IAttributeValue,
-	IAttributeValueUi,
-	IAttributeValueValue,
-	PutItemUi,
+    AdjustedPutItem,
+    AttributeValueType,
+    EAttributeValueType,
+    IAttributeNameUi,
+    IAttributeValue,
+    IAttributeValueUi,
+    IAttributeValueValue,
+    PutItemUi
 } from './types';
 
 const addColon = (attribute: string) => attribute = attribute.charAt(0) === ':' ? attribute : `:${attribute}`;

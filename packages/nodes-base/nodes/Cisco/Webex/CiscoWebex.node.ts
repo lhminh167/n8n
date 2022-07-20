@@ -1,31 +1,31 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IBinaryData,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IBinaryData,
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	getAttachemnts,
-	webexApiRequest,
-	webexApiRequestAllItems,
+    getAttachemnts,
+    webexApiRequest,
+    webexApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	meetingFields,
-	meetingOperations,
-	// meetingTranscriptFields,
-	// meetingTranscriptOperations,
-	messageFields,
-	messageOperations,
+    meetingFields,
+    meetingOperations,
+    // meetingTranscriptFields,
+    // meetingTranscriptOperations,
+    messageFields,
+    messageOperations
 } from './descriptions';
 
 import moment from 'moment-timezone';

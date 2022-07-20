@@ -1,18 +1,18 @@
 import {
-	ContainerOptions,
-	create_container,
-	Dictionary,
-	EventContext,
+    ContainerOptions,
+    create_container,
+    Dictionary,
+    EventContext
 } from 'rhea';
 
-import { IExecuteFunctions } from 'n8n-core';
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 export class Amqp implements INodeType {
 	description: INodeTypeDescription = {

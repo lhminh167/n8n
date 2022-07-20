@@ -1,37 +1,33 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	JsonObject,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions, INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    JsonObject
+} from '@lhminh167/n8n-workflow';
 
 import {
-	discourseApiRequest,
+    discourseApiRequest
 } from './GenericFunctions';
 
 import {
-	postFields,
-	postOperations,
+    postFields,
+    postOperations
 } from './PostDescription';
 
 import {
-	categoryFields,
-	categoryOperations,
+    categoryFields,
+    categoryOperations
 } from './CategoryDescription';
 
 import {
-	groupFields,
-	groupOperations,
+    groupFields,
+    groupOperations
 } from './GroupDescription';
 
 // import {
@@ -40,15 +36,14 @@ import {
 // } from './SearchDescription';
 
 import {
-	userFields,
-	userOperations,
+    userFields,
+    userOperations
 } from './UserDescription';
 
 import {
-	userGroupFields,
-	userGroupOperations,
+    userGroupFields,
+    userGroupOperations
 } from './UserGroupDescription';
-import { OptionsWithUri } from 'request';
 
 //import moment from 'moment';
 

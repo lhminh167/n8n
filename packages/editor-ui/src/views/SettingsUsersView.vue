@@ -38,7 +38,7 @@ import { mapGetters } from 'vuex';
 
 import SettingsView from './SettingsView.vue';
 import PageAlert from '../components/PageAlert.vue';
-import { N8nUsersList } from 'n8n-design-system';
+import { N8nUsersList } from '@lhminh167/n8n-design-system';
 import { IUser } from '@/Interface';
 import mixins from 'vue-typed-mixins';
 import { showMessage } from '@/components/mixins/showMessage';

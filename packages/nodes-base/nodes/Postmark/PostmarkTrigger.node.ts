@@ -1,18 +1,18 @@
 import {
-	IHookFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IHookFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	INodeType,
-	INodeTypeDescription,
-	IWebhookResponseData,
-} from 'n8n-workflow';
+    INodeType,
+    INodeTypeDescription,
+    IWebhookResponseData
+} from '@lhminh167/n8n-workflow';
 
 import {
-	convertTriggerObjectToStringArray,
-	eventExists,
-	postmarkApiRequest
+    convertTriggerObjectToStringArray,
+    eventExists,
+    postmarkApiRequest
 } from './GenericFunctions';
 
 export class PostmarkTrigger implements INodeType {

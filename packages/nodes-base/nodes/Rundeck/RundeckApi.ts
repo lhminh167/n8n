@@ -1,6 +1,6 @@
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
+import { IDataObject, NodeApiError, NodeOperationError } from '@lhminh167/n8n-workflow';
 import { OptionsWithUri } from 'request';
-import { IExecuteFunctions } from 'n8n-core';
-import { IDataObject, NodeApiError, NodeOperationError } from 'n8n-workflow';
 
 export interface RundeckCredentials {
 	url: string;

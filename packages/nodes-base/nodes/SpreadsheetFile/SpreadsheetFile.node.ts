@@ -1,21 +1,21 @@
-import { IExecuteFunctions } from 'n8n-core';
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	JSON2SheetOpts,
-	read as xlsxRead,
-	Sheet2JSONOpts,
-	utils as xlsxUtils,
-	WorkBook,
-	write as xlsxWrite,
-	WritingOptions,
+    JSON2SheetOpts,
+    read as xlsxRead,
+    Sheet2JSONOpts,
+    utils as xlsxUtils,
+    WorkBook,
+    write as xlsxWrite,
+    WritingOptions
 } from 'xlsx';
 
 

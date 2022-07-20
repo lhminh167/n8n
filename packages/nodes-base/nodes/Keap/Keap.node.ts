@@ -1,103 +1,103 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IBinaryKeyData,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IBinaryKeyData,
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	keapApiRequest,
-	keapApiRequestAllItems,
-	keysToSnakeCase,
+    keapApiRequest,
+    keapApiRequestAllItems,
+    keysToSnakeCase
 } from './GenericFunctions';
 
 import {
-	contactFields,
-	contactOperations,
+    contactFields,
+    contactOperations
 } from './ContactDescription';
 
 import {
-	contactNoteFields,
-	contactNoteOperations,
+    contactNoteFields,
+    contactNoteOperations
 } from './ContactNoteDescription';
 
 import {
-	contactTagFields,
-	contactTagOperations,
+    contactTagFields,
+    contactTagOperations
 } from './ContactTagDescription';
 
 import {
-	ecommerceOrderFields,
-	ecommerceOrderOperations,
+    ecommerceOrderFields,
+    ecommerceOrderOperations
 } from './EcommerceOrderDescripion';
 
 import {
-	ecommerceProductFields,
-	ecommerceProductOperations,
+    ecommerceProductFields,
+    ecommerceProductOperations
 } from './EcommerceProductDescription';
 
 import {
-	emailFields,
-	emailOperations,
+    emailFields,
+    emailOperations
 } from './EmailDescription';
 
 import {
-	fileFields,
-	fileOperations,
+    fileFields,
+    fileOperations
 } from './FileDescription';
 
 import {
-	companyFields,
-	companyOperations,
+    companyFields,
+    companyOperations
 } from './CompanyDescription';
 
 import {
-	IAddress,
-	IContact,
-	IEmailContact,
-	IFax,
-	IPhone,
-	ISocialAccount,
+    IAddress,
+    IContact,
+    IEmailContact,
+    IFax,
+    IPhone,
+    ISocialAccount
 } from './ConctactInterface';
 
 import {
-	IAttachment,
-	IEmail,
+    IAttachment,
+    IEmail
 } from './EmaiIInterface';
 
 import {
-	INote,
+    INote
 } from './ContactNoteInterface';
 
 import {
-	IEcommerceOrder,
-	IItem,
-	IShippingAddress,
+    IEcommerceOrder,
+    IItem,
+    IShippingAddress
 } from './EcommerceOrderInterface';
 
 import {
-	IEcommerceProduct,
+    IEcommerceProduct
 } from './EcommerceProductInterface';
 
 import {
-	IFile,
+    IFile
 } from './FileInterface';
 
 import {
-	ICompany,
+    ICompany
 } from './CompanyInterface';
 
 import {
-	capitalCase,
-	pascalCase,
+    capitalCase,
+    pascalCase
 } from 'change-case';
 
 import moment from 'moment-timezone';

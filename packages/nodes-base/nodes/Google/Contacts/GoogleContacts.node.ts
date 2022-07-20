@@ -1,30 +1,29 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	allFields,
-	cleanData,
-	googleApiRequest,
-	googleApiRequestAllItems,
+    allFields,
+    cleanData,
+    googleApiRequest,
+    googleApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	contactFields,
-	contactOperations,
+    contactFields,
+    contactOperations
 } from './ContactDescription';
 
 import moment from 'moment';
-import { IData } from '../Analytics/Interfaces';
 
 export class GoogleContacts implements INodeType {
 	description: INodeTypeDescription = {

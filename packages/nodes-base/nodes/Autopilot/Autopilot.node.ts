@@ -1,39 +1,39 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	autopilotApiRequest,
-	autopilotApiRequestAllItems,
+    autopilotApiRequest,
+    autopilotApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	contactFields,
-	contactOperations,
+    contactFields,
+    contactOperations
 } from './ContactDescription';
 
 import {
-	contactJourneyFields,
-	contactJourneyOperations,
+    contactJourneyFields,
+    contactJourneyOperations
 } from './ContactJourneyDescription';
 
 import {
-	contactListFields,
-	contactListOperations,
+    contactListFields,
+    contactListOperations
 } from './ContactListDescription';
 
 import {
-	listFields,
-	listOperations,
+    listFields,
+    listOperations
 } from './ListDescription';
 
 export class Autopilot implements INodeType {

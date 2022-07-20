@@ -35,7 +35,7 @@ import {
 	Workflow,
 	WorkflowExecuteMode,
 	WorkflowOperationError,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { get } from 'lodash';
 // eslint-disable-next-line import/no-cycle

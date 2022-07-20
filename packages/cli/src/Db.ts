@@ -4,7 +4,9 @@
 /* eslint-disable @typescript-eslint/restrict-template-expressions */
 /* eslint-disable no-case-declarations */
 /* eslint-disable @typescript-eslint/naming-convention */
-import { UserSettings } from 'n8n-core';
+import { UserSettings } from '@lhminh167/n8n-core';
+import path from 'path';
+import { TlsOptions } from 'tls';
 import {
 	Connection,
 	ConnectionOptions,
@@ -15,8 +17,6 @@ import {
 	LoggerOptions,
 	Repository,
 } from 'typeorm';
-import { TlsOptions } from 'tls';
-import path from 'path';
 // eslint-disable-next-line import/no-cycle
 import { DatabaseType, GenericHelpers, IDatabaseCollections } from '.';
 
@@ -25,8 +25,8 @@ import config from '../config';
 // eslint-disable-next-line import/no-cycle
 import { entities } from './databases/entities';
 
-import { postgresMigrations } from './databases/migrations/postgresdb';
 import { mysqlMigrations } from './databases/migrations/mysqldb';
+import { postgresMigrations } from './databases/migrations/postgresdb';
 import { sqliteMigrations } from './databases/migrations/sqlite';
 
 export let isInitialized = false;

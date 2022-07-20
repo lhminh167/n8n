@@ -1,17 +1,17 @@
 import {
-	CloseHandler,
-	CreateHandler,
-	DeleteHandler,
-	GetAllHandler,
-	GetHandler,
-	MoveHandler,
-	ReopenHandler,
-	SyncHandler,
-	UpdateHandler
+    CloseHandler,
+    CreateHandler,
+    DeleteHandler,
+    GetAllHandler,
+    GetHandler,
+    MoveHandler,
+    ReopenHandler,
+    SyncHandler,
+    UpdateHandler
 } from './OperationHandler';
 
-import {Context} from './GenericFunctions';
-import { IDataObject } from 'n8n-workflow';
+import { IDataObject } from '@lhminh167/n8n-workflow';
+import { Context } from './GenericFunctions';
 
 export class TodoistService implements Service {
 

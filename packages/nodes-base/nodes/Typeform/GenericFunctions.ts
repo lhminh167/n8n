@@ -1,20 +1,20 @@
 import {
-	IExecuteFunctions,
-	IHookFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IHookFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	INodePropertyOptions, NodeApiError, NodeOperationError,
-} from 'n8n-workflow';
+    INodePropertyOptions, NodeApiError, NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	IDataObject,
-} from 'n8n-workflow';
+    IDataObject
+} from '@lhminh167/n8n-workflow';
 
 // Interface in Typeform
 export interface ITypeformDefinition {

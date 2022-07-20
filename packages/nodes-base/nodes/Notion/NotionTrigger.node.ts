@@ -1,19 +1,19 @@
 import {
-	IPollFunctions,
-} from 'n8n-core';
+    IPollFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	notionApiRequest,
-	simplifyObjects,
+    notionApiRequest,
+    simplifyObjects
 } from './GenericFunctions';
 
 import moment from 'moment';

@@ -1,9 +1,9 @@
 import {
-	INodeProperties,
-} from 'n8n-workflow';
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 import {
-	invoiceAdditionalFieldsOptions
+    invoiceAdditionalFieldsOptions
 } from './InvoiceAdditionalFieldsOptions';
 
 export const invoiceOperations: INodeProperties[] = [

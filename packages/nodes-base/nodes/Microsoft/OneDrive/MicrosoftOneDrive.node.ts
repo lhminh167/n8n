@@ -1,30 +1,30 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IBinaryKeyData,
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IBinaryKeyData,
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeApiError,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	microsoftApiRequest,
-	microsoftApiRequestAllItems,
+    microsoftApiRequest,
+    microsoftApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	fileFields,
-	fileOperations,
+    fileFields,
+    fileOperations
 } from './FileDescription';
 
 import {
-	folderFields,
-	folderOperations,
+    folderFields,
+    folderOperations
 } from './FolderDescription';
 
 export class MicrosoftOneDrive implements INodeType {

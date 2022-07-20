@@ -1,47 +1,47 @@
 import {
-	IExecuteFunctions
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeApiError,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	couponFields,
-	couponOperations,
+    couponFields,
+    couponOperations
 } from './CouponDescription';
 
 import {
-	paddleApiRequest,
-	paddleApiRequestAllItems,
-	validateJSON
+    paddleApiRequest,
+    paddleApiRequestAllItems,
+    validateJSON
 } from './GenericFunctions';
 
 import {
-	paymentFields,
-	paymentOperations,
+    paymentFields,
+    paymentOperations
 } from './PaymentDescription';
 
 import {
-	planFields,
-	planOperations,
+    planFields,
+    planOperations
 } from './PlanDescription';
 
 import {
-	productFields,
-	productOperations,
+    productFields,
+    productOperations
 } from './ProductDescription';
 
 import {
-	userFields,
-	userOperations,
+    userFields,
+    userOperations
 } from './UserDescription';
 
 // import {

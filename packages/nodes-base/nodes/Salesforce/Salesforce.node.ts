@@ -1,125 +1,125 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeApiError,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	accountFields,
-	accountOperations,
+    accountFields,
+    accountOperations
 } from './AccountDescription';
 
 import {
-	IAccount,
+    IAccount
 } from './AccountInterface';
 
 import {
-	attachmentFields,
-	attachmentOperations,
+    attachmentFields,
+    attachmentOperations
 } from './AttachmentDescription';
 
 import {
-	IAttachment,
+    IAttachment
 } from './AttachmentInterface';
 
 import {
-	ICampaignMember,
+    ICampaignMember
 } from './CampaignMemberInterface';
 
 import {
-	caseFields,
-	caseOperations,
+    caseFields,
+    caseOperations
 } from './CaseDescription';
 
 import {
-	ICase,
-	ICaseComment,
+    ICase,
+    ICaseComment
 } from './CaseInterface';
 
 import {
-	contactFields,
-	contactOperations,
+    contactFields,
+    contactOperations
 } from './ContactDescription';
 
 import {
-	IContact,
+    IContact
 } from './ContactInterface';
 
 import {
-	customObjectFields,
-	customObjectOperations,
+    customObjectFields,
+    customObjectOperations
 } from './CustomObjectDescription';
 
 import {
-	flowFields,
-	flowOperations,
+    flowFields,
+    flowOperations
 } from './FlowDescription';
 
 import {
-	getQuery,
-	salesforceApiRequest,
-	salesforceApiRequestAllItems,
-	sortOptions,
+    getQuery,
+    salesforceApiRequest,
+    salesforceApiRequestAllItems,
+    sortOptions
 } from './GenericFunctions';
 
 import {
-	leadFields,
-	leadOperations,
+    leadFields,
+    leadOperations
 } from './LeadDescription';
 
 import {
-	ILead,
+    ILead
 } from './LeadInterface';
 
 import {
-	INote,
+    INote
 } from './NoteInterface';
 
 import {
-	opportunityFields,
-	opportunityOperations,
+    opportunityFields,
+    opportunityOperations
 } from './OpportunityDescription';
 
 import {
-	IOpportunity,
+    IOpportunity
 } from './OpportunityInterface';
 
 import {
-	searchFields,
-	searchOperations,
+    searchFields,
+    searchOperations
 } from './SearchDescription';
 
 import {
-	taskFields,
-	taskOperations,
+    taskFields,
+    taskOperations
 } from './TaskDescription';
 
 import {
-	ITask,
+    ITask
 } from './TaskInterface';
 
 import {
-	userFields,
-	userOperations,
+    userFields,
+    userOperations
 } from './UserDescription';
 
 import {
-	documentFields,
-	documentOperations,
+    documentFields,
+    documentOperations
 } from './DocumentDescription';
 
 import {
-	LoggerProxy as Logger,
-} from 'n8n-workflow';
+    LoggerProxy as Logger
+} from '@lhminh167/n8n-workflow';
 
 export class Salesforce implements INodeType {
 	description: INodeTypeDescription = {

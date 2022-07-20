@@ -1,22 +1,22 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 import {
-	upleadApiRequest,
-} from './GenericFunctions';
-import {
-	companyFields,
-	companyOperations,
+    companyFields,
+    companyOperations
 } from './CompanyDesciption';
 import {
-	personFields,
-	personOperations,
+    upleadApiRequest
+} from './GenericFunctions';
+import {
+    personFields,
+    personOperations
 } from './PersonDescription';
 
 export class Uplead implements INodeType {

@@ -1,23 +1,23 @@
 import {
-	IHookFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IHookFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialDataDecryptedObject,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookResponseData,
-} from 'n8n-workflow';
+    ICredentialDataDecryptedObject,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookResponseData
+} from '@lhminh167/n8n-workflow';
 
 import {
-	pipedriveApiRequest,
+    pipedriveApiRequest
 } from './GenericFunctions';
 
 import basicAuth from 'basic-auth';
 
 import {
-	Response,
+    Response
 } from 'express';
 
 function authorizationError(resp: Response, realm: string, responseCode: number, message?: string) {

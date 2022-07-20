@@ -1,34 +1,34 @@
-import { IExecuteFunctions } from 'n8n-core';
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 import {
-	collectionFields,
-	collectionOperations,
+    collectionFields,
+    collectionOperations
 } from './CollectionDescription';
 import {
-	createCollectionEntry,
-	getAllCollectionEntries,
-	getAllCollectionNames,
+    createCollectionEntry,
+    getAllCollectionEntries,
+    getAllCollectionNames
 } from './CollectionFunctions';
 import {
-	formFields,
-	formOperations
+    formFields,
+    formOperations
 } from './FormDescription';
 import { submitForm } from './FormFunctions';
 import { createDataFromParameters } from './GenericFunctions';
 import {
-	singletonFields,
-	singletonOperations,
+    singletonFields,
+    singletonOperations
 } from './SingletonDescription';
 import {
-	getAllSingletonNames,
-	getSingleton,
+    getAllSingletonNames,
+    getSingleton
 } from './SingletonFunctions';
 
 export class Cockpit implements INodeType {

@@ -1,17 +1,17 @@
 import {
-	IExecuteFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	IHookFunctions,
-	IHttpRequestMethods,
-	IHttpRequestOptions,
-	INodePropertyOptions,
-	IWebhookFunctions,
-	NodeApiError,
-} from 'n8n-workflow';
+    IDataObject,
+    IHookFunctions,
+    IHttpRequestMethods,
+    IHttpRequestOptions,
+    INodePropertyOptions,
+    IWebhookFunctions,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 export async function calApiRequest(this: IExecuteFunctions | IWebhookFunctions | IHookFunctions | ILoadOptionsFunctions, method: IHttpRequestMethods, resource: string, body: any = {}, query: IDataObject = {}, option: IDataObject = {}): Promise<any> { // tslint:disable-line:no-any
 

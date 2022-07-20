@@ -1,10 +1,10 @@
 import {
-	INodeProperties
-} from 'n8n-workflow';
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 import {
-	buildBinTestURL,
-	buildRequestURL
+    buildBinTestURL,
+    buildRequestURL
 } from './GenericFunctions';
 
 // Operations for the `Request` resource

@@ -1,37 +1,37 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	reportFields,
-	reportOperations,
+    reportFields,
+    reportOperations
 } from './ReportDescription';
 
 import {
-	userActivityFields,
-	userActivityOperations,
+    userActivityFields,
+    userActivityOperations
 } from './UserActivityDescription';
 
 import {
-	googleApiRequest,
-	googleApiRequestAllItems,
-	merge,
-	simplify,
+    googleApiRequest,
+    googleApiRequestAllItems,
+    merge,
+    simplify
 } from './GenericFunctions';
 
 import moment from 'moment-timezone';
 
 import {
-	IData,
+    IData
 } from './Interfaces';
 
 export class GoogleAnalytics implements INodeType {

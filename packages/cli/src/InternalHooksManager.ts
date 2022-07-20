@@ -1,5 +1,5 @@
 /* eslint-disable import/no-cycle */
-import { INodeTypes } from 'n8n-workflow';
+import { INodeTypes } from '@lhminh167/n8n-workflow';
 import { InternalHooksClass } from './InternalHooks';
 import { Telemetry } from './telemetry';
 

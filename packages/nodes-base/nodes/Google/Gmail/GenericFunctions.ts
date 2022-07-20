@@ -1,27 +1,26 @@
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	simpleParser,
+    simpleParser
 } from 'mailparser';
 
 import {
-	IExecuteFunctions,
-	IExecuteSingleFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IExecuteSingleFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IBinaryKeyData,
-	IDataObject,
-	INodeExecutionData,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IBinaryKeyData,
+    IDataObject,
+    INodeExecutionData,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	IEmail,
+    IEmail
 } from './Gmail.node';
 
 import moment from 'moment-timezone';

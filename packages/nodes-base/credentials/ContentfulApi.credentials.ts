@@ -1,7 +1,7 @@
 import {
-	ICredentialType,
-	INodeProperties,
-} from 'n8n-workflow';
+    ICredentialType,
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 //https://www.contentful.com/developers/docs/references/authentication/
 export class ContentfulApi implements ICredentialType {

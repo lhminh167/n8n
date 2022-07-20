@@ -1,6 +1,6 @@
 import {
-	INodePropertyOptions,
-} from 'n8n-workflow';
+    INodePropertyOptions
+} from '@lhminh167/n8n-workflow';
 
 export const triggerPlaceholders = [
 	{

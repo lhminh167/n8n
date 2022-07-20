@@ -1,35 +1,35 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialDataDecryptedObject,
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	JsonObject,
-} from 'n8n-workflow';
+    ICredentialDataDecryptedObject,
+    ICredentialsDecrypted,
+    ICredentialTestFunctions,
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeCredentialTestResult,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    JsonObject
+} from '@lhminh167/n8n-workflow';
 
 import {
-	linearApiRequest,
-	linearApiRequestAllItems,
-	sort,
-	validateCredentials,
+    linearApiRequest,
+    linearApiRequestAllItems,
+    sort,
+    validateCredentials
 } from './GenericFunctions';
 
 import {
-	issueFields,
-	issueOperations,
+    issueFields,
+    issueOperations
 } from './IssueDescription';
 
 import {
-	query,
+    query
 } from './Queries';
 interface IGraphqlBody {
 	query: string;

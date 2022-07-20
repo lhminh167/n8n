@@ -1,17 +1,17 @@
 import { OptionsWithUri } from 'request';
 
 import {
-	IExecuteFunctions,
-	IExecuteSingleFunctions,
-	IHookFunctions,
-	ILoadOptionsFunctions,
-	IPollFunctions,
-	ITriggerFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IExecuteSingleFunctions,
+    IHookFunctions,
+    ILoadOptionsFunctions,
+    IPollFunctions,
+    ITriggerFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject, NodeApiError, NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject, NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 export async function togglApiRequest(this: ITriggerFunctions | IPollFunctions | IHookFunctions | IExecuteFunctions | IExecuteSingleFunctions | ILoadOptionsFunctions, method: string, resource: string, body: any = {}, query?: IDataObject, uri?: string): Promise<any> { // tslint:disable-line:no-any
 	const credentials = await this.getCredentials('togglApi');

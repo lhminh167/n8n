@@ -1,38 +1,38 @@
 import {
-	OptionsWithUri
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
+import {
+    ICredentialsDecrypted,
+    ICredentialTestFunctions,
+    IDataObject,
+    INodeCredentialTestResult,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
+import {
+    OptionsWithUri
 } from 'request';
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    payPalApiRequest,
+    payPalApiRequestAllItems,
+    validateJSON
+} from './GenericFunctions';
 import {
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
-import {
-	payoutFields,
-	payoutItemFields,
-	payoutItemOperations,
-	payoutOperations,
+    payoutFields,
+    payoutItemFields,
+    payoutItemOperations,
+    payoutOperations
 } from './PaymentDescription';
 import {
-	IAmount,
-	IItem,
-	IPaymentBatch,
-	ISenderBatchHeader,
-	RecipientType,
-	RecipientWallet,
- } from './PaymentInteface';
-import {
-	payPalApiRequest,
-	payPalApiRequestAllItems,
-	validateJSON,
- } from './GenericFunctions';
+    IAmount,
+    IItem,
+    IPaymentBatch,
+    ISenderBatchHeader,
+    RecipientType,
+    RecipientWallet
+} from './PaymentInteface';
 
 export class PayPal implements INodeType {
 	description: INodeTypeDescription = {

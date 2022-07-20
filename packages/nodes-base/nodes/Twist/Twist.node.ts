@@ -1,43 +1,43 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IBinaryData,
-	IBinaryKeyData,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IBinaryData,
+    IBinaryKeyData,
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	twistApiRequest,
+    twistApiRequest
 } from './GenericFunctions';
 
 import {
-	channelFields,
-	channelOperations,
+    channelFields,
+    channelOperations
 } from './ChannelDescription';
 
 import {
-	messageConversationFields,
-	messageConversationOperations,
+    messageConversationFields,
+    messageConversationOperations
 } from './MessageConversationDescription';
 
-import {
-	threadFields,
-	threadOperations
-} from './ThreadDescription';
-import {
-	commentFields,
-	commentOperations
-} from './CommentDescription';
-import { v4 as uuid } from 'uuid';
 import moment from 'moment';
+import { v4 as uuid } from 'uuid';
+import {
+    commentFields,
+    commentOperations
+} from './CommentDescription';
+import {
+    threadFields,
+    threadOperations
+} from './ThreadDescription';
 
 export class Twist implements INodeType {
 	description: INodeTypeDescription = {

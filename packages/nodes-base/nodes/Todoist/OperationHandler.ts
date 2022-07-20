@@ -1,7 +1,7 @@
-import {IDataObject} from 'n8n-workflow';
-import {Context, FormatDueDatetime, todoistApiRequest, todoistSyncRequest} from './GenericFunctions';
-import {Section, TodoistResponse} from './Service';
-import {v4 as uuid} from 'uuid';
+import { IDataObject } from '@lhminh167/n8n-workflow';
+import { v4 as uuid } from 'uuid';
+import { Context, FormatDueDatetime, todoistApiRequest, todoistSyncRequest } from './GenericFunctions';
+import { Section, TodoistResponse } from './Service';
 
 export interface OperationHandler {
 	handleOperation(ctx: Context, itemIndex: number): Promise<TodoistResponse>;

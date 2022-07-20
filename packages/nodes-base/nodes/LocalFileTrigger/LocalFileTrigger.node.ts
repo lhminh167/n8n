@@ -1,10 +1,10 @@
-import { ITriggerFunctions } from 'n8n-core';
+import { ITriggerFunctions } from '@lhminh167/n8n-core';
 import {
-	IDataObject,
-	INodeType,
-	INodeTypeDescription,
-	ITriggerResponse,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeType,
+    INodeTypeDescription,
+    ITriggerResponse
+} from '@lhminh167/n8n-workflow';
 
 import { watch } from 'chokidar';
 

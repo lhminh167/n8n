@@ -1,39 +1,38 @@
 import {
-	URL,
+    URL
 } from 'url';
 
 import {
-	Request,
-	sign,
+    Request,
+    sign
 } from 'aws4';
 
 import {
-	get,
+    get
 } from 'lodash';
 
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	parseString,
+    parseString
 } from 'xml2js';
 
 import {
-	IExecuteFunctions,
-	IHookFunctions,
-	ILoadOptionsFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IHookFunctions,
+    ILoadOptionsFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	NodeApiError,
-	NodeOperationError,
- } from 'n8n-workflow';
+    IDataObject,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	pascalCase,
+    pascalCase
 } from 'change-case';
 
 export async function awsApiRequest(this: IHookFunctions | IExecuteFunctions | ILoadOptionsFunctions | IWebhookFunctions, service: string, method: string, path: string, body?: string | Buffer | IDataObject, query: IDataObject = {}, headers?: object, option: IDataObject = {}, region?: string): Promise<any> { // tslint:disable-line:no-any

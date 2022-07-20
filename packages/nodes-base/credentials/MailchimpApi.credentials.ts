@@ -1,10 +1,8 @@
 import {
-	IAuthenticateGeneric,
-	ICredentialTestFunctions,
-	ICredentialTestRequest,
-	ICredentialType,
-	INodeProperties,
-} from 'n8n-workflow';
+    IAuthenticateGeneric, ICredentialTestRequest,
+    ICredentialType,
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 export class MailchimpApi implements ICredentialType {
 	name = 'mailchimpApi';

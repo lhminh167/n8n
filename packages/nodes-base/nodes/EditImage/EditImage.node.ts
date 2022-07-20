@@ -1,28 +1,27 @@
 import {
-	BINARY_ENCODING,
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodeProperties,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
-import gm from 'gm';
-import { file } from 'tmp-promise';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodeProperties,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 import {
-	parse as pathParse,
-} from 'path';
-import {
-	writeFile as fsWriteFile,
+    writeFile as fsWriteFile
 } from 'fs';
+import getSystemFonts from 'get-system-fonts';
+import gm from 'gm';
+import {
+    parse as pathParse
+} from 'path';
+import { file } from 'tmp-promise';
 import { promisify } from 'util';
 const fsWriteFileAsync = promisify(fsWriteFile);
-import getSystemFonts from 'get-system-fonts';
 
 
 const nodeOperations: INodePropertyOptions[] = [

@@ -1,22 +1,22 @@
 import {
-	IHookFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IHookFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookResponseData,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookResponseData
+} from '@lhminh167/n8n-workflow';
 
 import {
-	apiRequest,
-	getImageBySize,
+    apiRequest,
+    getImageBySize
 } from './GenericFunctions';
 
 import {
-	IEvent,
+    IEvent
 } from './IEvent';
 
 export class TelegramTrigger implements INodeType {

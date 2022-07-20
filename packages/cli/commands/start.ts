@@ -6,13 +6,13 @@
 /* eslint-disable no-console */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
-import localtunnel from 'localtunnel';
-import { BinaryDataManager, TUNNEL_SUBDOMAIN_ENV, UserSettings } from 'n8n-core';
+import { BinaryDataManager, TUNNEL_SUBDOMAIN_ENV, UserSettings } from '@lhminh167/n8n-core';
 import { Command, flags } from '@oclif/command';
+import localtunnel from 'localtunnel';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import Redis from 'ioredis';
 
-import { IDataObject, LoggerProxy } from 'n8n-workflow';
+import { IDataObject, LoggerProxy } from '@lhminh167/n8n-workflow';
 import { createHash } from 'crypto';
 import config from '../config';
 import {

@@ -1,17 +1,16 @@
 import {
-	ICredentialDataDecryptedObject,
-	IDataObject,
-	IExecuteFunctions,
-	IHookFunctions,
-	ILoadOptionsFunctions,
-	INodePropertyOptions,
-	IWebhookFunctions,
-	JsonObject,
-	NodeApiError
-} from 'n8n-workflow';
+    IDataObject,
+    IExecuteFunctions,
+    IHookFunctions,
+    ILoadOptionsFunctions,
+    INodePropertyOptions,
+    IWebhookFunctions,
+    JsonObject,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import moment from 'moment-timezone';

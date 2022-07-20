@@ -1,35 +1,35 @@
 import {
-	createHash,
+    createHash
 } from 'crypto';
 
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	IExecuteFunctions,
-	IExecuteSingleFunctions,
-	IHookFunctions,
-	ILoadOptionsFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IExecuteSingleFunctions,
+    IHookFunctions,
+    ILoadOptionsFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialDataDecryptedObject,
-	IDataObject,
-	NodeApiError,
-} from 'n8n-workflow';
+    ICredentialDataDecryptedObject,
+    IDataObject,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	flow,
-	omit,
+    flow,
+    omit
 } from 'lodash';
 
 import {
-	AddressFixedCollection,
-	EmailFixedCollection,
-	EmailsFixedCollection,
-	PhoneNumbersFixedCollection,
+    AddressFixedCollection,
+    EmailFixedCollection,
+    EmailsFixedCollection,
+    PhoneNumbersFixedCollection
 } from './utils/types';
 
 /**

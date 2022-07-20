@@ -1,13 +1,13 @@
 import {
-	IExecuteFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IHookFunctions,
-	IWebhookFunctions,
-	NodeApiError,
-} from 'n8n-workflow';
+    IHookFunctions,
+    IWebhookFunctions,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 
 interface IFormIoCredentials {

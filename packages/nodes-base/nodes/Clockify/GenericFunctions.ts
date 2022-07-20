@@ -1,16 +1,16 @@
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	IExecuteFunctions,
-	ILoadOptionsFunctions,
-	IPollFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    ILoadOptionsFunctions,
+    IPollFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject, NodeApiError,
-} from 'n8n-workflow';
+    IDataObject, NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 export async function clockifyApiRequest(this: ILoadOptionsFunctions | IPollFunctions | IExecuteFunctions, method: string, resource: string, body: any = {}, qs: IDataObject = {}, uri?: string, option: IDataObject = {}): Promise<any> { // tslint:disable-line:no-any
 	const BASE_URL = 'https://api.clockify.me/api/v1';

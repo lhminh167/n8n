@@ -1,5 +1,5 @@
 /* eslint-disable no-prototype-builtins */
-import { INode, IWorkflowCredentials } from 'n8n-workflow';
+import { INode, IWorkflowCredentials } from '@lhminh167/n8n-workflow';
 // eslint-disable-next-line import/no-cycle
 import { Db } from '.';
 

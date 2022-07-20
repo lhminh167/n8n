@@ -1,21 +1,20 @@
 import {
-	ICredentialDataDecryptedObject,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookFunctions,
-	IWebhookResponseData,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookFunctions,
+    IWebhookResponseData
+} from '@lhminh167/n8n-workflow';
 
 import {
-	IHookFunctions,
-} from 'n8n-core';
+    IHookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	getAutomaticSecret,
-	taigaApiRequest,
+    getAutomaticSecret,
+    taigaApiRequest
 } from './GenericFunctions';
 
 // import {

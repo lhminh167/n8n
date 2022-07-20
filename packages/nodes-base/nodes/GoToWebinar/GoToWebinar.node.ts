@@ -1,46 +1,46 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	attendeeFields,
-	attendeeOperations,
-	coorganizerFields,
-	coorganizerOperations,
-	panelistFields,
-	panelistOperations,
-	registrantFields,
-	registrantOperations,
-	sessionFields,
-	sessionOperations,
-	webinarFields,
-	webinarOperations,
+    attendeeFields,
+    attendeeOperations,
+    coorganizerFields,
+    coorganizerOperations,
+    panelistFields,
+    panelistOperations,
+    registrantFields,
+    registrantOperations,
+    sessionFields,
+    sessionOperations,
+    webinarFields,
+    webinarOperations
 } from './descriptions';
 
 import {
-	goToWebinarApiRequest,
-	goToWebinarApiRequestAllItems,
-	handleGetAll,
-	loadAnswers,
-	loadRegistranMultiChoiceQuestions,
-	loadRegistranSimpleQuestions,
-	loadWebinars,
-	loadWebinarSessions,
+    goToWebinarApiRequest,
+    goToWebinarApiRequestAllItems,
+    handleGetAll,
+    loadAnswers,
+    loadRegistranMultiChoiceQuestions,
+    loadRegistranSimpleQuestions,
+    loadWebinars,
+    loadWebinarSessions
 } from './GenericFunctions';
 
 import {
-	isEmpty,
-	omit,
+    isEmpty,
+    omit
 } from 'lodash';
 
 import moment from 'moment-timezone';

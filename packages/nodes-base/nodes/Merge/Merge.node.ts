@@ -1,13 +1,13 @@
 import { get } from 'lodash';
 
-import { IExecuteFunctions } from 'n8n-core';
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
 import {
-	GenericValue,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	IPairedItemData,
-} from 'n8n-workflow';
+    GenericValue,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    IPairedItemData
+} from '@lhminh167/n8n-workflow';
 
 
 export class Merge implements INodeType {

@@ -1,10 +1,18 @@
 import { exec as callbackExec } from 'child_process';
 import { promisify } from 'util';
 
-import { createConnection, getConnection, ConnectionOptions, Connection } from 'typeorm';
-import { UserSettings } from 'n8n-core';
+import { UserSettings } from '@lhminh167/n8n-core';
+import { Connection, ConnectionOptions, createConnection, getConnection } from 'typeorm';
 
 import config from '../../../config';
+import { DatabaseType, Db, ICredentialsDb } from '../../../src';
+import { createCredentiasFromCredentialsEntity } from '../../../src/CredentialsHelper';
+import { entities } from '../../../src/databases/entities';
+import { CredentialsEntity } from '../../../src/databases/entities/CredentialsEntity';
+import { mysqlMigrations } from '../../../src/databases/migrations/mysqldb';
+import { postgresMigrations } from '../../../src/databases/migrations/postgresdb';
+import { sqliteMigrations } from '../../../src/databases/migrations/sqlite';
+import { hashPassword } from '../../../src/UserManagement/UserManagementHelper';
 import {
 	BOOTSTRAP_MYSQL_CONNECTION_NAME,
 	BOOTSTRAP_POSTGRES_CONNECTION_NAME,
@@ -12,23 +20,15 @@ import {
 	MAPPING_TABLES,
 	MAPPING_TABLES_TO_CLEAR,
 } from './constants';
-import { DatabaseType, Db, ICredentialsDb } from '../../../src';
 import { randomApiKey, randomEmail, randomName, randomString, randomValidPassword } from './random';
-import { CredentialsEntity } from '../../../src/databases/entities/CredentialsEntity';
-import { hashPassword } from '../../../src/UserManagement/UserManagementHelper';
-import { entities } from '../../../src/databases/entities';
-import { mysqlMigrations } from '../../../src/databases/migrations/mysqldb';
-import { postgresMigrations } from '../../../src/databases/migrations/postgresdb';
-import { sqliteMigrations } from '../../../src/databases/migrations/sqlite';
 import { categorize, getPostgresSchemaSection } from './utils';
-import { createCredentiasFromCredentialsEntity } from '../../../src/CredentialsHelper';
 
-import type { Role } from '../../../src/databases/entities/Role';
-import { User } from '../../../src/databases/entities/User';
-import type { CollectionName, CredentialPayload, MappingName } from './types';
-import { WorkflowEntity } from '../../../src/databases/entities/WorkflowEntity';
 import { ExecutionEntity } from '../../../src/databases/entities/ExecutionEntity';
+import type { Role } from '../../../src/databases/entities/Role';
 import { TagEntity } from '../../../src/databases/entities/TagEntity';
+import { User } from '../../../src/databases/entities/User';
+import { WorkflowEntity } from '../../../src/databases/entities/WorkflowEntity';
+import type { CollectionName, CredentialPayload, MappingName } from './types';
 
 const exec = promisify(callbackExec);
 

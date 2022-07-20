@@ -1,65 +1,64 @@
 /* eslint-disable n8n-nodes-base/node-filename-against-convention */
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	billFields,
-	billOperations,
-	customerFields,
-	customerOperations,
-	employeeFields,
-	employeeOperations,
-	estimateFields,
-	estimateOperations,
-	invoiceFields,
-	invoiceOperations,
-	itemFields,
-	itemOperations,
-	paymentFields,
-	paymentOperations,
-	purchaseFields,
-	purchaseOperations,
-	transactionFields,
-	transactionOperations,
-	vendorFields,
-	vendorOperations,
+    billFields,
+    billOperations,
+    customerFields,
+    customerOperations,
+    employeeFields,
+    employeeOperations,
+    estimateFields,
+    estimateOperations,
+    invoiceFields,
+    invoiceOperations,
+    itemFields,
+    itemOperations,
+    paymentFields,
+    paymentOperations,
+    purchaseFields,
+    purchaseOperations,
+    transactionFields,
+    transactionOperations,
+    vendorFields,
+    vendorOperations
 } from './descriptions';
 
 import {
-	adjustTransactionDates,
-	getRefAndSyncToken,
-	getSyncToken,
-	handleBinaryData,
-	handleListing,
-	loadResource,
-	populateFields,
-	processLines,
-	quickBooksApiRequest,
-	simplifyTransactionReport,
+    adjustTransactionDates,
+    getRefAndSyncToken,
+    getSyncToken,
+    handleBinaryData,
+    handleListing,
+    loadResource,
+    populateFields,
+    processLines,
+    quickBooksApiRequest,
+    simplifyTransactionReport
 } from './GenericFunctions';
 
 import {
-	capitalCase,
+    capitalCase
 } from 'change-case';
 
 import {
-	isEmpty,
+    isEmpty
 } from 'lodash';
 
 import {
-	DateFieldsUi,
-	QuickBooksOAuth2Credentials,
-	TransactionFields,
+    QuickBooksOAuth2Credentials,
+    TransactionFields
 } from './types';
 
 export class QuickBooks implements INodeType {

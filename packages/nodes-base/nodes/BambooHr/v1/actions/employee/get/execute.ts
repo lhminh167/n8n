@@ -1,14 +1,14 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData
+} from '@lhminh167/n8n-workflow';
 
 import {
-	apiRequest,
+    apiRequest
 } from '../../../transport';
 
 export async function get(this: IExecuteFunctions, index: number): Promise<INodeExecutionData[]> {

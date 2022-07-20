@@ -2,13 +2,13 @@ import * as create from './create';
 import * as del from './del';
 import * as getAll from './getAll';
 
-import { INodeProperties } from 'n8n-workflow';
+import { INodeProperties } from '@lhminh167/n8n-workflow';
 
 
 export {
-	create,
-	del as delete,
-	getAll,
+    create,
+    del as delete,
+    getAll,
 };
 
 export const descriptions: INodeProperties[] = [

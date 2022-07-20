@@ -1,25 +1,25 @@
 import {
-	IHookFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IHookFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookResponseData,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookResponseData
+} from '@lhminh167/n8n-workflow';
 
 import {
-	figmaApiRequest,
+    figmaApiRequest
 } from './GenericFunctions';
 
 import {
-	snakeCase,
+    snakeCase
 } from 'change-case';
 
 import {
-	randomBytes,
+    randomBytes
 } from 'crypto';
 
 export class FigmaTrigger implements INodeType {

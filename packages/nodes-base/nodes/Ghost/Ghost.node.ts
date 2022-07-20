@@ -1,26 +1,26 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	ghostApiRequest,
-	ghostApiRequestAllItems,
-	validateJSON,
+    ghostApiRequest,
+    ghostApiRequestAllItems,
+    validateJSON
 } from './GenericFunctions';
 
 import {
-	postFields,
-	postOperations,
+    postFields,
+    postOperations
 } from './PostDescription';
 
 import moment from 'moment-timezone';

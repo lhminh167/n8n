@@ -2,16 +2,16 @@
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-return */
+import { Credentials, UserSettings } from '@lhminh167/n8n-core';
+import { IDataObject, INodeProperties, INodePropertyOptions } from '@lhminh167/n8n-workflow';
 import { FindOneOptions } from 'typeorm';
-import { UserSettings, Credentials } from 'n8n-core';
-import { IDataObject, INodeProperties, INodePropertyOptions } from 'n8n-workflow';
 import { Db, ICredentialsDb } from '../../../..';
 import { CredentialsEntity } from '../../../../databases/entities/CredentialsEntity';
 import { SharedCredentials } from '../../../../databases/entities/SharedCredentials';
 import { User } from '../../../../databases/entities/User';
+import { CredentialRequest } from '../../../../requests';
 import { externalHooks } from '../../../../Server';
 import { IDependency, IJsonSchema } from '../../../types';
-import { CredentialRequest } from '../../../../requests';
 
 export async function getCredentials(
 	credentialId: number | string,

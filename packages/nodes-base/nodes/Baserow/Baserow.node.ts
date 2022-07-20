@@ -1,34 +1,34 @@
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	baserowApiRequest,
-	baserowApiRequestAllItems,
-	getJwtToken,
-	TableFieldMapper,
-	toOptions,
+    baserowApiRequest,
+    baserowApiRequestAllItems,
+    getJwtToken,
+    TableFieldMapper,
+    toOptions
 } from './GenericFunctions';
 
 import {
-	operationFields
+    operationFields
 } from './OperationDescription';
 
 import {
-	BaserowCredentials,
-	FieldsUiValues,
-	GetAllAdditionalOptions,
-	LoadedResource,
-	Operation,
-	Row,
+    BaserowCredentials,
+    FieldsUiValues,
+    GetAllAdditionalOptions,
+    LoadedResource,
+    Operation,
+    Row
 } from './types';
 
 export class Baserow implements INodeType {

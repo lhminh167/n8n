@@ -1,16 +1,15 @@
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
-import { IDataObject, NodeApiError, NodeOperationError, } from 'n8n-workflow';
+import { IDataObject, NodeApiError, NodeOperationError } from '@lhminh167/n8n-workflow';
 
 import {
-	IExecuteFunctions,
-	IExecuteSingleFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IExecuteSingleFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
-import _ from 'lodash';
 import { v4 as uuid } from 'uuid';
 
 

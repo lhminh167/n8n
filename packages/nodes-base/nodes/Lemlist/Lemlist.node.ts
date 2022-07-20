@@ -1,35 +1,35 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	activityFields,
-	activityOperations,
-	campaignFields,
-	campaignOperations,
-	leadFields,
-	leadOperations,
-	teamFields,
-	teamOperations,
-	unsubscribeFields,
-	unsubscribeOperations,
+    activityFields,
+    activityOperations,
+    campaignFields,
+    campaignOperations,
+    leadFields,
+    leadOperations,
+    teamFields,
+    teamOperations,
+    unsubscribeFields,
+    unsubscribeOperations
 } from './descriptions';
 
 import {
-	lemlistApiRequest,
-	lemlistApiRequestAllItems,
+    lemlistApiRequest,
+    lemlistApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	isEmpty,
-	omit,
+    isEmpty,
+    omit
 } from 'lodash';
 
 export class Lemlist implements INodeType {

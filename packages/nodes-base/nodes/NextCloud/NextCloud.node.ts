@@ -1,22 +1,22 @@
-import { IExecuteFunctions } from 'n8n-core';
-import { NodeApiError } from 'n8n-workflow';
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
+import { NodeApiError } from '@lhminh167/n8n-workflow';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import { URLSearchParams } from 'url';
 
 import {
-	parseString,
+    parseString
 } from 'xml2js';
 
 import {
-	nextCloudApiRequest,
+    nextCloudApiRequest
 } from './GenericFunctions';
 
 export class NextCloud implements INodeType {

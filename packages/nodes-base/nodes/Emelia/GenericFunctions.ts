@@ -1,17 +1,17 @@
 import {
-	IExecuteFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IHookFunctions,
-	INodeCredentialTestResult,
-	INodePropertyOptions,
-	JsonObject,
-	NodeApiError,
-} from 'n8n-workflow';
+    ICredentialsDecrypted,
+    ICredentialTestFunctions,
+    IHookFunctions,
+    INodeCredentialTestResult,
+    INodePropertyOptions,
+    JsonObject,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 /**
  * Make an authenticated GraphQL request to Emelia.

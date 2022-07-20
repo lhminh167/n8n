@@ -1,5 +1,5 @@
 /* eslint-disable no-underscore-dangle */
-import { ICredentialDataDecryptedObject } from 'n8n-workflow';
+import { ICredentialDataDecryptedObject } from '@lhminh167/n8n-workflow';
 
 // eslint-disable-next-line import/no-cycle
 import { CredentialTypes, GenericHelpers, ICredentialsOverwrite } from '.';

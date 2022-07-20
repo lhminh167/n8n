@@ -1,55 +1,55 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	eventFields,
-	eventOperations,
+    eventFields,
+    eventOperations
 } from './EventDescription';
 
 import {
-	issueFields,
-	issueOperations,
+    issueFields,
+    issueOperations
 } from './IssueDescription';
 
 import {
-	organizationFields,
-	organizationOperations,
+    organizationFields,
+    organizationOperations
 } from './OrganizationDescription';
 
 import {
-	projectFields,
-	projectOperations,
+    projectFields,
+    projectOperations
 } from './ProjectDescription';
 
 import {
-	releaseFields,
-	releaseOperations,
+    releaseFields,
+    releaseOperations
 } from './ReleaseDescription';
 
 import {
-	teamFields,
-	teamOperations,
+    teamFields,
+    teamOperations
 } from './TeamDescription';
 
 import {
-	sentryApiRequestAllItems,
-	sentryIoApiRequest,
+    sentryApiRequestAllItems,
+    sentryIoApiRequest
 } from './GenericFunctions';
 
 import {
-	ICommit,
-	IPatchSet,
-	IRef,
+    ICommit,
+    IPatchSet,
+    IRef
 } from './Interface';
 
 export class SentryIo implements INodeType {

@@ -196,7 +196,7 @@ import {
 	TelemetryHelpers,
 	ITelemetryTrackProperties,
 	IWorkflowBase,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 import {
 	ICredentialsResponse,
 	IExecutionResponse,

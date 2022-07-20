@@ -1,8 +1,8 @@
 import {
-	IDataObject,
-	IExecuteFunctions,
-	ITriggerFunctions,
-} from 'n8n-workflow';
+    IDataObject,
+    IExecuteFunctions,
+    ITriggerFunctions
+} from '@lhminh167/n8n-workflow';
 
 import * as amqplib from 'amqplib';
 

@@ -1,35 +1,35 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	endOfDayDataFields,
-	endOfDayDataOperations,
-	exchangeFields,
-	exchangeOperations,
-	tickerFields,
-	tickerOperations,
+    endOfDayDataFields,
+    endOfDayDataOperations,
+    exchangeFields,
+    exchangeOperations,
+    tickerFields,
+    tickerOperations
 } from './descriptions';
 
 import {
-	format,
-	marketstackApiRequest,
-	marketstackApiRequestAllItems,
-	validateTimeOptions,
+    format,
+    marketstackApiRequest,
+    marketstackApiRequestAllItems,
+    validateTimeOptions
 } from './GenericFunctions';
 
 import {
-	EndOfDayDataFilters,
-	Operation,
-	Resource,
+    EndOfDayDataFilters,
+    Operation,
+    Resource
 } from './types';
 
 export class Marketstack implements INodeType {

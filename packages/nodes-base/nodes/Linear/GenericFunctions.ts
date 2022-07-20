@@ -1,26 +1,26 @@
 import {
-	OptionsWithUri
+    OptionsWithUri
 } from 'request';
 
 import {
-	IExecuteFunctions,
-	ILoadOptionsFunctions
-} from 'n8n-core';
+    IExecuteFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialDataDecryptedObject,
-	ICredentialTestFunctions,
-	IDataObject,
-	IHookFunctions,
-	IWebhookFunctions,
-	JsonObject,
-	NodeApiError
-} from 'n8n-workflow';
+    ICredentialDataDecryptedObject,
+    ICredentialTestFunctions,
+    IDataObject,
+    IHookFunctions,
+    IWebhookFunctions,
+    JsonObject,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 		//@ts-ignore
 import get from 'lodash.get';
 
 import {
-	query
+    query
 } from './Queries';
 
 export async function linearApiRequest(this: IExecuteFunctions | IWebhookFunctions | IHookFunctions | ILoadOptionsFunctions, body: any = {}, option: IDataObject = {}): Promise<any> { // tslint:disable-line:no-any

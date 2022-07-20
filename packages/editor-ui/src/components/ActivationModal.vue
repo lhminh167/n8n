@@ -39,7 +39,7 @@ import Vue from 'vue';
 import Modal from '@/components/Modal.vue';
 import { WORKFLOW_ACTIVE_MODAL_KEY, EXECUTIONS_MODAL_KEY, WORKFLOW_SETTINGS_MODAL_KEY, LOCAL_STORAGE_ACTIVATION_FLAG } from '../constants';
 import { getActivatableTriggerNodes, getTriggerNodeServiceName } from './helpers';
-import { INodeTypeDescription } from 'n8n-workflow';
+import { INodeTypeDescription } from '@lhminh167/n8n-workflow';
 
 export default Vue.extend({
 	name: 'ActivationModal',

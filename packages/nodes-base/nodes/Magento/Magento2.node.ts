@@ -1,67 +1,60 @@
-import {
-	OptionsWithUri,
-} from 'request';
 
 
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeApiError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions, INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	adjustAddresses,
-	getFilterQuery,
-	getOrderFields,
-	getProductAttributes,
-	magentoApiRequest,
-	magentoApiRequestAllItems,
-	sort,
-	validateJSON,
+    adjustAddresses,
+    getFilterQuery,
+    getOrderFields,
+    getProductAttributes,
+    magentoApiRequest,
+    magentoApiRequestAllItems,
+    sort,
+    validateJSON
 } from './GenericFunctions';
 
 import {
-	customerFields,
-	customerOperations,
+    customerFields,
+    customerOperations
 } from './CustomerDescription';
 
 import {
-	orderFields,
-	orderOperations,
+    orderFields,
+    orderOperations
 } from './OrderDescription';
 
 import {
-	productFields,
-	productOperations,
+    productFields,
+    productOperations
 } from './ProductDescription';
 
 import {
-	invoiceFields,
-	invoiceOperations,
+    invoiceFields,
+    invoiceOperations
 } from './InvoiceDescription';
 
 import {
-	CustomAttribute,
-	CustomerAttributeMetadata,
-	Filter,
-	NewCustomer,
-	NewProduct,
-	Search,
+    CustomAttribute,
+    CustomerAttributeMetadata,
+    Filter,
+    NewCustomer,
+    NewProduct,
+    Search
 } from './Types';
 
 import {
-	capitalCase,
+    capitalCase
 } from 'change-case';
 
 export class Magento2 implements INodeType {

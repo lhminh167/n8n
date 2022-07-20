@@ -1,27 +1,27 @@
 /* eslint-disable n8n-nodes-base/node-filename-against-convention */
-import {IExecuteFunctions} from 'n8n-core';
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
 import {
-	ILoadOptionsFunctions,
-	INodeExecutionData, INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    ILoadOptionsFunctions,
+    INodeExecutionData, INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 
-import {OptionsWithUri} from 'request';
+import { OptionsWithUri } from 'request';
 import {
-	getFields,
-	getPortals,
-	getScripts,
-	getToken,
-	layoutsApiRequest,
-	logout,
-	parseFields,
-	parsePortals,
-	parseQuery,
-	parseScripts,
-	parseSort,
+    getFields,
+    getPortals,
+    getScripts,
+    getToken,
+    layoutsApiRequest,
+    logout,
+    parseFields,
+    parsePortals,
+    parseQuery,
+    parseScripts,
+    parseSort
 } from './GenericFunctions';
 
 export class FileMaker implements INodeType {

@@ -1,32 +1,32 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialDataDecryptedObject,
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    ICredentialDataDecryptedObject,
+    ICredentialsDecrypted,
+    ICredentialTestFunctions,
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeCredentialTestResult,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	buildGetQuery,
-	buildOrQuery,
-	buildQuery,
-	supabaseApiRequest,
-	validateCredentials,
+    buildGetQuery,
+    buildOrQuery,
+    buildQuery,
+    supabaseApiRequest,
+    validateCredentials
 } from './GenericFunctions';
 
 import {
-	rowFields,
-	rowOperations,
+    rowFields,
+    rowOperations
 } from './RowDescription';
 
 export type FieldsUiValues = Array<{

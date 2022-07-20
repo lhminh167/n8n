@@ -1,7 +1,7 @@
 import {
-	ICredentialType,
-	INodeProperties,
-} from 'n8n-workflow';
+    ICredentialType,
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 const scopes = [
 	'https://www.googleapis.com/auth/admin.directory.group',

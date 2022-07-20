@@ -1,36 +1,34 @@
 import {
-	IHookFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IHookFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookResponseData,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookResponseData, NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	idsExist,
-	surveyMonkeyApiRequest,
-	surveyMonkeyRequestAllItems,
+    idsExist,
+    surveyMonkeyApiRequest,
+    surveyMonkeyRequestAllItems
 } from './GenericFunctions';
 
 import {
-	IAnswer,
-	IChoice,
-	IOther,
-	IQuestion,
-	IRow,
+    IAnswer,
+    IChoice,
+    IOther,
+    IQuestion,
+    IRow
 } from './Interfaces';
 
 import {
-	createHmac,
+    createHmac
 } from 'crypto';
 
 export class SurveyMonkeyTrigger implements INodeType {

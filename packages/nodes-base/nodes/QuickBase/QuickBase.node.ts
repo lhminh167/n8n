@@ -1,42 +1,42 @@
 /* eslint-disable n8n-nodes-base/node-filename-against-convention */
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	getFieldsObject,
-	quickbaseApiRequest,
-	quickbaseApiRequestAllItems,
+    getFieldsObject,
+    quickbaseApiRequest,
+    quickbaseApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	fieldFields,
-	fieldOperations,
+    fieldFields,
+    fieldOperations
 } from './FieldDescription';
 
 import {
-	fileFields,
-	fileOperations,
+    fileFields,
+    fileOperations
 } from './FileDescription';
 
 import {
-	recordFields,
-	recordOperations,
+    recordFields,
+    recordOperations
 } from './RecordDescription';
 
 import {
-	reportFields,
-	reportOperations,
+    reportFields,
+    reportOperations
 } from './ReportDescription';
 
 export class QuickBase implements INodeType {

@@ -1,14 +1,14 @@
 import {
-	IExecuteFunctions,
-	IExecuteSingleFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IExecuteSingleFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject, INodePropertyOptions, NodeApiError, NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject, INodePropertyOptions, NodeApiError, NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
-import {OptionsWithUri} from 'request';
+import { OptionsWithUri } from 'request';
 
 interface ScriptsOptions {
 	script?: any; //tslint:disable-line:no-any

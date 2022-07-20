@@ -2,12 +2,12 @@
 /* eslint-disable no-console */
 import { Command, flags } from '@oclif/command';
 
-import { IDataObject, LoggerProxy } from 'n8n-workflow';
+import { IDataObject, LoggerProxy } from '@lhminh167/n8n-workflow';
 
 import fs from 'fs';
 import path from 'path';
-import { getLogger } from '../../src/Logger';
 import { Db } from '../../src';
+import { getLogger } from '../../src/Logger';
 
 export class ExportWorkflowsCommand extends Command {
 	static description = 'Export workflows';

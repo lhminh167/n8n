@@ -1,43 +1,43 @@
 import {
-	IExecuteFunctions
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    ICredentialsDecrypted,
+    ICredentialTestFunctions,
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeCredentialTestResult,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	gristApiRequest,
-	parseAutoMappedInputs,
-	parseDefinedFields,
-	parseFilterProperties,
-	parseSortProperties,
-	throwOnZeroDefinedFields,
+    gristApiRequest,
+    parseAutoMappedInputs,
+    parseDefinedFields,
+    parseFilterProperties,
+    parseSortProperties,
+    throwOnZeroDefinedFields
 } from './GenericFunctions';
 
 import {
-	operationFields,
+    operationFields
 } from './OperationDescription';
 
 import {
-	FieldsToSend,
-	GristColumns,
-	GristCreateRowPayload,
-	GristCredentials,
-	GristGetAllOptions,
-	GristUpdateRowPayload,
-	SendingOptions,
+    FieldsToSend,
+    GristColumns,
+    GristCreateRowPayload,
+    GristCredentials,
+    GristGetAllOptions,
+    GristUpdateRowPayload,
+    SendingOptions
 } from './types';
 
 export class Grist implements INodeType {

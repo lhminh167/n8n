@@ -1,34 +1,34 @@
-import { IExecuteFunctions } from 'n8n-core';
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	listFields,
-	listOperations,
+    listFields,
+    listOperations
 } from './ListDescription';
 
 import {
-	contactFields,
-	contactOperations
+    contactFields,
+    contactOperations
 } from './ContactDescription';
 
 import {
-	mailFields,
-	mailOperations,
-	SendMailBody,
+    mailFields,
+    mailOperations,
+    SendMailBody
 } from './MailDescription';
 
 import {
-	sendGridApiRequest,
-	sendGridApiRequestAllItems,
+    sendGridApiRequest,
+    sendGridApiRequestAllItems
 } from './GenericFunctions';
 
 import moment from 'moment-timezone';

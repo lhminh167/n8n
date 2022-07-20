@@ -1,58 +1,34 @@
 import {
-	ERROR_TRIGGER_NODE_TYPE,
-	PLACEHOLDER_FILLED_AT_EXECUTION_TIME,
-	PLACEHOLDER_EMPTY_WORKFLOW_ID,
-	START_NODE_TYPE,
-	WEBHOOK_NODE_TYPE,
-	VIEWS,
+    ERROR_TRIGGER_NODE_TYPE, PLACEHOLDER_EMPTY_WORKFLOW_ID, PLACEHOLDER_FILLED_AT_EXECUTION_TIME, START_NODE_TYPE, VIEWS, WEBHOOK_NODE_TYPE
 } from '@/constants';
 
 import {
-	IConnections,
-	IDataObject,
-	INode,
-	INodeExecutionData,
-	INodeIssues,
-	INodeParameters,
-	NodeParameterValue,
-	INodeCredentials,
-	INodeType,
-	INodeTypes,
-	INodeTypeData,
-	INodeTypeDescription,
-	INodeVersionedType,
-	IRunData,
-	IRunExecutionData,
-	IWorfklowIssues,
-	IWorkflowDataProxyAdditionalKeys,
-	Workflow,
-	NodeHelpers,
-	IExecuteData,
-	INodeConnection,
-	IWebhookDescription,
-} from 'n8n-workflow';
+    IConnections,
+    IDataObject, IExecuteData, INode, INodeConnection, INodeCredentials, INodeExecutionData,
+    INodeIssues,
+    INodeParameters, INodeType, INodeTypeData,
+    INodeTypeDescription, INodeTypes, INodeVersionedType,
+    IRunData,
+    IRunExecutionData, IWebhookDescription, IWorfklowIssues,
+    IWorkflowDataProxyAdditionalKeys, NodeHelpers, NodeParameterValue, Workflow
+} from '@lhminh167/n8n-workflow';
 
 import {
-	IExecutionResponse,
-	INodeTypesMaxCount,
-	INodeUi,
-	IWorkflowData,
-	IWorkflowDb,
-	IWorkflowDataUpdate,
-	XYPosition,
-	ITag,
-	IUpdateInformation,
+    IExecutionResponse,
+    INodeTypesMaxCount,
+    INodeUi, ITag,
+    IUpdateInformation, IWorkflowData, IWorkflowDataUpdate, IWorkflowDb, XYPosition
 } from '../../Interface';
 
 import { externalHooks } from '@/components/mixins/externalHooks';
-import { restApi } from '@/components/mixins/restApi';
 import { nodeHelpers } from '@/components/mixins/nodeHelpers';
+import { restApi } from '@/components/mixins/restApi';
 import { showMessage } from '@/components/mixins/showMessage';
 
 import { isEqual } from 'lodash';
 
-import mixins from 'vue-typed-mixins';
 import { v4 as uuidv4 } from 'uuid';
+import mixins from 'vue-typed-mixins';
 
 export const workflowHelpers = mixins(
 	externalHooks,

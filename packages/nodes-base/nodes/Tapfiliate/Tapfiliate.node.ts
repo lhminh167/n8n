@@ -1,35 +1,35 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	affiliateFields,
-	affiliateOperations
+    affiliateFields,
+    affiliateOperations
 } from './AffiliateDescription';
 
 import {
-	affiliateMetadataFields,
-	affiliateMetadataOperations,
+    affiliateMetadataFields,
+    affiliateMetadataOperations
 } from './AffiliateMetadataDescription';
 
 import {
-	programAffiliateFields,
-	programAffiliateOperations,
+    programAffiliateFields,
+    programAffiliateOperations
 } from './ProgramAffiliateDescription';
 
 import {
-	tapfiliateApiRequest,
-	tapfiliateApiRequestAllItems,
+    tapfiliateApiRequest,
+    tapfiliateApiRequestAllItems
 } from './GenericFunctions';
 
 export class Tapfiliate implements INodeType {

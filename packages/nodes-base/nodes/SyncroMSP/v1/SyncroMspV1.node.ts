@@ -1,20 +1,20 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialDataDecryptedObject,
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	INodeCredentialTestResult,
-	INodeType,
-	INodeTypeBaseDescription,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    ICredentialDataDecryptedObject,
+    ICredentialsDecrypted,
+    ICredentialTestFunctions,
+    INodeCredentialTestResult,
+    INodeType,
+    INodeTypeBaseDescription,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
+import { router } from './actions/router';
 import { versionDescription } from './actions/versionDescription';
 import { loadOptions } from './methods';
-import { router } from './actions/router';
 import { validateCredentials } from './transport';
 
 export class SyncroMspV1 implements INodeType {

@@ -1,10 +1,9 @@
-import { IDataObject } from 'n8n-workflow';
 import {
-	IExecuteSingleFunctions,
-	IN8nHttpFullResponse,
-	INodeExecutionData,
-	INodeProperties,
-} from 'n8n-workflow';
+    IDataObject, IExecuteSingleFunctions,
+    IN8nHttpFullResponse,
+    INodeExecutionData,
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 export const campaignOperations: INodeProperties[] = [
 	{

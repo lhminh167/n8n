@@ -1,32 +1,29 @@
-import {
-	parse as urlParse,
-} from 'url';
 
 import {
-	IHookFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IHookFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookResponseData,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookResponseData,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	zendeskApiRequest,
-	zendeskApiRequestAllItems,
+    conditionFields
+} from './ConditionDescription';
+import {
+    zendeskApiRequest,
+    zendeskApiRequestAllItems
 } from './GenericFunctions';
-import {
-	conditionFields,
- } from './ConditionDescription';
 
 import {
-	triggerPlaceholders
+    triggerPlaceholders
 } from './TriggerPlaceholders';
 
 export class ZendeskTrigger implements INodeType {

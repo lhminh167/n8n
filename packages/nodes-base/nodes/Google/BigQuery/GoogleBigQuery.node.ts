@@ -1,26 +1,26 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeApiError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	googleApiRequest,
-	googleApiRequestAllItems,
-	simplify,
+    googleApiRequest,
+    googleApiRequestAllItems,
+    simplify
 } from './GenericFunctions';
 
 import {
-	recordFields,
-	recordOperations,
+    recordFields,
+    recordOperations
 } from './RecordDescription';
 
 import { v4 as uuid } from 'uuid';

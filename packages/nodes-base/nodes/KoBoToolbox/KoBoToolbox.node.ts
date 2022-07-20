@@ -1,39 +1,34 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	JsonObject,
-} from 'n8n-workflow';
+    IDataObject, INodeExecutionData,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	downloadAttachments,
-	formatSubmission,
-	koBoToolboxApiRequest,
-	loadForms,
-	parseStringList,
+    downloadAttachments,
+    formatSubmission,
+    koBoToolboxApiRequest,
+    loadForms,
+    parseStringList
 } from './GenericFunctions';
 
 import {
-	formFields,
-	formOperations
+    formFields,
+    formOperations
 } from './FormDescription';
 
 import {
-	submissionFields,
-	submissionOperations,
+    submissionFields,
+    submissionOperations
 } from './SubmissionDescription';
 
 import {
-	hookFields,
-	hookOperations,
+    hookFields,
+    hookOperations
 } from './HookDescription';
 
 export class KoBoToolbox implements INodeType {

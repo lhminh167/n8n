@@ -1,67 +1,67 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	clockifyApiRequest,
-	clockifyApiRequestAllItems,
+    clockifyApiRequest,
+    clockifyApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	IClientDto,
-	IWorkspaceDto,
+    IClientDto,
+    IWorkspaceDto
 } from './WorkpaceInterfaces';
 
 import {
-	IUserDto,
+    IUserDto
 } from './UserDtos';
 
 import {
-	IProjectDto,
+    IProjectDto
 } from './ProjectInterfaces';
 
 import {
-	clientFields,
-	clientOperations,
+    clientFields,
+    clientOperations
 } from './ClientDescription';
 
 import {
-	projectFields,
-	projectOperations,
+    projectFields,
+    projectOperations
 } from './ProjectDescription';
 
 import {
-	tagFields,
-	tagOperations,
+    tagFields,
+    tagOperations
 } from './TagDescription';
 
 import {
-	taskFields,
-	taskOperations,
+    taskFields,
+    taskOperations
 } from './TaskDescription';
 
 import {
-	timeEntryFields,
-	timeEntryOperations,
+    timeEntryFields,
+    timeEntryOperations
 } from './TimeEntryDescription';
 
 import {
-	userFields,
-	userOperations,
+    userFields,
+    userOperations
 } from './UserDescription';
 
 import {
-	workspaceFields,
-	workspaceOperations,
+    workspaceFields,
+    workspaceOperations
 } from './WorkspaceDescription';
 
 import moment from 'moment-timezone';

@@ -1,28 +1,28 @@
-import { ITriggerFunctions } from 'n8n-core';
+import { ITriggerFunctions } from '@lhminh167/n8n-core';
 import {
-	createDeferredPromise,
-	IBinaryData,
-	IBinaryKeyData,
-	IDataObject,
-	IDeferredPromise,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	ITriggerResponse,
-	LoggerProxy as Logger,
-	NodeOperationError,
-} from 'n8n-workflow';
+    createDeferredPromise,
+    IBinaryData,
+    IBinaryKeyData,
+    IDataObject,
+    IDeferredPromise,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    ITriggerResponse,
+    LoggerProxy as Logger,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	connect as imapConnect,
-	getParts,
-	ImapSimple,
-	ImapSimpleOptions,
-	Message,
+    connect as imapConnect,
+    getParts,
+    ImapSimple,
+    ImapSimpleOptions,
+    Message
 } from 'imap-simple';
 import {
-	simpleParser,
-	Source as ParserSource,
+    simpleParser,
+    Source as ParserSource
 } from 'mailparser';
 
 import _ from 'lodash';

@@ -18,7 +18,7 @@
 <script lang="ts">
 import { WEBHOOK_NODE_TYPE } from '@/constants';
 import { INodeUi } from '@/Interface';
-import { INodeTypeDescription } from 'n8n-workflow';
+import { INodeTypeDescription } from '@lhminh167/n8n-workflow';
 import mixins from 'vue-typed-mixins';
 import { workflowRun } from './mixins/workflowRun';
 

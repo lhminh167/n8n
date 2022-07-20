@@ -7,20 +7,20 @@
 /* eslint-disable no-console */
 import { Command, flags } from '@oclif/command';
 
-import { Credentials, UserSettings } from 'n8n-core';
+import { Credentials, UserSettings } from '@lhminh167/n8n-core';
 
-import { LoggerProxy } from 'n8n-workflow';
+import { LoggerProxy } from '@lhminh167/n8n-workflow';
 
-import fs from 'fs';
 import glob from 'fast-glob';
+import fs from 'fs';
 import path from 'path';
 import { EntityManager, getConnection } from 'typeorm';
-import { getLogger } from '../../src/Logger';
 import { Db } from '../../src';
-import { User } from '../../src/databases/entities/User';
-import { SharedCredentials } from '../../src/databases/entities/SharedCredentials';
-import { Role } from '../../src/databases/entities/Role';
 import { CredentialsEntity } from '../../src/databases/entities/CredentialsEntity';
+import { Role } from '../../src/databases/entities/Role';
+import { SharedCredentials } from '../../src/databases/entities/SharedCredentials';
+import { User } from '../../src/databases/entities/User';
+import { getLogger } from '../../src/Logger';
 
 const FIX_INSTRUCTION =
 	'Please fix the database by running ./packages/cli/bin/n8n user-management:reset';

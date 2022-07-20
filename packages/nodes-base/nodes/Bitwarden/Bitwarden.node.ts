@@ -1,51 +1,51 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	bitwardenApiRequest as tokenlessBitwardenApiRequest,
-	getAccessToken,
-	handleGetAll as tokenlessHandleGetAll,
-	loadResource,
+    bitwardenApiRequest as tokenlessBitwardenApiRequest,
+    getAccessToken,
+    handleGetAll as tokenlessHandleGetAll,
+    loadResource
 } from './GenericFunctions';
 
 import {
-	collectionFields,
-	collectionOperations,
-	CollectionUpdateFields,
+    collectionFields,
+    collectionOperations,
+    CollectionUpdateFields
 } from './descriptions/CollectionDescription';
 
 import {
-	eventFields,
-	eventOperations,
+    eventFields,
+    eventOperations
 } from './descriptions/EventDescription';
 
 import {
-	GroupCreationAdditionalFields,
-	groupFields,
-	groupOperations,
-	GroupUpdateFields,
+    GroupCreationAdditionalFields,
+    groupFields,
+    groupOperations,
+    GroupUpdateFields
 } from './descriptions/GroupDescription';
 
 import {
-	MemberCreationAdditionalFields,
-	memberFields,
-	memberOperations,
-	MemberUpdateFields,
+    MemberCreationAdditionalFields,
+    memberFields,
+    memberOperations,
+    MemberUpdateFields
 } from './descriptions/MemberDescription';
 
 import {
-	isEmpty,
-	partialRight,
+    isEmpty,
+    partialRight
 } from 'lodash';
 
 export class Bitwarden implements INodeType {

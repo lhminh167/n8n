@@ -3,9 +3,9 @@ import { ElNotificationComponent, ElNotificationOptions } from 'element-ui/types
 import mixins from 'vue-typed-mixins';
 
 import { externalHooks } from '@/components/mixins/externalHooks';
-import { ExecutionError } from 'n8n-workflow';
+import { ExecutionError } from '@lhminh167/n8n-workflow';
+import { ElMessageComponent, ElMessageOptions, MessageType } from 'element-ui/types/message';
 import { ElMessageBoxOptions } from 'element-ui/types/message-box';
-import { ElMessage, ElMessageComponent, ElMessageOptions, MessageType } from 'element-ui/types/message';
 import { isChildOf } from './helpers';
 
 let stickyNotificationQueue: ElNotificationComponent[] = [];

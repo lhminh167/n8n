@@ -1,12 +1,12 @@
 import { ICredentialsDecryptedResponse, ICredentialsResponse, IRestApiContext } from '@/Interface';
-import { makeRestApiRequest } from './helpers';
 import {
-	ICredentialsDecrypted,
-	ICredentialType,
-	IDataObject,
-	INodeCredentialTestRequest,
-	INodeCredentialTestResult,
-} from 'n8n-workflow';
+    ICredentialsDecrypted,
+    ICredentialType,
+    IDataObject,
+    INodeCredentialTestRequest,
+    INodeCredentialTestResult
+} from '@lhminh167/n8n-workflow';
+import { makeRestApiRequest } from './helpers';
 
 export async function getCredentialTypes(context: IRestApiContext): Promise<ICredentialType[]> {
 	return await makeRestApiRequest(context, 'GET', '/credential-types');

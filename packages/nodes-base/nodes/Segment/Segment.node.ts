@@ -1,40 +1,40 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	segmentApiRequest,
+    segmentApiRequest
 } from './GenericFunctions';
 
 import {
-	groupFields,
-	groupOperations,
+    groupFields,
+    groupOperations
 } from './GroupDescription';
 
 import {
-	identifyFields,
-	identifyOperations,
+    identifyFields,
+    identifyOperations
 } from './IdentifyDescription';
 
 import {
-	IIdentify,
+    IIdentify
 } from './IdentifyInterface';
 
 import {
-	trackFields,
-	trackOperations,
+    trackFields,
+    trackOperations
 } from './TrackDescription';
 
 import {
-	IGroup,
-	ITrack,
+    IGroup,
+    ITrack
 } from './TrackInterface';
 
 import { v4 as uuid } from 'uuid';

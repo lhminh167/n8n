@@ -1,29 +1,29 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodeParameters,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodeParameters,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeApiError,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	URL,
+    URL
 } from 'url';
 
 import {
-	awsApiRequestSOAP,
+    awsApiRequestSOAP
 } from '../GenericFunctions';
 
 import {
-	pascalCase,
+    pascalCase
 } from 'change-case';
 
 export class AwsSqs implements INodeType {

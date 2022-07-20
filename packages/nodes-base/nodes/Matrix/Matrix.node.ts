@@ -1,48 +1,48 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	handleMatrixCall,
-	matrixApiRequest,
+    handleMatrixCall,
+    matrixApiRequest
 } from './GenericFunctions';
 
 import {
-	accountOperations
+    accountOperations
 } from './AccountDescription';
 
 import {
-	eventFields,
-	eventOperations,
+    eventFields,
+    eventOperations
 } from './EventDescription';
 
 import {
-	mediaFields,
-	mediaOperations,
+    mediaFields,
+    mediaOperations
 } from './MediaDescription';
 
 import {
-	messageFields,
-	messageOperations,
+    messageFields,
+    messageOperations
 } from './MessageDescription';
 
 import {
-	roomFields,
-	roomOperations,
+    roomFields,
+    roomOperations
 } from './RoomDescription';
 
 import {
-	roomMemberFields,
-	roomMemberOperations,
+    roomMemberFields,
+    roomMemberOperations
 } from './RoomMemberDescription';
 
 export class Matrix implements INodeType {

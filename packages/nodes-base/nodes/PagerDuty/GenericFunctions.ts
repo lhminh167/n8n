@@ -1,22 +1,21 @@
 import {
-	OptionsWithUri,
- } from 'request';
+    OptionsWithUri
+} from 'request';
 
 import {
-	IExecuteFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	IHookFunctions,
-	IWebhookFunctions,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    IHookFunctions,
+    IWebhookFunctions,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	snakeCase,
+    snakeCase
 } from 'change-case';
 
 export async function pagerDutyApiRequest(this: IExecuteFunctions | IWebhookFunctions | IHookFunctions | ILoadOptionsFunctions, method: string, resource: string, body: any = {}, query: IDataObject = {}, uri?: string, headers: IDataObject = {}): Promise<any> { // tslint:disable-line:no-any

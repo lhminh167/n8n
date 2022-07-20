@@ -1,75 +1,75 @@
 import {
-	IExecuteFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IBinaryData,
-	IDataObject,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	JsonObject,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IBinaryData,
+    IDataObject,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    JsonObject,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	mapEndpoint,
-	serviceNowApiRequest,
-	serviceNowDownloadAttachment,
-	serviceNowRequestAllItems,
-	sortData
+    mapEndpoint,
+    serviceNowApiRequest,
+    serviceNowDownloadAttachment,
+    serviceNowRequestAllItems,
+    sortData
 } from './GenericFunctions';
 
 import {
-	attachmentFields,
-	attachmentOperations,
+    attachmentFields,
+    attachmentOperations
 } from './AttachmentDescription';
 
 import {
-	businessServiceFields,
-	businessServiceOperations,
+    businessServiceFields,
+    businessServiceOperations
 } from './BusinessServiceDescription';
 
 import {
-	configurationItemsFields,
-	configurationItemsOperations,
+    configurationItemsFields,
+    configurationItemsOperations
 } from './ConfigurationItemsDescription';
 
 import {
-	departmentFields,
-	departmentOperations,
+    departmentFields,
+    departmentOperations
 } from './DepartmentDescription';
 
 import {
-	dictionaryFields,
-	dictionaryOperations,
+    dictionaryFields,
+    dictionaryOperations
 } from './DictionaryDescription';
 
 import {
-	incidentFields,
-	incidentOperations,
+    incidentFields,
+    incidentOperations
 } from './IncidentDescription';
 
 import {
-	tableRecordFields,
-	tableRecordOperations,
+    tableRecordFields,
+    tableRecordOperations
 } from './TableRecordDescription';
 
 import {
-	userFields,
-	userOperations,
+    userFields,
+    userOperations
 } from './UserDescription';
 
 import {
-	userGroupFields,
-	userGroupOperations,
+    userGroupFields,
+    userGroupOperations
 } from './UserGroupDescription';
 
 import {
-	userRoleFields,
-	userRoleOperations,
+    userRoleFields,
+    userRoleOperations
 } from './UserRoleDescription';
 
 export class ServiceNow implements INodeType {

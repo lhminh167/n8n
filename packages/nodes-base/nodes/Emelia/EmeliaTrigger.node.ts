@@ -1,17 +1,17 @@
 import {
-	IHookFunctions,
-	ILoadOptionsFunctions,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookFunctions,
-	IWebhookResponseData,
-} from 'n8n-workflow';
+    IHookFunctions,
+    ILoadOptionsFunctions,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookFunctions,
+    IWebhookResponseData
+} from '@lhminh167/n8n-workflow';
 
 import {
-	emeliaApiRequest,
-	emeliaApiTest,
-	emeliaGraphqlRequest,
+    emeliaApiRequest,
+    emeliaApiTest,
+    emeliaGraphqlRequest
 } from './GenericFunctions';
 
 interface Campaign {

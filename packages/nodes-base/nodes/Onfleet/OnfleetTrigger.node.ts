@@ -1,27 +1,27 @@
 import {
-	IDataObject,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookResponseData,
-	NodeApiError,
-	NodeOperationError
-} from 'n8n-workflow';
+    IHookFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 import {
-	IHookFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IDataObject,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookResponseData,
+    NodeApiError,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	eventDisplay,
-	eventNameField,
+    eventDisplay,
+    eventNameField
 } from './descriptions/OnfleetWebhookDescription';
 
 import {
-	onfleetApiRequest,
+    onfleetApiRequest
 } from './GenericFunctions';
 
 import {
-	webhookMapping,
+    webhookMapping
 } from './WebhookMapping';
 
 

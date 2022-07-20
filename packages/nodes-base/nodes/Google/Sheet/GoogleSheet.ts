@@ -1,18 +1,18 @@
 import {
-	IDataObject, NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject, NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	IExecuteFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	googleApiRequest,
+    googleApiRequest
 } from './GenericFunctions';
 
 import {
-	utils as xlsxUtils,
+    utils as xlsxUtils
 } from 'xlsx';
 
 import { get } from 'lodash';

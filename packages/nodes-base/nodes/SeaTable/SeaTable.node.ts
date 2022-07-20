@@ -1,43 +1,43 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	getTableColumns,
-	getTableViews,
-	rowExport,
-	rowFormatColumns,
-	rowMapKeyToName,
-	seaTableApiRequest,
-	setableApiRequestAllItems,
-	split,
-	updateAble,
+    getTableColumns,
+    getTableViews,
+    rowExport,
+    rowFormatColumns,
+    rowMapKeyToName,
+    seaTableApiRequest,
+    setableApiRequestAllItems,
+    split,
+    updateAble
 } from './GenericFunctions';
 
 import {
-	rowFields,
-	rowOperations,
+    rowFields,
+    rowOperations
 } from './RowDescription';
 
 import {
-	TColumnsUiValues,
-	TColumnValue,
+    TColumnsUiValues,
+    TColumnValue
 } from './types';
 
 import {
-	ICtx,
-	IRow,
-	IRowObject,
+    ICtx,
+    IRow,
+    IRowObject
 } from './Interfaces';
 
 export class SeaTable implements INodeType {

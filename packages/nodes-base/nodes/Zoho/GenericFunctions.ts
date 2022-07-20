@@ -1,38 +1,38 @@
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	IExecuteFunctions,
-	IHookFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IHookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    NodeApiError,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	flow,
-	sortBy,
+    flow,
+    sortBy
 } from 'lodash';
 
 import {
-	AllFields,
-	CamelCaseResource,
-	DateType,
-	GetAllFilterOptions,
-	IdType,
-	LoadedFields,
-	LoadedLayouts,
-	LocationType,
-	NameType,
-	ProductDetails,
-	ResourceItems,
-	SnakeCaseResource,
-	ZohoOAuth2ApiCredentials,
+    AllFields,
+    CamelCaseResource,
+    DateType,
+    GetAllFilterOptions,
+    IdType,
+    LoadedFields,
+    LoadedLayouts,
+    LocationType,
+    NameType,
+    ProductDetails,
+    ResourceItems,
+    SnakeCaseResource,
+    ZohoOAuth2ApiCredentials
 } from './types';
 
 export async function zohoApiRequest(

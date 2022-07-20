@@ -2,43 +2,39 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-import { PLACEHOLDER_EMPTY_WORKFLOW_ID, DEFAULT_NODETYPE_VERSION } from '@/constants';
+import { DEFAULT_NODETYPE_VERSION, PLACEHOLDER_EMPTY_WORKFLOW_ID } from '@/constants';
 
 import {
-	IConnection,
-	IConnections,
-	IDataObject,
-	INodeConnections,
-	INodeIssueData,
-	INodeTypeDescription,
-	IRunData,
-	ITaskData,
-	IWorkflowSettings,
-} from 'n8n-workflow';
+    IConnection,
+    IConnections,
+    IDataObject,
+    INodeConnections,
+    INodeIssueData,
+    INodeTypeDescription,
+    IRunData,
+    ITaskData,
+    IWorkflowSettings
+} from '@lhminh167/n8n-workflow';
 
 import {
-	IExecutionResponse,
-	IExecutionsCurrentSummaryExtended,
-	IRootState,
-	IMenuItem,
-	INodeUi,
-	INodeUpdatePropertiesInformation,
-	IPushDataExecutionFinished,
-	IPushDataNodeExecuteAfter,
-	IUpdateInformation,
-	IWorkflowDb,
-	XYPosition,
-	IRestApiContext,
+    IExecutionResponse,
+    IExecutionsCurrentSummaryExtended, IMenuItem,
+    INodeUi,
+    INodeUpdatePropertiesInformation,
+    IPushDataExecutionFinished,
+    IPushDataNodeExecuteAfter, IRestApiContext, IRootState, IUpdateInformation,
+    IWorkflowDb,
+    XYPosition
 } from './Interface';
 
 import credentials from './modules/credentials';
 import settings from './modules/settings';
 import tags from './modules/tags';
+import templates from './modules/templates';
 import ui from './modules/ui';
 import users from './modules/users';
-import workflows from './modules/workflows';
 import versions from './modules/versions';
-import templates from './modules/templates';
+import workflows from './modules/workflows';
 
 Vue.use(Vuex);
 

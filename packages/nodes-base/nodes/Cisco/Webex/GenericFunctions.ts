@@ -1,27 +1,27 @@
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	IExecuteFunctions,
-	IHookFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IHookFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialDataDecryptedObject,
-	IDataObject,
-	INodeProperties,
-	IWebhookFunctions,
-	NodeApiError,
-} from 'n8n-workflow';
+    ICredentialDataDecryptedObject,
+    IDataObject,
+    INodeProperties,
+    IWebhookFunctions,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	upperFirst,
+    upperFirst
 } from 'lodash';
 
 import {
-	createHash,
+    createHash
 } from 'crypto';
 
 export async function webexApiRequest(this: IExecuteFunctions | ILoadOptionsFunctions | IHookFunctions | IWebhookFunctions, method: string, resource: string, body: any = {}, qs: IDataObject = {}, uri?: string, option: IDataObject = {}): Promise<any> { // tslint:disable-line:no-any

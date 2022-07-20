@@ -1,14 +1,14 @@
 import {
-	INodeProperties,
-} from 'n8n-workflow';
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 import {
-	isoCountryCodes,
+    isoCountryCodes
 } from '../utils/isoCountryCodes';
 
 import {
-	addressFixedCollection,
-	phoneNumbersFixedCollection,
+    addressFixedCollection,
+    phoneNumbersFixedCollection
 } from '../utils/sharedFields';
 
 export const companyOperations: INodeProperties[] = [

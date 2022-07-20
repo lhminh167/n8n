@@ -25,7 +25,7 @@ import {
 	IWorkflowDataProxyAdditionalKeys,
 	Workflow,
 	WorkflowDataProxy,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 
 import VariableSelectorItem from '@/components/VariableSelectorItem.vue';
 import {

@@ -1,48 +1,48 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    ICredentialsDecrypted,
+    ICredentialTestFunctions,
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeCredentialTestResult,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	groupDescription,
-	organizationDescription,
-	ticketDescription,
-	userDescription,
+    groupDescription,
+    organizationDescription,
+    ticketDescription,
+    userDescription
 } from './descriptions';
 
 import {
-	doesNotBelongToZammad,
-	fieldToLoadOption,
-	getAllFields,
-	getGroupCustomFields,
-	getGroupFields,
-	getOrganizationCustomFields,
-	getOrganizationFields,
-	getTicketCustomFields,
-	getTicketFields,
-	getUserCustomFields,
-	getUserFields,
-	isCustomer,
-	isNotZammadFoundation,
-	throwOnEmptyUpdate,
-	tolerateTrailingSlash,
-	zammadApiRequest,
-	zammadApiRequestAllItems,
+    doesNotBelongToZammad,
+    fieldToLoadOption,
+    getAllFields,
+    getGroupCustomFields,
+    getGroupFields,
+    getOrganizationCustomFields,
+    getOrganizationFields,
+    getTicketCustomFields,
+    getTicketFields,
+    getUserCustomFields,
+    getUserFields,
+    isCustomer,
+    isNotZammadFoundation,
+    throwOnEmptyUpdate,
+    tolerateTrailingSlash,
+    zammadApiRequest,
+    zammadApiRequestAllItems
 } from './GenericFunctions';
 
 import type { Zammad as ZammadTypes } from './types';

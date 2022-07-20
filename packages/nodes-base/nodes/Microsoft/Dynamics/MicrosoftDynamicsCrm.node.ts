@@ -1,29 +1,29 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	adjustAddresses,
-	getEntityFields,
-	getPicklistOptions,
-	IField,
-	microsoftApiRequest,
-	microsoftApiRequestAllItems,
-	sort,
+    adjustAddresses,
+    getEntityFields,
+    getPicklistOptions,
+    IField,
+    microsoftApiRequest,
+    microsoftApiRequestAllItems,
+    sort
 } from './GenericFunctions';
 
 import {
-	accountFields,
-	accountOperations,
+    accountFields,
+    accountOperations
 } from './descriptions';
 
 export class MicrosoftDynamicsCrm implements INodeType {

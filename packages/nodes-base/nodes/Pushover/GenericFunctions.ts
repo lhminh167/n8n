@@ -1,16 +1,13 @@
-import {
-	OptionsWithUri,
-} from 'request';
 
 import {
-	IExecuteFunctions,
-	IExecuteSingleFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IExecuteSingleFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject, IHttpRequestMethods, IHttpRequestOptions, NodeApiError,
-} from 'n8n-workflow';
+    IDataObject, IHttpRequestMethods, IHttpRequestOptions, NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 export async function pushoverApiRequest(this: IExecuteFunctions | IExecuteSingleFunctions | ILoadOptionsFunctions, method: IHttpRequestMethods, path: string, body: any = {}, qs: IDataObject = {}, option = {}): Promise<any> { // tslint:disable-line:no-any
 

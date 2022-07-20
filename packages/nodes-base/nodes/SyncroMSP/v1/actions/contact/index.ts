@@ -1,18 +1,18 @@
 
-import * as getAll from './getAll';
 import * as create from './create';
-import * as get from './get';
-import * as update from './update';
 import * as del from './del';
+import * as get from './get';
+import * as getAll from './getAll';
+import * as update from './update';
 
-import { INodeProperties } from 'n8n-workflow';
+import { INodeProperties } from '@lhminh167/n8n-workflow';
 
 export {
-	getAll,
-	create,
-	del as delete,
-	update,
-	get,
+    getAll,
+    create,
+    del as delete,
+    update,
+    get,
 };
 
 

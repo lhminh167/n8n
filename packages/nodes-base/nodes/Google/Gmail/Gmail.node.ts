@@ -1,47 +1,47 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IBinaryKeyData,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IBinaryKeyData,
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	encodeEmail,
-	extractEmail,
-	googleApiRequest,
-	googleApiRequestAllItems,
-	parseRawEmail,
+    encodeEmail,
+    extractEmail,
+    googleApiRequest,
+    googleApiRequestAllItems,
+    parseRawEmail
 } from './GenericFunctions';
 
 import {
-	messageFields,
-	messageOperations,
+    messageFields,
+    messageOperations
 } from './MessageDescription';
 
 import {
-	messageLabelFields,
-	messageLabelOperations,
+    messageLabelFields,
+    messageLabelOperations
 } from './MessageLabelDescription';
 
 import {
-	labelFields,
-	labelOperations,
+    labelFields,
+    labelOperations
 } from './LabelDescription';
 
 import {
-	draftFields,
-	draftOperations,
+    draftFields,
+    draftOperations
 } from './DraftDescription';
 
 import {
-	isEmpty,
+    isEmpty
 } from 'lodash';
 
 export interface IEmail {

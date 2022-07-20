@@ -1,24 +1,24 @@
 import { OptionsWithUri } from 'request';
 
 import {
-	IExecuteFunctions,
-	IExecuteSingleFunctions,
-	IHookFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IExecuteSingleFunctions,
+    IHookFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	NodeApiError,
-} from 'n8n-workflow';
+    IDataObject,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	IContactUpdate,
+    IContactUpdate
 } from './ContactInterface';
 
 import {
-	IFilterRules,
-	ISearchConditions,
+    IFilterRules,
+    ISearchConditions
 } from './FilterInterface';
 
 export async function agileCrmApiRequest(this: IHookFunctions | IExecuteFunctions | IExecuteSingleFunctions | ILoadOptionsFunctions,

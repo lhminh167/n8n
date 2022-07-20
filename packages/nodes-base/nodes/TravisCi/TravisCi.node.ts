@@ -1,22 +1,22 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	buildFields,
-	buildOperations,
+    buildFields,
+    buildOperations
 } from './BuildDescription';
 
 import {
-	travisciApiRequest,
-	travisciApiRequestAllItems,
+    travisciApiRequest,
+    travisciApiRequestAllItems
 } from './GenericFunctions';
 
 export class TravisCi implements INodeType {

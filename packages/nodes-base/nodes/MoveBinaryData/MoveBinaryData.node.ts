@@ -1,23 +1,23 @@
 import {
-	get,
-	set,
-	unset,
+    get,
+    set,
+    unset
 } from 'lodash';
 
 import {
-	BINARY_ENCODING,
-} from 'n8n-core';
+    BINARY_ENCODING
+} from '@lhminh167/n8n-core';
 
-import { IExecuteFunctions } from 'n8n-core';
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
 import {
-	IBinaryData,
-	IDataObject,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IBinaryData,
+    IDataObject,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import iconv from 'iconv-lite';
 iconv.encodingExists('utf8');

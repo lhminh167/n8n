@@ -1,21 +1,21 @@
 import {
-	IHookFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IHookFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookResponseData,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookResponseData
+} from '@lhminh167/n8n-workflow';
 
 import {
-	autopilotApiRequest,
+    autopilotApiRequest
 } from './GenericFunctions';
 
 import {
-	snakeCase,
+    snakeCase
 } from 'change-case';
 
 export class AutopilotTrigger implements INodeType {

@@ -1,10 +1,9 @@
-import _Vue from "vue";
-import {
-	ITelemetrySettings,
-	ITelemetryTrackProperties,
-	IDataObject,
-} from 'n8n-workflow';
 import { ILogLevel, INodeCreateElement, IRootState } from "@/Interface";
+import {
+    IDataObject, ITelemetrySettings,
+    ITelemetryTrackProperties
+} from '@lhminh167/n8n-workflow';
+import _Vue from "vue";
 import { Route } from "vue-router";
 import { Store } from "vuex";
 

@@ -1,54 +1,54 @@
 import {
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    ICredentialsDecrypted,
+    ICredentialTestFunctions,
+    IDataObject,
+    INodeCredentialTestResult,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	taskFields,
-	taskOperations,
+    taskFields,
+    taskOperations
 } from './descriptions/TaskDescription';
 
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	destinationFields,
-	destinationOperations,
+    destinationFields,
+    destinationOperations
 } from './descriptions/DestinationDescription';
 
 import {
-	resourceLoaders,
+    resourceLoaders
 } from './GenericFunctions';
 
 import {
-	recipientFields,
-	recipientOperations,
+    recipientFields,
+    recipientOperations
 } from './descriptions/RecipientDescription';
 
 import {
-	organizationFields,
-	organizationOperations,
+    organizationFields,
+    organizationOperations
 } from './descriptions/OrganizationDescription';
 
 import {
-	adminFields,
-	adminOperations,
+    adminFields,
+    adminOperations
 } from './descriptions/AdministratorDescription';
 
 import {
-	hubFields,
-	hubOperations,
+    hubFields,
+    hubOperations
 } from './descriptions/HubDescription';
 
 import {
-	workerFields,
-	workerOperations,
+    workerFields,
+    workerOperations
 } from './descriptions/WorkerDescription';
 
 // import {
@@ -57,17 +57,17 @@ import {
 // } from './descriptions/WebhookDescription';
 
 import {
-	containerFields,
-	containerOperations,
+    containerFields,
+    containerOperations
 } from './descriptions/ContainerDescription';
 
 import {
-	teamFields,
-	teamOperations,
+    teamFields,
+    teamOperations
 } from './descriptions/TeamDescription';
 
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import { Onfleet as OnfleetMethods } from './Onfleet';

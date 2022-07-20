@@ -1,23 +1,23 @@
 import {
-	Kafka as apacheKafka,
-	KafkaConfig,
-	logLevel,
-	SASLOptions,
+    Kafka as apacheKafka,
+    KafkaConfig,
+    logLevel,
+    SASLOptions
 } from 'kafkajs';
 
 import { SchemaRegistry } from '@kafkajs/confluent-schema-registry';
 
 import {
-	ITriggerFunctions,
-} from 'n8n-core';
+    ITriggerFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeType,
-	INodeTypeDescription,
-	ITriggerResponse,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeType,
+    INodeTypeDescription,
+    ITriggerResponse,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 export class KafkaTrigger implements INodeType {
 	description: INodeTypeDescription = {

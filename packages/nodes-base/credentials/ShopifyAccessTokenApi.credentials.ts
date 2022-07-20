@@ -3,7 +3,7 @@ import {
 	ICredentialTestRequest,
 	ICredentialType,
 	INodeProperties,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 
 export class ShopifyAccessTokenApi implements ICredentialType {
 	name = 'shopifyAccessTokenApi';
@@ -43,7 +43,7 @@ export class ShopifyAccessTokenApi implements ICredentialType {
 		},
 	};
 	test: ICredentialTestRequest = {
-	request: {
+		request: {
 			baseURL: '=https://{{$credentials?.shopSubdomain}}.myshopify.com/admin/api/2019-10',
 			url: '/products.json',
 		},

@@ -15,7 +15,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable func-names */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import { BinaryDataManager, UserSettings, WorkflowExecute } from 'n8n-core';
+import { BinaryDataManager, UserSettings, WorkflowExecute } from '@lhminh167/n8n-core';
 
 import {
 	IDataObject,
@@ -34,11 +34,10 @@ import {
 	Workflow,
 	WorkflowExecuteMode,
 	WorkflowHooks,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 
 import { LessThanOrEqual } from 'typeorm';
 import { DateUtils } from 'typeorm/util/DateUtils';
-import config from '../config';
 import {
 	ActiveExecutions,
 	CredentialsHelper,
@@ -58,13 +57,14 @@ import {
 	WebhookHelpers,
 	WorkflowHelpers,
 } from '.';
+import config from '../config';
+import { IWorkflowErrorData } from './Interfaces';
 import {
 	checkPermissionsForExecution,
 	getUserById,
 	getWorkflowOwner,
 } from './UserManagement/UserManagementHelper';
 import { whereClause } from './WorkflowHelpers';
-import { IWorkflowErrorData } from './Interfaces';
 
 const ERROR_TRIGGER_TYPE = config.getEnv('nodes.errorTriggerType');
 

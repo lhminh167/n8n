@@ -85,7 +85,7 @@ import {
 	INodeTypeDescription,
 	ITaskData,
 	NodeHelpers,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 
 import NodeIcon from '@/components/NodeIcon.vue';
 

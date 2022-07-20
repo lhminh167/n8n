@@ -2,7 +2,7 @@
 /* eslint-disable import/no-cycle */
 import { Length } from 'class-validator';
 
-import { IConnections, IDataObject, INode, IWorkflowSettings } from 'n8n-workflow';
+import { IConnections, IDataObject, INode, IWorkflowSettings } from '@lhminh167/n8n-workflow';
 
 import {
 	BeforeUpdate,
@@ -18,11 +18,11 @@ import {
 	UpdateDateColumn,
 } from 'typeorm';
 
-import * as config from '../../../config';
 import { DatabaseType, IWorkflowDb } from '../..';
-import { TagEntity } from './TagEntity';
-import { SharedWorkflow } from './SharedWorkflow';
+import * as config from '../../../config';
 import { objectRetriever } from '../utils/transformers';
+import { SharedWorkflow } from './SharedWorkflow';
+import { TagEntity } from './TagEntity';
 
 function resolveDataType(dataType: string) {
 	const dbType = config.getEnv('database.type');

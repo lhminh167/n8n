@@ -1,11 +1,11 @@
 import {
-	INodeProperties,
-} from 'n8n-workflow';
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 import {
-	addressFixedCollection,
-	emailsFixedCollection,
-	phoneNumbersFixedCollection,
+    addressFixedCollection,
+    emailsFixedCollection,
+    phoneNumbersFixedCollection
 } from '../utils/sharedFields';
 
 export const personOperations: INodeProperties[] = [

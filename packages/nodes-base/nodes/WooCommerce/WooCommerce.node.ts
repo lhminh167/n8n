@@ -1,47 +1,47 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 import {
-	adjustMetadata,
-	setFields,
-	setMetadata,
-	toSnakeCase,
-	woocommerceApiRequest,
-	woocommerceApiRequestAllItems,
+    adjustMetadata,
+    setFields,
+    setMetadata,
+    toSnakeCase,
+    woocommerceApiRequest,
+    woocommerceApiRequestAllItems
 } from './GenericFunctions';
 import {
-	productFields,
-	productOperations,
-} from './ProductDescription';
-import {
-	orderFields,
-	orderOperations,
+    orderFields,
+    orderOperations
 } from './OrderDescription';
 import {
-	IDimension,
-	IImage,
-	IProduct,
-} from './ProductInterface';
-import {
-	IAddress,
-	ICouponLine,
-	IFeeLine,
-	ILineItem,
-	IOrder,
-	IShoppingLine,
+    IAddress,
+    ICouponLine,
+    IFeeLine,
+    ILineItem,
+    IOrder,
+    IShoppingLine
 } from './OrderInterface';
+import {
+    productFields,
+    productOperations
+} from './ProductDescription';
+import {
+    IDimension,
+    IImage,
+    IProduct
+} from './ProductInterface';
 
 import {
-	customerFields,
-	customerOperations,
+    customerFields,
+    customerOperations
 } from './descriptions';
 
 export class WooCommerce implements INodeType {

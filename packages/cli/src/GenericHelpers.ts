@@ -5,11 +5,11 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
-import express from 'express';
-import { join as pathJoin } from 'path';
-import { readFile as fsReadFile } from 'fs/promises';
-import { IDataObject } from 'n8n-workflow';
+import { IDataObject } from '@lhminh167/n8n-workflow';
 import { validate } from 'class-validator';
+import express from 'express';
+import { readFile as fsReadFile } from 'fs/promises';
+import { join as pathJoin } from 'path';
 import config from '../config';
 
 // eslint-disable-next-line import/no-cycle
@@ -17,10 +17,10 @@ import { Db, ICredentialsDb, IPackageVersions, ResponseHelper } from '.';
 // eslint-disable-next-line import/order
 import { Like } from 'typeorm';
 // eslint-disable-next-line import/no-cycle
-import { WorkflowEntity } from './databases/entities/WorkflowEntity';
 import { CredentialsEntity } from './databases/entities/CredentialsEntity';
 import { TagEntity } from './databases/entities/TagEntity';
 import { User } from './databases/entities/User';
+import { WorkflowEntity } from './databases/entities/WorkflowEntity';
 
 let versionCache: IPackageVersions | undefined;
 

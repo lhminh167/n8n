@@ -1,54 +1,52 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	adjustAccounts,
-	adjustAttendees,
-	freshworksCrmApiRequest,
-	getAllItemsViewId,
-	handleListing,
-	loadResource,
-	throwOnEmptyFilter,
-	throwOnEmptyUpdate,
+    adjustAccounts,
+    adjustAttendees,
+    freshworksCrmApiRequest,
+    getAllItemsViewId,
+    handleListing,
+    loadResource, throwOnEmptyUpdate
 } from './GenericFunctions';
 
 import {
-	accountFields,
-	accountOperations,
-	appointmentFields,
-	appointmentOperations,
-	contactFields,
-	contactOperations,
-	dealFields,
-	dealOperations,
-	noteFields,
-	noteOperations,
-	salesActivityFields,
-	salesActivityOperations,
-	searchFields,
-	searchOperations,
-	taskFields,
-	taskOperations,
+    accountFields,
+    accountOperations,
+    appointmentFields,
+    appointmentOperations,
+    contactFields,
+    contactOperations,
+    dealFields,
+    dealOperations,
+    noteFields,
+    noteOperations,
+    salesActivityFields,
+    salesActivityOperations,
+    searchFields,
+    searchOperations,
+    taskFields,
+    taskOperations
 } from './descriptions';
 
 import {
-	FreshworksConfigResponse,
-	LoadedCurrency,
-	LoadedUser,
-	LoadOption,
+    FreshworksConfigResponse,
+    LoadedCurrency,
+    LoadedUser,
+    LoadOption
 } from './types';
 
 import {
-	tz,
+    tz
 } from 'moment-timezone';
 
 export class FreshworksCrm implements INodeType {

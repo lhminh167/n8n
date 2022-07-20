@@ -1,10 +1,10 @@
 import {
-	ICredentialDataDecryptedObject,
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IHttpRequestOptions,
-	INodeCredentialTestResult,
-} from 'n8n-workflow';
+    ICredentialDataDecryptedObject,
+    ICredentialsDecrypted,
+    ICredentialTestFunctions,
+    IHttpRequestOptions,
+    INodeCredentialTestResult
+} from '@lhminh167/n8n-workflow';
 
 export async function bambooHrApiCredentialTest(this: ICredentialTestFunctions, credential: ICredentialsDecrypted): Promise<INodeCredentialTestResult> {
 	try {

@@ -1,6 +1,6 @@
 import {
-	IDataObject,
-} from 'n8n-workflow';
+    IDataObject
+} from '@lhminh167/n8n-workflow';
 
 export declare namespace Zammad {
 	export type Resource = 'group' | 'organization' | 'ticket' | 'user';

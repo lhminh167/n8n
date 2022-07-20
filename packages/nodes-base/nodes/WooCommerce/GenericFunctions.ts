@@ -1,39 +1,38 @@
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	IExecuteFunctions,
-	IExecuteSingleFunctions,
-	IHookFunctions,
-	ILoadOptionsFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IExecuteSingleFunctions,
+    IHookFunctions,
+    ILoadOptionsFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialDataDecryptedObject,
-	IDataObject,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    ICredentialDataDecryptedObject,
+    IDataObject,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	ICouponLine,
-	IFeeLine,
-	ILineItem,
-	IShoppingLine,
+    ICouponLine,
+    IFeeLine,
+    ILineItem,
+    IShoppingLine
 } from './OrderInterface';
 
 import {
-	createHash,
+    createHash
 } from 'crypto';
 
 import {
-	snakeCase,
+    snakeCase
 } from 'change-case';
 
 import {
-	omit
+    omit
 } from 'lodash';
 
 export async function woocommerceApiRequest(this: IHookFunctions | IExecuteFunctions | IExecuteSingleFunctions | ILoadOptionsFunctions | IWebhookFunctions, method: string, resource: string, body: any = {}, qs: IDataObject = {}, uri?: string, option: IDataObject = {}): Promise<any> { // tslint:disable-line:no-any

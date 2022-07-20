@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 // @ts-ignore
-import sseChannel from 'sse-channel';
 import express from 'express';
+import sseChannel from 'sse-channel';
 
-import { LoggerProxy as Logger } from 'n8n-workflow';
+import { LoggerProxy as Logger } from '@lhminh167/n8n-workflow';
 // eslint-disable-next-line import/no-cycle
 import { IPushData, IPushDataType } from '.';
 

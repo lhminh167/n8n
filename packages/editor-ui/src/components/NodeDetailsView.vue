@@ -103,7 +103,7 @@ import {
 	IRunData,
 	IRunExecutionData,
 	Workflow,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 import { IExecutionResponse, INodeUi, IUpdateInformation } from '../Interface';
 
 import { externalHooks } from '@/components/mixins/externalHooks';

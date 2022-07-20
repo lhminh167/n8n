@@ -1,17 +1,17 @@
 import {
-	BINARY_ENCODING,
-	IWebhookFunctions,
-} from 'n8n-core';
+    BINARY_ENCODING,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialDataDecryptedObject,
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookResponseData,
-	NodeOperationError,
-} from 'n8n-workflow';
+    ICredentialDataDecryptedObject,
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookResponseData,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import basicAuth from 'basic-auth';
 

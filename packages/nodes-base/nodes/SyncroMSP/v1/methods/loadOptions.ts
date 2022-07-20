@@ -1,12 +1,11 @@
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodePropertyOptions,
-	NodeOperationError,
-} from 'n8n-workflow';
+    ILoadOptionsFunctions,
+    INodePropertyOptions,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	apiRequestAllItems,
+    apiRequestAllItems
 } from '../transport';
 
 // Get all the available channels

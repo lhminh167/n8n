@@ -1,42 +1,42 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 import {
-	salesmateApiRequest,
-	salesmateApiRequestAllItems,
-	simplifySalesmateData,
-	validateJSON,
-} from './GenericFunctions';
-import {
-	companyFields,
-	companyOperations,
-} from './CompanyDescription';
-import {
-	activityFields,
-	activityOperations,
+    activityFields,
+    activityOperations
 } from './ActivityDescription';
 import {
-	ICompany,
- } from './CompanyInterface';
- import {
-	IActivity,
- } from './ActivityInterface';
- import {
-	IDeal,
- } from './DealInterface';
+    IActivity
+} from './ActivityInterface';
 import {
-	dealFields,
-	dealOperations,
- } from './DealDescription';
+    companyFields,
+    companyOperations
+} from './CompanyDescription';
+import {
+    ICompany
+} from './CompanyInterface';
+import {
+    dealFields,
+    dealOperations
+} from './DealDescription';
+import {
+    IDeal
+} from './DealInterface';
+import {
+    salesmateApiRequest,
+    salesmateApiRequestAllItems,
+    simplifySalesmateData,
+    validateJSON
+} from './GenericFunctions';
 
 export class Salesmate implements INodeType {
 	description: INodeTypeDescription = {

@@ -1,44 +1,44 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	isEmpty,
+    isEmpty
 } from 'lodash';
 
 import {
-	adjustChargeFields,
-	adjustCustomerFields,
-	adjustMetadata,
-	handleListing,
-	loadResource,
-	stripeApiRequest,
+    adjustChargeFields,
+    adjustCustomerFields,
+    adjustMetadata,
+    handleListing,
+    loadResource,
+    stripeApiRequest
 } from './helpers';
 
 import {
-	balanceOperations,
-	chargeFields,
-	chargeOperations,
-	couponFields,
-	couponOperations,
-	customerCardFields,
-	customerCardOperations,
-	customerFields,
-	customerOperations,
-	sourceFields,
-	sourceOperations,
-	tokenFields,
-	tokenOperations,
+    balanceOperations,
+    chargeFields,
+    chargeOperations,
+    couponFields,
+    couponOperations,
+    customerCardFields,
+    customerCardOperations,
+    customerFields,
+    customerOperations,
+    sourceFields,
+    sourceOperations,
+    tokenFields,
+    tokenOperations
 } from './descriptions';
 
 export class Stripe implements INodeType {

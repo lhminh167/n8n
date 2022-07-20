@@ -1,13 +1,13 @@
 import {
-	INodeProperties
-} from 'n8n-workflow';
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 import {
-	destinationExternalField,
+    destinationExternalField
 } from './DestinationDescription';
 
 import {
-	recipientExternalField,
+    recipientExternalField
 } from './RecipientDescription';
 
 export const taskOperations: INodeProperties[] = [

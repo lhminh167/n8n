@@ -1,20 +1,20 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 /* eslint-disable import/no-cycle */
 
+import { LoggerProxy as Logger } from '@lhminh167/n8n-workflow';
 import express from 'express';
-import { v4 as uuid } from 'uuid';
-import { URL } from 'url';
-import validator from 'validator';
 import { IsNull, MoreThanOrEqual, Not } from 'typeorm';
-import { LoggerProxy as Logger } from 'n8n-workflow';
+import { URL } from 'url';
+import { v4 as uuid } from 'uuid';
+import validator from 'validator';
 
 import { Db, InternalHooksManager, ResponseHelper } from '../..';
-import { N8nApp } from '../Interfaces';
-import { getInstanceBaseUrl, hashPassword, validatePassword } from '../UserManagementHelper';
-import * as UserManagementMailer from '../email';
+import * as config from '../../../config';
 import type { PasswordResetRequest } from '../../requests';
 import { issueCookie } from '../auth/jwt';
-import * as config from '../../../config';
+import * as UserManagementMailer from '../email';
+import { N8nApp } from '../Interfaces';
+import { getInstanceBaseUrl, hashPassword, validatePassword } from '../UserManagementHelper';
 
 export function passwordResetNamespace(this: N8nApp): void {
 	/**

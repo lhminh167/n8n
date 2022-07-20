@@ -1,42 +1,42 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	accountFields,
-	accountOperations,
-	exchangeRateFields,
-	exchangeRateOperations,
-	profileFields,
-	profileOperations,
-	quoteFields,
-	quoteOperations,
-	recipientFields,
-	recipientOperations,
-	transferFields,
-	transferOperations,
+    accountFields,
+    accountOperations,
+    exchangeRateFields,
+    exchangeRateOperations,
+    profileFields,
+    profileOperations,
+    quoteFields,
+    quoteOperations,
+    recipientFields,
+    recipientOperations,
+    transferFields,
+    transferOperations
 } from './descriptions';
 
 import {
-	BorderlessAccount,
-	ExchangeRateAdditionalFields,
-	Profile,
-	Recipient,
-	StatementAdditionalFields,
-	TransferFilters,
-	wiseApiRequest,
+    BorderlessAccount,
+    ExchangeRateAdditionalFields,
+    Profile,
+    Recipient,
+    StatementAdditionalFields,
+    TransferFilters,
+    wiseApiRequest
 } from './GenericFunctions';
 
 import {
-	omit,
+    omit
 } from 'lodash';
 
 import moment from 'moment-timezone';

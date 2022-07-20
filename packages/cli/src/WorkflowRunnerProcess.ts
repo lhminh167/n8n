@@ -5,7 +5,12 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 /* eslint-disable @typescript-eslint/no-use-before-define */
 /* eslint-disable @typescript-eslint/unbound-method */
-import { BinaryDataManager, IProcessMessage, UserSettings, WorkflowExecute } from 'n8n-core';
+import {
+	BinaryDataManager,
+	IProcessMessage,
+	UserSettings,
+	WorkflowExecute,
+} from '@lhminh167/n8n-core';
 
 import {
 	ExecutionError,
@@ -27,7 +32,7 @@ import {
 	WorkflowExecuteMode,
 	WorkflowHooks,
 	WorkflowOperationError,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 import {
 	CredentialsOverwrites,
 	CredentialTypes,

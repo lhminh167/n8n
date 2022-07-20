@@ -1,47 +1,47 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeApiError,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	validateJSON,
-	zendeskApiRequest,
-	zendeskApiRequestAllItems,
+    validateJSON,
+    zendeskApiRequest,
+    zendeskApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	ticketFields,
-	ticketOperations
+    ticketFields,
+    ticketOperations
 } from './TicketDescription';
 
 import {
-	ticketFieldFields,
-	ticketFieldOperations
+    ticketFieldFields,
+    ticketFieldOperations
 } from './TicketFieldDescription';
 
 import {
-	userFields,
-	userOperations
+    userFields,
+    userOperations
 } from './UserDescription';
 
 import {
-	organizationFields,
-	organizationOperations
+    organizationFields,
+    organizationOperations
 } from './OrganizationDescription';
 
 import {
-	IComment,
-	ITicket,
+    IComment,
+    ITicket
 } from './TicketInterface';
 
 export class Zendesk implements INodeType {

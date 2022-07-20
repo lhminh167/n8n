@@ -54,7 +54,7 @@ import { INodeUi, XYPosition } from '@/Interface';
 
 import {
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 import { QUICKSTART_NOTE_NAME } from '@/constants';
 
 export default mixins(externalHooks, nodeBase, nodeHelpers, workflowHelpers).extend({

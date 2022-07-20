@@ -1,14 +1,14 @@
 import {
-	IWebhookFunctions,
-} from 'n8n-core';
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	IHookFunctions,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookResponseData,
-} from 'n8n-workflow';
+    IDataObject,
+    IHookFunctions,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookResponseData
+} from '@lhminh167/n8n-workflow';
 
 export class TheHiveTrigger implements INodeType {
 	description: INodeTypeDescription = {

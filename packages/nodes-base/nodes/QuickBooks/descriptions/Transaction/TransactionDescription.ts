@@ -1,19 +1,19 @@
 import {
-	INodeProperties,
-} from 'n8n-workflow';
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 import {
-	toDisplayName,
-	toOptions,
+    toDisplayName,
+    toOptions
 } from '../../GenericFunctions';
 
 import {
-	GROUP_BY_OPTIONS,
-	PAYMENT_METHODS,
-	PREDEFINED_DATE_RANGES,
-	SOURCE_ACCOUNT_TYPES,
-	TRANSACTION_REPORT_COLUMNS,
-	TRANSACTION_TYPES,
+    GROUP_BY_OPTIONS,
+    PAYMENT_METHODS,
+    PREDEFINED_DATE_RANGES,
+    SOURCE_ACCOUNT_TYPES,
+    TRANSACTION_REPORT_COLUMNS,
+    TRANSACTION_TYPES
 } from './constants';
 
 export const transactionOperations: INodeProperties[] = [

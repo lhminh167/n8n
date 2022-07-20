@@ -1,19 +1,19 @@
 import {
-	ITriggerFunctions,
-} from 'n8n-core';
+    ITriggerFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeType,
-	INodeTypeDescription,
-	ITriggerResponse,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeType,
+    INodeTypeDescription,
+    ITriggerResponse,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import mqtt from 'mqtt';
 
 import {
-	IClientOptions, ISubscriptionMap,
+    IClientOptions, ISubscriptionMap
 } from 'mqtt';
 
 export class MqttTrigger implements INodeType {

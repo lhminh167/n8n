@@ -1,4 +1,4 @@
-import { INodeProperties } from 'n8n-workflow';
+import { INodeProperties } from '@lhminh167/n8n-workflow';
 
 export const tableOperations: INodeProperties[] = [
 	{

@@ -1,40 +1,40 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	IAlias,
-	IEvent,
-	IIdentity,
-	ITrack,
-	posthogApiRequest,
+    IAlias,
+    IEvent,
+    IIdentity,
+    ITrack,
+    posthogApiRequest
 } from './GenericFunctions';
 
 import {
-	aliasFields,
-	aliasOperations,
+    aliasFields,
+    aliasOperations
 } from './AliasDescription';
 
 import {
-	eventFields,
-	eventOperations,
+    eventFields,
+    eventOperations
 } from './EventDescription';
 
 import {
-	trackFields,
-	trackOperations,
+    trackFields,
+    trackOperations
 } from './TrackDescription';
 
 import {
-	identityFields,
-	identityOperations,
+    identityFields,
+    identityOperations
 } from './IdentityDescription';
 
 import moment from 'moment-timezone';

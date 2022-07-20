@@ -1,7 +1,7 @@
 import {
-	IDisplayOptions,
-	INodeProperties,
-} from 'n8n-workflow';
+    IDisplayOptions,
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 const colors = [
 	{

@@ -16,7 +16,7 @@ import AutoFormat from 'quill-autoformat';
 import {
 	NodeParameterValue,
 	Workflow,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 
 import {
 	IVariableItemSelected,

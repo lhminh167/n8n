@@ -1,33 +1,30 @@
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	IExecuteFunctions,
-	IExecuteSingleFunctions,
-	IHookFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IExecuteSingleFunctions,
+    IHookFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IBinaryKeyData,
-	ICredentialDataDecryptedObject,
-	ICredentialTestFunctions,
-	IDataObject,
-	IDisplayOptions,
-	INodeExecutionData,
-	INodeProperties,
-	IPollFunctions,
-	NodeApiError,
-} from 'n8n-workflow';
+    IBinaryKeyData, IDataObject,
+    IDisplayOptions,
+    INodeExecutionData,
+    INodeProperties,
+    IPollFunctions,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	camelCase,
-	capitalCase,
+    camelCase,
+    capitalCase
 } from 'change-case';
 
 import {
-	filters,
+    filters
 } from './Filters';
 
 import moment from 'moment-timezone';

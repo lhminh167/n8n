@@ -20,7 +20,7 @@ import {
 	NodeHelpers,
 	NodeParameterValue,
 	WorkflowHooks,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 
 import { Credentials, IExecuteFunctions } from '../src';
 

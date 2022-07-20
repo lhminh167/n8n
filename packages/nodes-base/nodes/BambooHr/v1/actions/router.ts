@@ -1,15 +1,15 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	INodeExecutionData,
-} from 'n8n-workflow';
+    INodeExecutionData
+} from '@lhminh167/n8n-workflow';
 
+import * as companyReport from './companyReport';
 import * as employee from './employee';
 import * as employeeDocument from './employeeDocument';
 import * as file from './file';
-import * as companyReport from './companyReport';
 
 import { BambooHr } from './Interfaces';
 

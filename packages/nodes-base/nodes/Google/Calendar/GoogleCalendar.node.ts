@@ -1,36 +1,36 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	JsonObject,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    JsonObject,
+    NodeApiError,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	googleApiRequest,
-	googleApiRequestAllItems,
+    googleApiRequest,
+    googleApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	eventFields,
-	eventOperations,
+    eventFields,
+    eventOperations
 } from './EventDescription';
 
 import {
-	calendarFields,
-	calendarOperations,
+    calendarFields,
+    calendarOperations
 } from './CalendarDescription';
 
 import {
-	IEvent,
+    IEvent
 } from './EventInterface';
 
 import moment from 'moment-timezone';

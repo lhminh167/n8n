@@ -1,6 +1,6 @@
 import {
-	INodeProperties
-} from 'n8n-workflow';
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 import { capitalizeInitial } from '../GenericFunctions';
 import { CamelCaseResource } from '../types';
 

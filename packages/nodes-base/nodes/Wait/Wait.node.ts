@@ -1,19 +1,19 @@
 import {
-	BINARY_ENCODING,
-	IExecuteFunctions,
-	WAIT_TIME_UNLIMITED,
-} from 'n8n-core';
+    BINARY_ENCODING,
+    IExecuteFunctions,
+    WAIT_TIME_UNLIMITED
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialDataDecryptedObject,
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookFunctions,
-	IWebhookResponseData,
-	NodeOperationError,
-} from 'n8n-workflow';
+    ICredentialDataDecryptedObject,
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookFunctions,
+    IWebhookResponseData,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import basicAuth from 'basic-auth';
 

@@ -1,13 +1,13 @@
 import {
-	INodeProperties,
-} from 'n8n-workflow';
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 import {
-	allCurrencies,
+    allCurrencies
 } from './currencies';
 
 import {
-	activeCampaignDefaultGetAllProperties,
+    activeCampaignDefaultGetAllProperties
 } from './GenericFunctions';
 
 export const dealOperations: INodeProperties[] = [

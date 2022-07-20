@@ -10,7 +10,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import { ActiveWorkflows, NodeExecuteFunctions } from 'n8n-core';
+import { ActiveWorkflows, NodeExecuteFunctions } from '@lhminh167/n8n-core';
 
 import {
 	ExecutionError,
@@ -25,20 +25,21 @@ import {
 	IRunExecutionData,
 	IWorkflowBase,
 	IWorkflowExecuteAdditionalData as IWorkflowExecuteAdditionalDataWorkflow,
+	LoggerProxy as Logger,
 	NodeHelpers,
 	WebhookHttpMethod,
 	Workflow,
 	WorkflowActivateMode,
 	WorkflowActivationError,
 	WorkflowExecuteMode,
-	LoggerProxy as Logger,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 
 import express from 'express';
 
 // eslint-disable-next-line import/no-cycle
 import {
 	Db,
+	ExternalHooks,
 	IActivationError,
 	IResponseCallbackData,
 	IWebhookDb,
@@ -50,13 +51,12 @@ import {
 	WorkflowExecuteAdditionalData,
 	WorkflowHelpers,
 	WorkflowRunner,
-	ExternalHooks,
 } from '.';
 import config from '../config';
-import { User } from './databases/entities/User';
-import { whereClause } from './WorkflowHelpers';
-import { WorkflowEntity } from './databases/entities/WorkflowEntity';
 import * as ActiveExecutions from './ActiveExecutions';
+import { User } from './databases/entities/User';
+import { WorkflowEntity } from './databases/entities/WorkflowEntity';
+import { whereClause } from './WorkflowHelpers';
 
 const activeExecutions = ActiveExecutions.getInstance();
 

@@ -1,10 +1,10 @@
 import {
-	INodeProperties,
-} from 'n8n-workflow';
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 import {
-	makeSimpleField,
-	petitionAdditionalFieldsOptions,
+    makeSimpleField,
+    petitionAdditionalFieldsOptions
 } from './SharedFields';
 
 export const petitionOperations: INodeProperties[] = [

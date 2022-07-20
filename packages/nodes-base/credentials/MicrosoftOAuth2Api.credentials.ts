@@ -1,7 +1,7 @@
 import {
-	ICredentialType,
-	INodeProperties,
-} from 'n8n-workflow';
+    ICredentialType,
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 export class MicrosoftOAuth2Api implements ICredentialType {
 	name = 'microsoftOAuth2Api';

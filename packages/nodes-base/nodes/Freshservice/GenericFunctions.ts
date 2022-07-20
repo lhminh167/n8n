@@ -1,28 +1,28 @@
 import {
-	IExecuteFunctions,
-	IHookFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IHookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    NodeApiError,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	AddressFixedCollection,
-	FreshserviceCredentials,
-	LoadedUser,
-	RolesParameter,
+    AddressFixedCollection,
+    FreshserviceCredentials,
+    LoadedUser,
+    RolesParameter
 } from './types';
 
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 import {
-	omit,
+    omit
 } from 'lodash';
 
 export async function freshserviceApiRequest(

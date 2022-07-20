@@ -1,16 +1,16 @@
 import {
-	OptionsWithUri
+    OptionsWithUri
 } from 'request';
 
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	NodeApiError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 export async function microsoftApiRequest(this: IExecuteFunctions | ILoadOptionsFunctions, method: string, resource: string, body: IDataObject = {}, qs: IDataObject = {}, uri?: string, headers: IDataObject = {}, option: IDataObject = { json: true }) {
 	const options: OptionsWithUri = {

@@ -1,29 +1,29 @@
 import {
-	IHookFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IHookFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookResponseData,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookResponseData
+} from '@lhminh167/n8n-workflow';
 
 import {
-	wufooApiRequest,
+    wufooApiRequest
 } from './GenericFunctions';
 
 import {
-	IField,
-	IFormQuery,
-	IWebhook,
+    IField,
+    IFormQuery,
+    IWebhook
 } from './Interface';
 
 import {
-	randomBytes,
+    randomBytes
 } from 'crypto';
 
 export class WufooTrigger implements INodeType {

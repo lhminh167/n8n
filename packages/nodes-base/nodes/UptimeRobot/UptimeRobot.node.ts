@@ -1,36 +1,36 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	uptimeRobotApiRequest,
+    uptimeRobotApiRequest
 } from './GenericFunctions';
 
 import {
-	monitorFields,
-	monitorOperations,
+    monitorFields,
+    monitorOperations
 } from './MonitorDescription';
 
 import {
-	alertContactFields,
-	alertContactOperations,
+    alertContactFields,
+    alertContactOperations
 } from './AlertContactDescription';
 
 import {
-	maintenanceWindowFields,
-	maintenanceWindowOperations,
+    maintenanceWindowFields,
+    maintenanceWindowOperations
 } from './MaintenanceWindowDescription';
 
 import {
-	publicStatusPageFields,
-	publicStatusPageOperations,
+    publicStatusPageFields,
+    publicStatusPageOperations
 } from './PublicStatusPageDescription';
 
 import moment from 'moment-timezone';

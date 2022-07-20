@@ -1,8 +1,8 @@
 /* eslint-disable import/no-cycle */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
+import { ITelemetryTrackProperties, LoggerProxy } from '@lhminh167/n8n-workflow';
 import TelemetryClient from '@rudderstack/rudder-sdk-node';
-import { ITelemetryTrackProperties, LoggerProxy } from 'n8n-workflow';
 import * as config from '../../config';
 import { IExecutionTrackProperties } from '../Interfaces';
 import { getLogger } from '../Logger';

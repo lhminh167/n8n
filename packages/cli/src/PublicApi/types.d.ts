@@ -1,6 +1,6 @@
 /* eslint-disable import/no-cycle */
+import { IDataObject } from '@lhminh167/n8n-workflow';
 import express from 'express';
-import { IDataObject } from 'n8n-workflow';
 
 import type { User } from '../databases/entities/User';
 

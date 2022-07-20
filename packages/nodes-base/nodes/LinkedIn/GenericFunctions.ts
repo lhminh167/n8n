@@ -1,13 +1,13 @@
 import {
-	OptionsWithUrl,
+    OptionsWithUrl
 } from 'request';
 
 import {
-	IExecuteFunctions,
-	IHookFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
-import { NodeApiError } from 'n8n-workflow';
+    IExecuteFunctions,
+    IHookFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
+import { NodeApiError } from '@lhminh167/n8n-workflow';
 
 export async function linkedInApiRequest(this: IHookFunctions | IExecuteFunctions | ILoadOptionsFunctions, method: string, endpoint: string, body: any = {}, binary?: boolean, headers?: object): Promise<any> { // tslint:disable-line:no-any
 	const options: OptionsWithUrl = {

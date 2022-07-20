@@ -1,35 +1,35 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	chunk,
-	flatten,
+    chunk,
+    flatten
 } from '../../utils/utilities';
 
 import mssql from 'mssql';
 
 import {
-	ITables,
+    ITables
 } from './TableInterface';
 
 import {
-	copyInputItem,
-	createTableStruct,
-	executeQueryQueue,
-	extractDeleteValues,
-	extractUpdateCondition,
-	extractUpdateSet,
-	extractValues,
-	formatColumns,
+    copyInputItem,
+    createTableStruct,
+    executeQueryQueue,
+    extractDeleteValues,
+    extractUpdateCondition,
+    extractUpdateSet,
+    extractValues,
+    formatColumns
 } from './GenericFunctions';
 
 export class MicrosoftSql implements INodeType {

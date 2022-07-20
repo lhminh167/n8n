@@ -5,15 +5,15 @@ import * as update from './update';
 import * as upload from './upload';
 
 import {
-	INodeProperties,
-} from 'n8n-workflow';
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 export {
-	del,
-	download,
-	getAll,
-	update,
-	upload,
+    del,
+    download,
+    getAll,
+    update,
+    upload,
 };
 
 export const descriptions: INodeProperties[] = [

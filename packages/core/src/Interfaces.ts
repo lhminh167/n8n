@@ -20,7 +20,7 @@ import {
 	ITriggerResponse,
 	IWebhookFunctions as IWebhookFunctionsBase,
 	IWorkflowSettings as IWorkflowSettingsWorkflow,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 
 import { OptionsWithUri, OptionsWithUrl } from 'request';
 import requestPromise from 'request-promise-native';

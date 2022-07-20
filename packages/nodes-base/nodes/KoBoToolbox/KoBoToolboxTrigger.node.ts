@@ -1,22 +1,22 @@
 import {
-	IDataObject,
-	IHookFunctions,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookFunctions,
-	IWebhookResponseData,
-} from 'n8n-workflow';
+    IDataObject,
+    IHookFunctions,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookFunctions,
+    IWebhookResponseData
+} from '@lhminh167/n8n-workflow';
 
 import {
-	downloadAttachments,
-	formatSubmission,
-	koBoToolboxApiRequest,
-	loadForms,
-	parseStringList
+    downloadAttachments,
+    formatSubmission,
+    koBoToolboxApiRequest,
+    loadForms,
+    parseStringList
 } from './GenericFunctions';
 
 import {
-	options,
+    options
 } from './Options';
 
 export class KoBoToolboxTrigger implements INodeType {

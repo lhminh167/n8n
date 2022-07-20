@@ -1,15 +1,11 @@
 import { getStyleTokenValue, isNumber } from "@/components/helpers";
-import { NODE_OUTPUT_DEFAULT_KEY, START_NODE_TYPE, STICKY_NODE_TYPE, QUICKSTART_NOTE_NAME } from "@/constants";
+import { NODE_OUTPUT_DEFAULT_KEY, QUICKSTART_NOTE_NAME, START_NODE_TYPE, STICKY_NODE_TYPE } from "@/constants";
 import { IBounds, INodeUi, IZoomConfig, XYPosition } from "@/Interface";
-import { Connection, Endpoint, Overlay, OverlaySpec, PaintStyle } from "jsplumb";
 import {
-	IConnection,
-	INode,
-	ITaskData,
-	INodeExecutionData,
-	NodeInputConnections,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IConnection,
+    INode, INodeExecutionData, INodeTypeDescription, ITaskData, NodeInputConnections
+} from '@lhminh167/n8n-workflow';
+import { Connection, Endpoint, Overlay, OverlaySpec, PaintStyle } from "jsplumb";
 
 export const OVERLAY_DROP_NODE_ID = 'drop-add-node';
 export const OVERLAY_MIDPOINT_ARROW_ID = 'midpoint-arrow';

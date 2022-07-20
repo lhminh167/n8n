@@ -1,35 +1,35 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IBinaryKeyData,
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IBinaryKeyData,
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	boxApiRequest,
-	boxApiRequestAllItems,
+    boxApiRequest,
+    boxApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	fileFields,
-	fileOperations,
+    fileFields,
+    fileOperations
 } from './FileDescription';
 
 import {
-	folderFields,
-	folderOperations,
+    folderFields,
+    folderOperations
 } from './FolderDescription';
 
 import moment from 'moment-timezone';
 
 import {
-	noCase,
+    noCase
 } from 'change-case';
 
 export class Box implements INodeType {

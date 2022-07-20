@@ -1,50 +1,50 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	contactFields,
-	contactOperations
+    contactFields,
+    contactOperations
 } from './ContactDescription';
 
 import {
-	companyFields,
-	companyOperations
+    companyFields,
+    companyOperations
 } from './CompanyDescription';
 
 import {
-	dealFields,
-	dealOperations
+    dealFields,
+    dealOperations
 } from './DealDescription';
 
 import {
-	IContact,
-	IContactUpdate,
+    IContact,
+    IContactUpdate
 } from './ContactInterface';
 
 import {
-	agileCrmApiRequest, agileCrmApiRequestAllItems,
-	agileCrmApiRequestUpdate,
-	getFilterRules,
-	simplifyResponse,
-	validateJSON,
+    agileCrmApiRequest, agileCrmApiRequestAllItems,
+    agileCrmApiRequestUpdate,
+    getFilterRules,
+    simplifyResponse,
+    validateJSON
 } from './GenericFunctions';
 
 import {
-	IDeal,
+    IDeal
 } from './DealInterface';
 
 import {
-	IFilter,
-	ISearchConditions,
+    IFilter,
+    ISearchConditions
 } from './FilterInterface';
 
 export class AgileCrm implements INodeType {

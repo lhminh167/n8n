@@ -1,42 +1,42 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	keysToSnakeCase,
-	shopifyApiRequest,
-	shopifyApiRequestAllItems,
+    keysToSnakeCase,
+    shopifyApiRequest,
+    shopifyApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	orderFields,
-	orderOperations,
+    orderFields,
+    orderOperations
 } from './OrderDescription';
 
 import {
-	productFields,
-	productOperations,
+    productFields,
+    productOperations
 } from './ProductDescription';
 
 import {
-	IAddress,
-	IDiscountCode,
-	ILineItem,
-	IOrder,
+    IAddress,
+    IDiscountCode,
+    ILineItem,
+    IOrder
 } from './OrderInterface';
 
 import {
-	IProduct,
+    IProduct
 } from './ProductInterface';
 
 export class Shopify implements INodeType {

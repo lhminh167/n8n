@@ -15,7 +15,7 @@ import {
 	WorkflowActivateMode,
 	WorkflowActivationError,
 	WorkflowExecuteMode,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 
 // eslint-disable-next-line import/no-cycle
 import { ITriggerTime, IWorkflowData } from '.';

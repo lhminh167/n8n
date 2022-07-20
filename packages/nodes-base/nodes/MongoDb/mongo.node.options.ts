@@ -1,7 +1,7 @@
 /* eslint-disable n8n-nodes-base/node-filename-against-convention */
 import {
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 /**
  * Options to be displayed

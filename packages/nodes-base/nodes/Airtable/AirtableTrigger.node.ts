@@ -1,18 +1,18 @@
 import {
-	IPollFunctions,
-} from 'n8n-core';
+    IPollFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	apiRequestAllItems,
-	downloadRecordAttachments,
+    apiRequestAllItems,
+    downloadRecordAttachments
 } from './GenericFunctions';
 
 import moment from 'moment';

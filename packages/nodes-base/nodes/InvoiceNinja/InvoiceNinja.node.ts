@@ -1,79 +1,79 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	invoiceNinjaApiRequest,
-	invoiceNinjaApiRequestAllItems,
+    invoiceNinjaApiRequest,
+    invoiceNinjaApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	clientFields,
-	clientOperations,
+    clientFields,
+    clientOperations
 } from './ClientDescription';
 
 import {
-	invoiceFields,
-	invoiceOperations,
+    invoiceFields,
+    invoiceOperations
 } from './InvoiceDescription';
 
 import {
-	IClient,
-	IContact,
+    IClient,
+    IContact
 } from './ClientInterface';
 
 import {
-	countryCodes,
+    countryCodes
 } from './ISOCountryCodes';
 
 import {
-	IInvoice,
-	IItem,
+    IInvoice,
+    IItem
 } from './invoiceInterface';
 
 import {
-	taskFields,
-	taskOperations,
+    taskFields,
+    taskOperations
 } from './TaskDescription';
 
 import {
-	ITask,
+    ITask
 } from './TaskInterface';
 
 import {
-	paymentFields,
-	paymentOperations,
+    paymentFields,
+    paymentOperations
 } from './PaymentDescription';
 
 import {
-	IPayment,
+    IPayment
 } from './PaymentInterface';
 
 import {
-	expenseFields,
-	expenseOperations,
+    expenseFields,
+    expenseOperations
 } from './ExpenseDescription';
 
 import {
-	IExpense,
+    IExpense
 } from './ExpenseInterface';
 
 import {
-	quoteFields,
-	quoteOperations,
+    quoteFields,
+    quoteOperations
 } from './QuoteDescription';
 
 import {
-	IQuote,
+    IQuote
 } from './QuoteInterface';
 
 export class InvoiceNinja implements INodeType {

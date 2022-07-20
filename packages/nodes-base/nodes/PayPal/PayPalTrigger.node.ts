@@ -1,21 +1,20 @@
 import {
-	IHookFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IHookFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookResponseData,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookResponseData,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 import {
-	payPalApiRequest,
-	upperFist
+    payPalApiRequest,
+    upperFist
 } from './GenericFunctions';
 
 export class PayPalTrigger implements INodeType {

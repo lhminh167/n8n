@@ -1,26 +1,26 @@
 import {
-	IHookFunctions,
-	IWebhookFunctions,
-} from 'n8n-core';
+    IHookFunctions,
+    IWebhookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeType,
-	INodeTypeDescription,
-	IWebhookResponseData,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeType,
+    INodeTypeDescription,
+    IWebhookResponseData
+} from '@lhminh167/n8n-workflow';
 
 import {
-	getTriggerName,
-	livePublicKey,
-	Profile,
-	testPublicKey,
-	wiseApiRequest,
+    getTriggerName,
+    livePublicKey,
+    Profile,
+    testPublicKey,
+    wiseApiRequest
 } from './GenericFunctions';
 
 import {
-	createVerify,
+    createVerify
 } from 'crypto';
 
 export class WiseTrigger implements INodeType {

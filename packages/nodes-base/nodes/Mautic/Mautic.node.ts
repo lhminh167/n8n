@@ -1,57 +1,57 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	JsonObject,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    JsonObject,
+    NodeApiError,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	mauticApiRequest,
-	mauticApiRequestAllItems,
-	validateJSON,
+    mauticApiRequest,
+    mauticApiRequestAllItems,
+    validateJSON
 } from './GenericFunctions';
 
 import {
-	contactFields,
-	contactOperations,
+    contactFields,
+    contactOperations
 } from './ContactDescription';
 
 import {
-	segmentEmailFields,
-	segmentEmailOperations,
+    segmentEmailFields,
+    segmentEmailOperations
 } from './SegmentEmailDescription';
 
 import {
-	companyFields,
-	companyOperations,
+    companyFields,
+    companyOperations
 } from './CompanyDescription';
 
 import {
-	companyContactFields,
-	companyContactOperations,
+    companyContactFields,
+    companyContactOperations
 } from './CompanyContactDescription';
 
 import {
-	contactSegmentFields,
-	contactSegmentOperations,
+    contactSegmentFields,
+    contactSegmentOperations
 } from './ContactSegmentDescription';
 
 import {
-	campaignContactFields,
-	campaignContactOperations,
+    campaignContactFields,
+    campaignContactOperations
 } from './CampaignContactDescription';
 
 import {
-	snakeCase,
+    snakeCase
 } from 'change-case';
 
 export class Mautic implements INodeType {

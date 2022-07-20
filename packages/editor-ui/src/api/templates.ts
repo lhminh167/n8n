@@ -1,5 +1,5 @@
-import { ITemplatesCategory, ITemplatesCollection, ITemplatesQuery, ITemplatesWorkflow, ITemplatesCollectionResponse, ITemplatesWorkflowResponse, IWorkflowTemplate } from '@/Interface';
-import { IDataObject } from 'n8n-workflow';
+import { ITemplatesCategory, ITemplatesCollection, ITemplatesCollectionResponse, ITemplatesQuery, ITemplatesWorkflow, ITemplatesWorkflowResponse, IWorkflowTemplate } from '@/Interface';
+import { IDataObject } from '@lhminh167/n8n-workflow';
 import { get } from './helpers';
 
 function stringifyArray(arr: number[]) {

@@ -1,42 +1,42 @@
-import { IExecuteFunctions } from 'n8n-core';
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
 import { OptionsWithUri } from 'request';
 
 import {
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	JsonObject,
-} from 'n8n-workflow';
+    ICredentialsDecrypted,
+    ICredentialTestFunctions,
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeCredentialTestResult,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    JsonObject
+} from '@lhminh167/n8n-workflow';
 
 import {
-	contactDescription,
-	contactOperations,
-	customResourceDescription,
-	customResourceOperations,
-	noteDescription,
-	noteOperations,
-	opportunityDescription,
-	opportunityOperations,
+    contactDescription,
+    contactOperations,
+    customResourceDescription,
+    customResourceOperations,
+    noteDescription,
+    noteOperations,
+    opportunityDescription,
+    opportunityOperations
 } from './descriptions';
 
 import {
-	IOdooFilterOperations,
-	odooCreate,
-	odooDelete,
-	odooGet,
-	odooGetAll,
-	odooGetDBName,
-	odooGetModelFields,
-	odooGetUserID,
-	odooJSONRPCRequest,
-	odooUpdate,
-	processNameValueFields,
+    IOdooFilterOperations,
+    odooCreate,
+    odooDelete,
+    odooGet,
+    odooGetAll,
+    odooGetDBName,
+    odooGetModelFields,
+    odooGetUserID,
+    odooJSONRPCRequest,
+    odooUpdate,
+    processNameValueFields
 } from './GenericFunctions';
 
 import { capitalCase } from 'change-case';

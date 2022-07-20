@@ -1,49 +1,49 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    ICredentialsDecrypted,
+    ICredentialTestFunctions,
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeCredentialTestResult,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	elasticSecurityApiRequest,
-	getConnector,
-	getVersion,
-	handleListing,
-	throwOnEmptyUpdate,
-	tolerateTrailingSlash,
+    elasticSecurityApiRequest,
+    getConnector,
+    getVersion,
+    handleListing,
+    throwOnEmptyUpdate,
+    tolerateTrailingSlash
 } from './GenericFunctions';
 
 import {
-	caseCommentFields,
-	caseCommentOperations,
-	caseFields,
-	caseOperations,
-	caseTagFields,
-	caseTagOperations,
-	connectorFields,
-	connectorOperations,
+    caseCommentFields,
+    caseCommentOperations,
+    caseFields,
+    caseOperations,
+    caseTagFields,
+    caseTagOperations,
+    connectorFields,
+    connectorOperations
 } from './descriptions';
 
 import {
-	Connector,
-	ConnectorCreatePayload,
-	ConnectorType,
-	ElasticSecurityApiCredentials,
+    Connector,
+    ConnectorCreatePayload,
+    ConnectorType,
+    ElasticSecurityApiCredentials
 } from './types';
 
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 export class ElasticSecurity implements INodeType {

@@ -9,7 +9,7 @@ import {
 	INodeTypes,
 	INodeVersionedType,
 	NodeHelpers,
-} from 'n8n-workflow';
+} from '@lhminh167/n8n-workflow';
 
 class NodeTypesClass implements INodeTypes {
 	nodeTypes: INodeTypeData = {};

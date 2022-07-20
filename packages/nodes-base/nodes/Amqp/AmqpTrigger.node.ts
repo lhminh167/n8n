@@ -1,19 +1,19 @@
 import {
-	ContainerOptions,
-	create_container,
-	EventContext,
-	Message,
-	ReceiverOptions,
+    ContainerOptions,
+    create_container,
+    EventContext,
+    Message,
+    ReceiverOptions
 } from 'rhea';
 
-import { ITriggerFunctions } from 'n8n-core';
+import { ITriggerFunctions } from '@lhminh167/n8n-core';
 import {
-	IDataObject,
-	INodeType,
-	INodeTypeDescription,
-	ITriggerResponse,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeType,
+    INodeTypeDescription,
+    ITriggerResponse,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 
 export class AmqpTrigger implements INodeType {

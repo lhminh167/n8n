@@ -1,47 +1,47 @@
-import { IExecuteFunctions } from 'n8n-core';
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	googleApiRequest,
-	googleApiRequestAllItems,
+    googleApiRequest,
+    googleApiRequestAllItems
 } from './GenericFunctions';
 
 import {
-	channelFields,
-	channelOperations,
+    channelFields,
+    channelOperations
 } from './ChannelDescription';
 
 import {
-	playlistFields,
-	playlistOperations,
+    playlistFields,
+    playlistOperations
 } from './PlaylistDescription';
 
 import {
-	playlistItemFields,
-	playlistItemOperations,
+    playlistItemFields,
+    playlistItemOperations
 } from './PlaylistItemDescription';
 
 import {
-	videoFields,
-	videoOperations,
+    videoFields,
+    videoOperations
 } from './VideoDescription';
 
 import {
-	videoCategoryFields,
-	videoCategoryOperations,
+    videoCategoryFields,
+    videoCategoryOperations
 } from './VideoCategoryDescription';
 
 import {
-	countriesCodes,
+    countriesCodes
 } from './CountryCodes';
 
 export class YouTube implements INodeType {

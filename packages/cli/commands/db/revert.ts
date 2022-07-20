@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable no-console */
+import { LoggerProxy } from '@lhminh167/n8n-workflow';
 import { Command, flags } from '@oclif/command';
 import { Connection, ConnectionOptions, createConnection } from 'typeorm';
-import { LoggerProxy } from 'n8n-workflow';
 
 import { getLogger } from '../../src/Logger';
 

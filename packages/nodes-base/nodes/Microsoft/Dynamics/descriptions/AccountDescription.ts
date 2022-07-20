@@ -1,9 +1,9 @@
 import {
-	INodeProperties,
-} from 'n8n-workflow';
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 import {
-	getAccountFields,
+    getAccountFields
 } from '../GenericFunctions';
 
 export const accountOperations: INodeProperties[] = [

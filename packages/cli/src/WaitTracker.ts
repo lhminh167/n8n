@@ -6,7 +6,7 @@
 /* eslint-disable @typescript-eslint/restrict-template-expressions */
 /* eslint-disable @typescript-eslint/no-floating-promises */
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { IRun, LoggerProxy as Logger, WorkflowOperationError } from 'n8n-workflow';
+import { LoggerProxy as Logger, WorkflowOperationError } from '@lhminh167/n8n-workflow';
 
 import { FindManyOptions, LessThanOrEqual, ObjectLiteral } from 'typeorm';
 
@@ -20,8 +20,6 @@ import {
 	IExecutionsStopData,
 	IWorkflowExecutionDataProcess,
 	ResponseHelper,
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
-	WorkflowCredentials,
 	WorkflowRunner,
 } from '.';
 import { getWorkflowOwner } from './UserManagement/UserManagementHelper';

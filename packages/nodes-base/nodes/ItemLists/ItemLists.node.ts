@@ -1,26 +1,26 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INode,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    INode,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	get,
-	isEqual,
-	isObject,
-	lt,
-	merge,
-	pick,
-	reduce,
-	set,
-	unset,
+    get,
+    isEqual,
+    isObject,
+    lt,
+    merge,
+    pick,
+    reduce,
+    set,
+    unset
 } from 'lodash';
 
 const {

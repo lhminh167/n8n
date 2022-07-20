@@ -1,15 +1,15 @@
 import {
-	IExecuteFunctions,
-	IHookFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    IHookFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	JsonObject,
-	NodeApiError,
- } from 'n8n-workflow';
+    JsonObject,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	OptionsWithUri,
+    OptionsWithUri
 } from 'request';
 
 /**

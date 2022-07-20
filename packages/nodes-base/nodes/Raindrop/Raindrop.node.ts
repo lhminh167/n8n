@@ -1,35 +1,35 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IBinaryData,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IBinaryData,
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	isEmpty,
-	omit,
+    isEmpty,
+    omit
 } from 'lodash';
 
 import {
-	raindropApiRequest,
+    raindropApiRequest
 } from './GenericFunctions';
 
 import {
-	bookmarkFields,
-	bookmarkOperations,
-	collectionFields,
-	collectionOperations,
-	tagFields,
-	tagOperations,
-	userFields,
-	userOperations,
+    bookmarkFields,
+    bookmarkOperations,
+    collectionFields,
+    collectionOperations,
+    tagFields,
+    tagOperations,
+    userFields,
+    userOperations
 } from './descriptions';
 
 export class Raindrop implements INodeType {

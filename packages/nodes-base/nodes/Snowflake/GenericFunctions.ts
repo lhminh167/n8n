@@ -1,7 +1,7 @@
 import {
-	IDataObject,
-	INodeExecutionData,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData
+} from '@lhminh167/n8n-workflow';
 
 import snowflake from 'snowflake-sdk';
 

@@ -1,34 +1,34 @@
 import {
-	IExecuteFunctions
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	JsonObject
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    JsonObject
+} from '@lhminh167/n8n-workflow';
 
 import {
-	emeliaApiTest,
-	emeliaGraphqlRequest,
-	loadResource,
+    emeliaApiTest,
+    emeliaGraphqlRequest,
+    loadResource
 } from './GenericFunctions';
 
 import {
-	campaignFields,
-	campaignOperations,
+    campaignFields,
+    campaignOperations
 } from './CampaignDescription';
 
 import {
-	contactListFields,
-	contactListOperations,
+    contactListFields,
+    contactListOperations
 } from './ContactListDescription';
 
 import {
-	isEmpty,
+    isEmpty
 } from 'lodash';
 
 export class Emelia implements INodeType {

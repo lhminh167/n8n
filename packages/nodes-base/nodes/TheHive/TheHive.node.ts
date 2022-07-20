@@ -1,68 +1,65 @@
 import {
-	IExecuteFunctions
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IBinaryData,
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodeParameters,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IBinaryData,
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodeParameters,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	alertFields,
-	alertOperations,
+    alertFields,
+    alertOperations
 } from './descriptions/AlertDescription';
 
 import {
-	observableFields,
-	observableOperations,
+    observableFields,
+    observableOperations
 } from './descriptions/ObservableDescription';
 
 import {
-	caseFields,
-	caseOperations,
+    caseFields,
+    caseOperations
 } from './descriptions/CaseDescription';
 
 import {
-	taskFields,
-	taskOperations,
+    taskFields,
+    taskOperations
 } from './descriptions/TaskDescription';
 
 import {
-	logFields,
-	logOperations,
+    logFields,
+    logOperations
 } from './descriptions/LogDescription';
 
-import {
-	Buffer,
-} from 'buffer';
 
 import {
-	And,
-	Between,
-	ContainsString,
-	Eq,
-	Id,
-	In,
-	IQueryObject,
-	Parent,
+    And,
+    Between,
+    ContainsString,
+    Eq,
+    Id,
+    In,
+    IQueryObject,
+    Parent
 } from './QueryFunctions';
 
 import {
-	buildCustomFieldSearch,
-	mapResource,
-	prepareCustomFields,
-	prepareOptional,
-	prepareRangeQuery,
-	prepareSortQuery,
-	splitTags,
-	theHiveApiRequest,
+    buildCustomFieldSearch,
+    mapResource,
+    prepareCustomFields,
+    prepareOptional,
+    prepareRangeQuery,
+    prepareSortQuery,
+    splitTags,
+    theHiveApiRequest
 } from './GenericFunctions';
 
 export class TheHive implements INodeType {

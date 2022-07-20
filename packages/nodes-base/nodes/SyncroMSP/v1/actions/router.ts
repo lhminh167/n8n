@@ -1,15 +1,15 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	INodeExecutionData, NodeApiError,
-} from 'n8n-workflow';
+    INodeExecutionData, NodeApiError
+} from '@lhminh167/n8n-workflow';
 
-import * as customer from './customer';
-import * as ticket from './ticket';
 import * as contact from './contact';
+import * as customer from './customer';
 import * as rmm from './rmm';
+import * as ticket from './ticket';
 
 import { SyncroMsp } from './Interfaces';
 

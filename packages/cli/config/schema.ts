@@ -1,8 +1,8 @@
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
+import * as core from '@lhminh167/n8n-core';
 import path from 'path';
-import * as core from 'n8n-core';
 
 export const schema = {
 	database: {

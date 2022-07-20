@@ -1,7 +1,7 @@
 import {
-	INodeTypeBaseDescription,
-	INodeVersionedType,
-} from 'n8n-workflow';
+    INodeTypeBaseDescription,
+    INodeVersionedType
+} from '@lhminh167/n8n-workflow';
 
 import { NodeVersionedType } from '../../src/NodeVersionedType';
 

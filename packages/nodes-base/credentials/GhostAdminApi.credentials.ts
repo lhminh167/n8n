@@ -1,10 +1,10 @@
 import {
-	ICredentialDataDecryptedObject,
-	ICredentialTestRequest,
-	ICredentialType,
-	IHttpRequestOptions,
-	INodeProperties,
-} from 'n8n-workflow';
+    ICredentialDataDecryptedObject,
+    ICredentialTestRequest,
+    ICredentialType,
+    IHttpRequestOptions,
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 import jwt from 'jsonwebtoken';
 export class GhostAdminApi implements ICredentialType {

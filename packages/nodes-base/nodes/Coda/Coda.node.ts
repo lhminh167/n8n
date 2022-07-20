@@ -1,35 +1,34 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeApiError
+} from '@lhminh167/n8n-workflow';
 import {
-	codaApiRequest,
-	codaApiRequestAllItems,
-} from './GenericFunctions';
-import {
-	tableFields,
-	tableOperations,
-} from './TableDescription';
-import {
-	formulaFields,
-	formulaOperations,
-} from './FormulaDescription';
-import {
-	controlFields,
-	controlOperations,
+    controlFields,
+    controlOperations
 } from './ControlDescription';
 import {
-	viewFields,
-	viewOperations,
+    formulaFields,
+    formulaOperations
+} from './FormulaDescription';
+import {
+    codaApiRequest,
+    codaApiRequestAllItems
+} from './GenericFunctions';
+import {
+    tableFields,
+    tableOperations
+} from './TableDescription';
+import {
+    viewFields,
+    viewOperations
 } from './ViewDescription';
 
 export class Coda implements INodeType {

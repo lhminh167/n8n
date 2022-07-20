@@ -1,43 +1,43 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeApiError,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 import {
-	leadFields,
-	leadOpeations,
-} from './LeadDescription';
-import {
-	intercomApiRequest,
-	intercomApiRequestAllItems,
-	validateJSON,
-} from './GenericFunctions';
-import {
-	IAvatar,
-	ILead,
-	ILeadCompany,
-} from './LeadInterface';
-import {
-	userFields,
-	userOpeations,
-} from './UserDescription';
-import {
-	IUser,
-	IUserCompany,
-} from './UserInterface';
-import {
-	companyFields,
-	companyOperations,
+    companyFields,
+    companyOperations
 } from './CompanyDescription';
 import { ICompany } from './CompanyInteface';
+import {
+    intercomApiRequest,
+    intercomApiRequestAllItems,
+    validateJSON
+} from './GenericFunctions';
+import {
+    leadFields,
+    leadOpeations
+} from './LeadDescription';
+import {
+    IAvatar,
+    ILead,
+    ILeadCompany
+} from './LeadInterface';
+import {
+    userFields,
+    userOpeations
+} from './UserDescription';
+import {
+    IUser,
+    IUserCompany
+} from './UserInterface';
 
 export class Intercom implements INodeType {
 	description: INodeTypeDescription = {

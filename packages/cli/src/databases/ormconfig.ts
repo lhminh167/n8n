@@ -1,5 +1,5 @@
+import { UserSettings } from '@lhminh167/n8n-core';
 import path from 'path';
-import { UserSettings } from 'n8n-core';
 import { entities } from './entities';
 
 export default [

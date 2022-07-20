@@ -1,4 +1,4 @@
-import { IDataObject, INodeExecutionData, JsonObject } from 'n8n-workflow';
+import { IDataObject, INodeExecutionData, JsonObject } from '@lhminh167/n8n-workflow';
 import pgPromise from 'pg-promise';
 import pg from 'pg-promise/typescript/pg-subset';
 

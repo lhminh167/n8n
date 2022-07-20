@@ -1,43 +1,43 @@
 import {
-	paramCase,
-	snakeCase,
+    paramCase,
+    snakeCase
 } from 'change-case';
 
 import { createHash } from 'crypto';
 
 import { Builder } from 'xml2js';
 
-import { IExecuteFunctions } from 'n8n-core';
+import { IExecuteFunctions } from '@lhminh167/n8n-core';
 
 import {
-	IBinaryKeyData,
-	IDataObject,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	NodeApiError,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IBinaryKeyData,
+    IDataObject,
+    INodeExecutionData,
+    INodeType,
+    INodeTypeDescription,
+    NodeApiError,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	bucketFields,
-	bucketOperations,
+    bucketFields,
+    bucketOperations
 } from '../Aws/S3/BucketDescription';
 
 import {
-	folderFields,
-	folderOperations,
+    folderFields,
+    folderOperations
 } from '../Aws/S3/FolderDescription';
 
 import {
-	fileFields,
-	fileOperations,
+    fileFields,
+    fileOperations
 } from '../Aws/S3/FileDescription';
 
 import {
-	s3ApiRequestREST,
-	s3ApiRequestSOAP,
-	s3ApiRequestSOAPAllItems,
+    s3ApiRequestREST,
+    s3ApiRequestSOAP,
+    s3ApiRequestSOAPAllItems
 } from './GenericFunctions';
 
 export class S3 implements INodeType {

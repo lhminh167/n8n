@@ -1,10 +1,10 @@
 import {
-	INodeProperties,
-} from 'n8n-workflow';
+    INodeProperties
+} from '@lhminh167/n8n-workflow';
 
 import {
-	makeCustomFieldsFixedCollection,
-	makeGetAllFields,
+    makeCustomFieldsFixedCollection,
+    makeGetAllFields
 } from './SharedFields';
 
 export const productOperations: INodeProperties[] = [

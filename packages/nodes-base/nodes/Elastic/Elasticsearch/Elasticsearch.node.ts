@@ -1,37 +1,30 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	ICredentialsDecrypted,
-	ICredentialTestFunctions,
-	IDataObject,
-	INodeCredentialTestResult,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
-	JsonObject,
-} from 'n8n-workflow';
+    IDataObject, INodeExecutionData,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	elasticsearchApiRequest,
+    elasticsearchApiRequest
 } from './GenericFunctions';
 
 import {
-	documentFields,
-	documentOperations,
-	indexFields,
-	indexOperations,
+    documentFields,
+    documentOperations,
+    indexFields,
+    indexOperations
 } from './descriptions';
 
 import {
-	DocumentGetAllOptions,
-	ElasticsearchApiCredentials,
-	FieldsUiValues,
+    DocumentGetAllOptions, FieldsUiValues
 } from './types';
 
 import {
-	omit,
+    omit
 } from 'lodash';
 
 export class Elasticsearch implements INodeType {

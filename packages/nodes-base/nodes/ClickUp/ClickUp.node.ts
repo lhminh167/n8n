@@ -1,51 +1,51 @@
 import {
-	IExecuteFunctions,
-} from 'n8n-core';
+    IExecuteFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	ILoadOptionsFunctions,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-	NodeOperationError,
-} from 'n8n-workflow';
+    IDataObject,
+    ILoadOptionsFunctions,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription,
+    NodeOperationError
+} from '@lhminh167/n8n-workflow';
 
 import {
-	clickupApiRequest,
-	clickupApiRequestAllItems,
-	validateJSON,
+    clickupApiRequest,
+    clickupApiRequestAllItems,
+    validateJSON
 } from './GenericFunctions';
 
 import {
-	checklistFields,
-	checklistOperations,
+    checklistFields,
+    checklistOperations
 } from './ChecklistDescription';
 
 import {
-	checklistItemFields,
-	checklistItemOperations,
+    checklistItemFields,
+    checklistItemOperations
 } from './ChecklistItemDescription';
 
 import {
-	commentFields,
-	commentOperations,
+    commentFields,
+    commentOperations
 } from './CommentDescription';
 
 import {
-	folderFields,
-	folderOperations,
+    folderFields,
+    folderOperations
 } from './FolderDescription';
 
 import {
-	goalFields,
-	goalOperations,
+    goalFields,
+    goalOperations
 } from './GoalDescription';
 
 import {
-	goalKeyResultFields,
-	goalKeyResultOperations,
+    goalKeyResultFields,
+    goalKeyResultOperations
 } from './GoalKeyResultDescription';
 
 // import {
@@ -54,51 +54,51 @@ import {
 // } from './guestDescription';
 
 import {
-	taskFields,
-	taskOperations,
+    taskFields,
+    taskOperations
 } from './TaskDescription';
 
 import {
-	taskListFields,
-	taskListOperations,
+    taskListFields,
+    taskListOperations
 } from './TaskListDescription';
 
 import {
-	taskTagFields,
-	taskTagOperations,
+    taskTagFields,
+    taskTagOperations
 } from './TaskTagDescription';
 
 import {
-	spaceTagFields,
-	spaceTagOperations,
+    spaceTagFields,
+    spaceTagOperations
 } from './SpaceTagDescription';
 
 import {
-	taskDependencyFields,
-	taskDependencyOperations,
+    taskDependencyFields,
+    taskDependencyOperations
 } from './TaskDependencyDescription';
 
 import {
-	timeEntryFields,
-	timeEntryOperations,
+    timeEntryFields,
+    timeEntryOperations
 } from './TimeEntryDescription';
 
 import {
-	timeEntryTagFields,
-	timeEntryTagOperations,
+    timeEntryTagFields,
+    timeEntryTagOperations
 } from './TimeEntryTagDescription';
 
 import {
-	listFields,
-	listOperations,
+    listFields,
+    listOperations
 } from './ListDescription';
 
 import {
-	ITask,
+    ITask
 } from './TaskInterface';
 
 import {
-	IList,
+    IList
 } from './ListInterface';
 
 import moment from 'moment-timezone';

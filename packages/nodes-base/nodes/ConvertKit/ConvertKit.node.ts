@@ -1,43 +1,43 @@
 import {
-	IExecuteFunctions,
-	ILoadOptionsFunctions,
-} from 'n8n-core';
+    IExecuteFunctions,
+    ILoadOptionsFunctions
+} from '@lhminh167/n8n-core';
 
 import {
-	IDataObject,
-	INodeExecutionData,
-	INodePropertyOptions,
-	INodeType,
-	INodeTypeDescription,
-} from 'n8n-workflow';
+    IDataObject,
+    INodeExecutionData,
+    INodePropertyOptions,
+    INodeType,
+    INodeTypeDescription
+} from '@lhminh167/n8n-workflow';
 
 import {
-	convertKitApiRequest,
+    convertKitApiRequest
 } from './GenericFunctions';
 
 import {
-	customFieldFields,
-	customFieldOperations,
+    customFieldFields,
+    customFieldOperations
 } from './CustomFieldDescription';
 
 import {
-	formFields,
-	formOperations,
+    formFields,
+    formOperations
 } from './FormDescription';
 
 import {
-	sequenceFields,
-	sequenceOperations,
+    sequenceFields,
+    sequenceOperations
 } from './SequenceDescription';
 
 import {
-	tagFields,
-	tagOperations,
+    tagFields,
+    tagOperations
 } from './TagDescription';
 
 import {
-	tagSubscriberFields,
-	tagSubscriberOperations,
+    tagSubscriberFields,
+    tagSubscriberOperations
 } from './TagSubscriberDescription';
 
 export class ConvertKit implements INodeType {

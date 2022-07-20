@@ -11,10 +11,16 @@ import express from 'express';
 import http from 'http';
 import PCancelable from 'p-cancelable';
 
+import { BinaryDataManager, UserSettings, WorkflowExecute } from '@lhminh167/n8n-core';
 import { Command, flags } from '@oclif/command';
-import { BinaryDataManager, IBinaryDataConfig, UserSettings, WorkflowExecute } from 'n8n-core';
 
-import { IExecuteResponsePromiseData, INodeTypes, IRun, Workflow, LoggerProxy } from 'n8n-workflow';
+import {
+	IExecuteResponsePromiseData,
+	INodeTypes,
+	IRun,
+	LoggerProxy,
+	Workflow,
+} from '@lhminh167/n8n-workflow';
 
 import { FindOneOptions, getConnectionManager } from 'typeorm';
 
@@ -28,7 +34,6 @@ import {
 	IBullJobData,
 	IBullJobResponse,
 	IBullWebhookResponse,
-	IExecutionFlattedDb,
 	InternalHooksManager,
 	LoadNodesAndCredentials,
 	NodeTypes,
