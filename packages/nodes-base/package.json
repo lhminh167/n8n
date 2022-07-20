@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-base",
+  "name": "@lhminh167/n8n-nodes-base",
   "version": "0.184.1",
   "description": "Base nodes of n8n",
   "license": "SEE LICENSE IN LICENSE.md",
