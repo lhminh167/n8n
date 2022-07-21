@@ -8,6 +8,8 @@
 	},
 	"defaultSeverity": "error",
 	"jsRules": {},
-	"rules": {},
+	"rules": {
+		"no-empty": true
+	},
 	"rulesDirectory": []
 }
