@@ -5,26 +5,26 @@ import Vuex from 'vuex';
 import { DEFAULT_NODETYPE_VERSION, PLACEHOLDER_EMPTY_WORKFLOW_ID } from '@/constants';
 
 import {
-    IConnection,
-    IConnections,
-    IDataObject,
-    INodeConnections,
-    INodeIssueData,
-    INodeTypeDescription,
-    IRunData,
-    ITaskData,
-    IWorkflowSettings
+	IConnection,
+	IConnections,
+	IDataObject,
+	INodeConnections,
+	INodeIssueData,
+	INodeTypeDescription,
+	IRunData,
+	ITaskData,
+	IWorkflowSettings
 } from '@lhminh167/n8n-workflow';
 
 import {
-    IExecutionResponse,
-    IExecutionsCurrentSummaryExtended, IMenuItem,
-    INodeUi,
-    INodeUpdatePropertiesInformation,
-    IPushDataExecutionFinished,
-    IPushDataNodeExecuteAfter, IRestApiContext, IRootState, IUpdateInformation,
-    IWorkflowDb,
-    XYPosition
+	IExecutionResponse,
+	IExecutionsCurrentSummaryExtended, IMenuItem,
+	INodeUi,
+	INodeUpdatePropertiesInformation,
+	IPushDataExecutionFinished,
+	IPushDataNodeExecuteAfter, IRestApiContext, IRootState, IUpdateInformation,
+	IWorkflowDb,
+	XYPosition
 } from './Interface';
 
 import credentials from './modules/credentials';
